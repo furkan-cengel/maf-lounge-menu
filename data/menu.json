@@ -106,26 +106,26 @@
       "comingSoon": false,
       "colorHue": 200,
       "catIds": [
-        "hotcoffee",
+        "matcha",
         "icecoffee",
+        "cold",
+        "hotcoffee",
         "hotdrinks",
+        "cocktail",
         "tea",
         "frappe",
         "shake",
         "frozen",
         "smoothie",
-        "lemonade",
-        "cocktail",
-        "cold",
-        "matcha"
+        "lemonade"
       ],
       "categories": [
         {
-          "id": "hotcoffee",
-          "tr": "Sıcak Kahveler",
-          "en": "Hot Coffee",
-          "emoji": "☕",
-          "colorHue": 28
+          "id": "matcha",
+          "tr": "Matchalar",
+          "en": "Matcha",
+          "emoji": "🍵",
+          "colorHue": 140
         },
         {
           "id": "icecoffee",
@@ -135,11 +135,32 @@
           "colorHue": 200
         },
         {
+          "id": "cold",
+          "tr": "Soğuk İçecekler",
+          "en": "Cold Drinks",
+          "emoji": "🥤",
+          "colorHue": 200
+        },
+        {
+          "id": "hotcoffee",
+          "tr": "Sıcak Kahveler",
+          "en": "Hot Coffee",
+          "emoji": "☕",
+          "colorHue": 28
+        },
+        {
           "id": "hotdrinks",
           "tr": "Sıcak İçecekler",
           "en": "Hot Drinks",
           "emoji": "🍵",
           "colorHue": 12
+        },
+        {
+          "id": "cocktail",
+          "tr": "Kokteyller",
+          "en": "Cocktails",
+          "emoji": "🍹",
+          "colorHue": 340
         },
         {
           "id": "tea",
@@ -182,27 +203,6 @@
           "en": "Lemonade",
           "emoji": "🍋",
           "colorHue": 60
-        },
-        {
-          "id": "cocktail",
-          "tr": "Kokteyller",
-          "en": "Cocktails",
-          "emoji": "🍹",
-          "colorHue": 340
-        },
-        {
-          "id": "cold",
-          "tr": "Soğuk İçecekler",
-          "en": "Cold Drinks",
-          "emoji": "🥤",
-          "colorHue": 200
-        },
-        {
-          "id": "matcha",
-          "tr": "Matchalar",
-          "en": "Matcha",
-          "emoji": "🍵",
-          "colorHue": 140
         }
       ]
     },
