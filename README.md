@@ -1,36 +1,99 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Maf Lounge Cafe — QR Menu
 
-## Getting Started
+Mobile-only digital menu for Maf Lounge Cafe. Scan a QR code → view the menu instantly, no app needed.
 
-First, run the development server:
+## Quick Start
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# open http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+With a table number:
+```
+http://localhost:3000/?masa=5
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## How to Edit the Menu
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+All menu content lives in **`data/menu.json`** — that's the only file you need to touch.
 
-## Learn More
+### Add a new item
 
-To learn more about Next.js, take a look at the following resources:
+Find the category in `data/menu.json` and add an object to its `items` array:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```json
+{
+  "id": "yeni-urun",
+  "name": "Yeni Ürün",
+  "description": "Açıklama (isteğe bağlı)",
+  "price": 150,
+  "image": null
+}
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `id` — unique slug, lowercase, dashes only
+- `description` — can be `null` to hide the description line
+- `price` — integer, displayed as `₺150`
+- `image` — `null` for the auto-generated thumbnail, or a URL / base64 data URI
 
-## Deploy on Vercel
+### Add a new category
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Add an object to the top-level `categories` array:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```json
+{
+  "id": "tatlilar",
+  "name": "Tatlılar",
+  "colorHue": 330,
+  "items": []
+}
+```
+
+- `colorHue` — 0–360, controls the thumbnail stripe color (e.g. 200 = teal, 45 = amber, 330 = pink)
+
+### Remove an item or category
+
+Delete its object from the array. The page rebuilds automatically on `npm run dev`.
+
+### Add a photo to an item
+
+Set `"image"` to a public URL:
+```json
+"image": "https://example.com/photo.jpg"
+```
+
+Or a base64 data URI (for self-hosted images with no external dependency):
+```json
+"image": "data:image/jpeg;base64,/9j/4AAQ..."
+```
+
+## QR Code Setup
+
+Generate a QR code pointing to:
+```
+https://yourdomain.com/?masa=<table-number>
+```
+
+The table number appears in the header. Use `masa=5` for table 5, etc.
+
+## Project Structure
+
+```
+app/
+  layout.tsx          Google Fonts + viewport meta
+  page.tsx            Main page (reads ?masa= param)
+  globals.css         CSS variables + base styles
+components/
+  Header.tsx          Sticky header + category nav (client)
+  CategorySection.tsx Category title + items list (server)
+  MenuItem.tsx        Individual card with press animation (client)
+  Thumbnail.tsx       SVG stripe pattern per category (server)
+  FloatingButton.tsx  Fixed "Garson" call-waiter button (client)
+  Footer.tsx          VAT note + allergen info (server)
+data/
+  menu.json           ← single source of truth for all content
+types/
+  menu.ts             TypeScript interfaces
+```

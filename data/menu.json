@@ -1,0 +1,2101 @@
+{
+  "meta": {
+    "name": "MAF Coffee & Lounge",
+    "tagline": {
+      "tr": "Şehrin kalbinde, gecenin tadında",
+      "en": "At the heart of the city"
+    },
+    "wifi": {
+      "name": "MAF_Guest",
+      "pass": "maflounge2026"
+    },
+    "instagram": "mafcoffeelounge",
+    "phone": "+90 555 123 4567"
+  },
+  "branches": [
+    {
+      "id": "maf-spesial",
+      "tr": "MAF Spesial",
+      "en": "MAF Specials",
+      "comingSoon": false,
+      "colorHue": 285,
+      "catIds": [
+        "specials"
+      ],
+      "categories": []
+    },
+    {
+      "id": "yiyecekler",
+      "tr": "Yiyecekler",
+      "en": "Food",
+      "comingSoon": false,
+      "colorHue": 35,
+      "catIds": [
+        "breakfast",
+        "toasts",
+        "gozleme",
+        "burgers",
+        "pasta",
+        "pans",
+        "salads",
+        "desserts"
+      ],
+      "categories": [
+        {
+          "id": "breakfast",
+          "tr": "Kahvaltı",
+          "en": "Breakfast",
+          "emoji": "🍳",
+          "colorHue": 35
+        },
+        {
+          "id": "toasts",
+          "tr": "Tostlar",
+          "en": "Toasts",
+          "emoji": "🥪",
+          "colorHue": 25
+        },
+        {
+          "id": "gozleme",
+          "tr": "Gözlemeler",
+          "en": "Gözleme",
+          "emoji": "🫓",
+          "colorHue": 40
+        },
+        {
+          "id": "burgers",
+          "tr": "Burgerler",
+          "en": "Burgers",
+          "emoji": "🍔",
+          "colorHue": 18
+        },
+        {
+          "id": "pasta",
+          "tr": "Makarnalar",
+          "en": "Pasta",
+          "emoji": "🍝",
+          "colorHue": 30
+        },
+        {
+          "id": "pans",
+          "tr": "Tavalar",
+          "en": "Skillets",
+          "emoji": "🍳",
+          "colorHue": 22
+        },
+        {
+          "id": "salads",
+          "tr": "Salatalar",
+          "en": "Salads",
+          "emoji": "🥗",
+          "colorHue": 130
+        },
+        {
+          "id": "desserts",
+          "tr": "Tatlılar",
+          "en": "Desserts",
+          "emoji": "🍰",
+          "colorHue": 320
+        }
+      ]
+    },
+    {
+      "id": "icecekler",
+      "tr": "İçecekler",
+      "en": "Drinks",
+      "comingSoon": false,
+      "colorHue": 200,
+      "catIds": [
+        "hotcoffee",
+        "icecoffee",
+        "hotdrinks",
+        "tea",
+        "frappe",
+        "shake",
+        "frozen",
+        "smoothie",
+        "lemonade",
+        "cocktail",
+        "cold",
+        "matcha"
+      ],
+      "categories": [
+        {
+          "id": "hotcoffee",
+          "tr": "Sıcak Kahveler",
+          "en": "Hot Coffee",
+          "emoji": "☕",
+          "colorHue": 28
+        },
+        {
+          "id": "icecoffee",
+          "tr": "Soğuk Kahveler",
+          "en": "Cold Coffee",
+          "emoji": "🧊",
+          "colorHue": 200
+        },
+        {
+          "id": "hotdrinks",
+          "tr": "Sıcak İçecekler",
+          "en": "Hot Drinks",
+          "emoji": "🍵",
+          "colorHue": 12
+        },
+        {
+          "id": "tea",
+          "tr": "Bitki Çayları",
+          "en": "Herbal Teas",
+          "emoji": "🌿",
+          "colorHue": 110
+        },
+        {
+          "id": "frappe",
+          "tr": "Frappe",
+          "en": "Frappe",
+          "emoji": "🥤",
+          "colorHue": 25
+        },
+        {
+          "id": "shake",
+          "tr": "Milkshake",
+          "en": "Milkshake",
+          "emoji": "🥤",
+          "colorHue": 320
+        },
+        {
+          "id": "frozen",
+          "tr": "Frozen",
+          "en": "Frozen",
+          "emoji": "❄️",
+          "colorHue": 200
+        },
+        {
+          "id": "smoothie",
+          "tr": "Smoothie",
+          "en": "Smoothie",
+          "emoji": "🍓",
+          "colorHue": 340
+        },
+        {
+          "id": "lemonade",
+          "tr": "Limonata",
+          "en": "Lemonade",
+          "emoji": "🍋",
+          "colorHue": 60
+        },
+        {
+          "id": "cocktail",
+          "tr": "Kokteyller",
+          "en": "Cocktails",
+          "emoji": "🍹",
+          "colorHue": 340
+        },
+        {
+          "id": "cold",
+          "tr": "Soğuk İçecekler",
+          "en": "Cold Drinks",
+          "emoji": "🥤",
+          "colorHue": 200
+        },
+        {
+          "id": "matcha",
+          "tr": "Matchalar",
+          "en": "Matcha",
+          "emoji": "🍵",
+          "colorHue": 140
+        }
+      ]
+    },
+    {
+      "id": "ekstralar",
+      "tr": "Ekstralar",
+      "en": "Extras",
+      "comingSoon": false,
+      "colorHue": 45,
+      "catIds": [
+        "ekstralar-cat"
+      ],
+      "categories": []
+    },
+    {
+      "id": "nargile",
+      "tr": "Nargile",
+      "en": "Hookah",
+      "comingSoon": true,
+      "colorHue": 295,
+      "catIds": [],
+      "categories": []
+    }
+  ],
+  "items": [
+    {
+      "id": "maf-special-ice",
+      "cat": "specials",
+      "price": 250,
+      "badge": "imza",
+      "hue": 280,
+      "tr": {
+        "name": "Ice MAF Special",
+        "desc": null
+      },
+      "en": {
+        "name": "Ice MAF Special",
+        "desc": null
+      }
+    },
+    {
+      "id": "maf-special-cocktail",
+      "cat": "specials",
+      "price": 300,
+      "badge": "imza",
+      "hue": 285,
+      "tr": {
+        "name": "Maf Spesial Kokteyl",
+        "desc": null
+      },
+      "en": {
+        "name": "Maf Special Cocktail",
+        "desc": null
+      }
+    },
+    {
+      "id": "dibek-double",
+      "cat": "specials",
+      "price": 200,
+      "badge": "klasik",
+      "hue": 30,
+      "tr": {
+        "name": "Double Dibek Kahvesi",
+        "desc": null
+      },
+      "en": {
+        "name": "Double Dibek Coffee",
+        "desc": null
+      }
+    },
+    {
+      "id": "kahvalti-tab",
+      "cat": "breakfast",
+      "price": 450,
+      "tr": {
+        "name": "Kahvaltı Tabağı",
+        "desc": null
+      },
+      "en": {
+        "name": "Breakfast Plate",
+        "desc": null
+      }
+    },
+    {
+      "id": "serpme",
+      "cat": "breakfast",
+      "price": 1100,
+      "badge": "pop",
+      "hue": 45,
+      "tr": {
+        "name": "Serpme Kahvaltı (2 kişilik)",
+        "desc": null
+      },
+      "en": {
+        "name": "Spread Breakfast (for 2)",
+        "desc": null
+      }
+    },
+    {
+      "id": "omlet",
+      "cat": "breakfast",
+      "price": 200,
+      "tr": {
+        "name": "Omlet",
+        "desc": null
+      },
+      "en": {
+        "name": "Omelette",
+        "desc": null
+      },
+      "section": "Kahvaltıya Ek Lezzetler"
+    },
+    {
+      "id": "pey-omlet",
+      "cat": "breakfast",
+      "price": 250,
+      "tr": {
+        "name": "Peynirli Omlet",
+        "desc": null
+      },
+      "en": {
+        "name": "Cheese Omelette",
+        "desc": null
+      }
+    },
+    {
+      "id": "kas-omlet",
+      "cat": "breakfast",
+      "price": 250,
+      "tr": {
+        "name": "Kaşarlı Omlet",
+        "desc": null
+      },
+      "en": {
+        "name": "Kaşar Omelette",
+        "desc": null
+      }
+    },
+    {
+      "id": "suc-omlet",
+      "cat": "breakfast",
+      "price": 250,
+      "tr": {
+        "name": "Sucuklu Omlet",
+        "desc": null
+      },
+      "en": {
+        "name": "Sucuk Omelette",
+        "desc": null
+      }
+    },
+    {
+      "id": "sahanda",
+      "cat": "breakfast",
+      "price": 200,
+      "tr": {
+        "name": "Sahanda Yumurta",
+        "desc": null
+      },
+      "en": {
+        "name": "Pan Eggs",
+        "desc": null
+      }
+    },
+    {
+      "id": "pey-yumurta",
+      "cat": "breakfast",
+      "price": 250,
+      "tr": {
+        "name": "Peynirli Yumurta",
+        "desc": null
+      },
+      "en": {
+        "name": "Cheese Eggs",
+        "desc": null
+      }
+    },
+    {
+      "id": "kas-yumurta",
+      "cat": "breakfast",
+      "price": 250,
+      "tr": {
+        "name": "Kaşarlı Yumurta",
+        "desc": null
+      },
+      "en": {
+        "name": "Kaşar Eggs",
+        "desc": null
+      }
+    },
+    {
+      "id": "suc-yumurta",
+      "cat": "breakfast",
+      "price": 250,
+      "tr": {
+        "name": "Sucuklu Yumurta",
+        "desc": null
+      },
+      "en": {
+        "name": "Sucuk Eggs",
+        "desc": null
+      }
+    },
+    {
+      "id": "menemen",
+      "cat": "breakfast",
+      "price": 250,
+      "tr": {
+        "name": "Menemen",
+        "desc": null
+      },
+      "en": {
+        "name": "Menemen",
+        "desc": null
+      }
+    },
+    {
+      "id": "tost-kasar",
+      "cat": "toasts",
+      "price": 250,
+      "tr": {
+        "name": "Kaşarlı Tost",
+        "desc": null
+      },
+      "en": {
+        "name": "Kaşar Toast",
+        "desc": null
+      }
+    },
+    {
+      "id": "tost-sucuk",
+      "cat": "toasts",
+      "price": 250,
+      "tr": {
+        "name": "Sucuklu Tost",
+        "desc": null
+      },
+      "en": {
+        "name": "Sucuk Toast",
+        "desc": null
+      }
+    },
+    {
+      "id": "tost-karisik",
+      "cat": "toasts",
+      "price": 300,
+      "tr": {
+        "name": "Karışık Tost",
+        "desc": null
+      },
+      "en": {
+        "name": "Mixed Toast",
+        "desc": null
+      }
+    },
+    {
+      "id": "tost-kavurma",
+      "cat": "toasts",
+      "price": 400,
+      "tr": {
+        "name": "Kavurmalı Tost",
+        "desc": null
+      },
+      "en": {
+        "name": "Kavurma Toast",
+        "desc": null
+      }
+    },
+    {
+      "id": "tost-bazlama",
+      "cat": "toasts",
+      "price": 350,
+      "tr": {
+        "name": "Bazlama Tost",
+        "desc": null
+      },
+      "en": {
+        "name": "Bazlama Toast",
+        "desc": null
+      }
+    },
+    {
+      "id": "tost-ayvalik",
+      "cat": "toasts",
+      "price": 350,
+      "tr": {
+        "name": "Ayvalık Tost",
+        "desc": null
+      },
+      "en": {
+        "name": "Ayvalık Toast",
+        "desc": null
+      }
+    },
+    {
+      "id": "goz-peynir",
+      "cat": "gozleme",
+      "price": 250,
+      "tr": {
+        "name": "Beyaz Peynirli Gözleme",
+        "desc": null
+      },
+      "en": {
+        "name": "White Cheese Gözleme",
+        "desc": null
+      }
+    },
+    {
+      "id": "goz-kasar",
+      "cat": "gozleme",
+      "price": 250,
+      "tr": {
+        "name": "Kaşarlı Gözleme",
+        "desc": null
+      },
+      "en": {
+        "name": "Kaşar Gözleme",
+        "desc": null
+      }
+    },
+    {
+      "id": "goz-sucuk",
+      "cat": "gozleme",
+      "price": 300,
+      "tr": {
+        "name": "Kaşar Sucuklu Gözleme",
+        "desc": null
+      },
+      "en": {
+        "name": "Kaşar-Sucuk Gözleme",
+        "desc": null
+      }
+    },
+    {
+      "id": "burger",
+      "cat": "burgers",
+      "price": 350,
+      "tr": {
+        "name": "Hamburger",
+        "desc": null
+      },
+      "en": {
+        "name": "Hamburger",
+        "desc": null
+      }
+    },
+    {
+      "id": "cheeseburger",
+      "cat": "burgers",
+      "price": 400,
+      "tr": {
+        "name": "Cheeseburger",
+        "desc": null
+      },
+      "en": {
+        "name": "Cheeseburger",
+        "desc": null
+      }
+    },
+    {
+      "id": "double-burger",
+      "cat": "burgers",
+      "price": 450,
+      "tr": {
+        "name": "Double Hamburger",
+        "desc": null
+      },
+      "en": {
+        "name": "Double Hamburger",
+        "desc": null
+      }
+    },
+    {
+      "id": "chicken-burger",
+      "cat": "burgers",
+      "price": 300,
+      "tr": {
+        "name": "Tavuk Burger",
+        "desc": null
+      },
+      "en": {
+        "name": "Chicken Burger",
+        "desc": null
+      }
+    },
+    {
+      "id": "double-chicken",
+      "cat": "burgers",
+      "price": 400,
+      "tr": {
+        "name": "Double Tavuk Burger",
+        "desc": null
+      },
+      "en": {
+        "name": "Double Chicken Burger",
+        "desc": null
+      }
+    },
+    {
+      "id": "kumru",
+      "cat": "burgers",
+      "price": 350,
+      "tr": {
+        "name": "Kumru",
+        "desc": null
+      },
+      "en": {
+        "name": "Kumru",
+        "desc": null
+      }
+    },
+    {
+      "id": "pesto",
+      "cat": "pasta",
+      "price": 300,
+      "tr": {
+        "name": "Pesto Makarna",
+        "desc": null
+      },
+      "en": {
+        "name": "Pesto Pasta",
+        "desc": null
+      }
+    },
+    {
+      "id": "napoliten",
+      "cat": "pasta",
+      "price": 300,
+      "tr": {
+        "name": "Napoliten Makarna",
+        "desc": null
+      },
+      "en": {
+        "name": "Napolitan Pasta",
+        "desc": null
+      }
+    },
+    {
+      "id": "kori",
+      "cat": "pasta",
+      "price": 300,
+      "tr": {
+        "name": "Köri Makarna",
+        "desc": null
+      },
+      "en": {
+        "name": "Curry Pasta",
+        "desc": null
+      }
+    },
+    {
+      "id": "kremali",
+      "cat": "pasta",
+      "price": 300,
+      "tr": {
+        "name": "Kremalı Mantarlı",
+        "desc": null
+      },
+      "en": {
+        "name": "Creamy Mushroom",
+        "desc": null
+      }
+    },
+    {
+      "id": "sosis-tava",
+      "cat": "pans",
+      "price": 250,
+      "tr": {
+        "name": "Sosis Tava",
+        "desc": null
+      },
+      "en": {
+        "name": "Sausage Skillet",
+        "desc": null
+      }
+    },
+    {
+      "id": "patates-tava",
+      "cat": "pans",
+      "price": 200,
+      "tr": {
+        "name": "Patates Tava",
+        "desc": null
+      },
+      "en": {
+        "name": "Potato Skillet",
+        "desc": null
+      }
+    },
+    {
+      "id": "mix-tava",
+      "cat": "pans",
+      "price": 350,
+      "tr": {
+        "name": "Mix Tava",
+        "desc": null
+      },
+      "en": {
+        "name": "Mix Skillet",
+        "desc": null
+      }
+    },
+    {
+      "id": "ton-balik",
+      "cat": "salads",
+      "price": 350,
+      "tr": {
+        "name": "Ton Balıklı Salata",
+        "desc": null
+      },
+      "en": {
+        "name": "Tuna Salad",
+        "desc": null
+      }
+    },
+    {
+      "id": "akdeniz",
+      "cat": "salads",
+      "price": 350,
+      "tr": {
+        "name": "Akdeniz Salata",
+        "desc": null
+      },
+      "en": {
+        "name": "Mediterranean Salad",
+        "desc": null
+      }
+    },
+    {
+      "id": "mevsim",
+      "cat": "salads",
+      "price": 300,
+      "tr": {
+        "name": "Mevsim Salata",
+        "desc": null
+      },
+      "en": {
+        "name": "Seasonal Salad",
+        "desc": null
+      }
+    },
+    {
+      "id": "san-seb",
+      "cat": "desserts",
+      "price": 250,
+      "tr": {
+        "name": "Cheesecake",
+        "desc": null
+      },
+      "en": {
+        "name": "Cheesecake",
+        "desc": null
+      }
+    },
+    {
+      "id": "sutlac",
+      "cat": "desserts",
+      "price": 250,
+      "tr": {
+        "name": "Sütlaç",
+        "desc": null
+      },
+      "en": {
+        "name": "Rice Pudding",
+        "desc": null
+      }
+    },
+    {
+      "id": "magnolya",
+      "cat": "desserts",
+      "price": 250,
+      "tr": {
+        "name": "Magnolya",
+        "desc": null
+      },
+      "en": {
+        "name": "Magnolia",
+        "desc": null
+      }
+    },
+    {
+      "id": "tiramisu",
+      "cat": "desserts",
+      "price": 250,
+      "tr": {
+        "name": "Tiramisu",
+        "desc": null
+      },
+      "en": {
+        "name": "Tiramisu",
+        "desc": null
+      }
+    },
+    {
+      "id": "crem-brule",
+      "cat": "desserts",
+      "price": 250,
+      "tr": {
+        "name": "Crème Brûlée",
+        "desc": null
+      },
+      "en": {
+        "name": "Crème Brûlée",
+        "desc": null
+      }
+    },
+    {
+      "id": "cilek-mag",
+      "cat": "desserts",
+      "price": 250,
+      "tr": {
+        "name": "Çilek Magnolia",
+        "desc": null
+      },
+      "en": {
+        "name": "Strawberry Magnolia",
+        "desc": null
+      }
+    },
+    {
+      "id": "oreo-mag",
+      "cat": "desserts",
+      "price": 250,
+      "tr": {
+        "name": "Oreo Magnolia",
+        "desc": null
+      },
+      "en": {
+        "name": "Oreo Magnolia",
+        "desc": null
+      }
+    },
+    {
+      "id": "latte-cup",
+      "cat": "desserts",
+      "price": 250,
+      "tr": {
+        "name": "Latte Cup",
+        "desc": null
+      },
+      "en": {
+        "name": "Latte Cup",
+        "desc": null
+      }
+    },
+    {
+      "id": "spagull",
+      "cat": "desserts",
+      "price": 250,
+      "tr": {
+        "name": "Sponfull",
+        "desc": null
+      },
+      "en": {
+        "name": "Sponfull",
+        "desc": null
+      }
+    },
+    {
+      "id": "espresso",
+      "cat": "hotcoffee",
+      "price": 100,
+      "tr": {
+        "name": "Espresso",
+        "desc": null
+      },
+      "en": {
+        "name": "Espresso",
+        "desc": null
+      }
+    },
+    {
+      "id": "double-espresso",
+      "cat": "hotcoffee",
+      "price": 125,
+      "tr": {
+        "name": "Double Espresso",
+        "desc": null
+      },
+      "en": {
+        "name": "Double Espresso",
+        "desc": null
+      }
+    },
+    {
+      "id": "americano",
+      "cat": "hotcoffee",
+      "price": 160,
+      "tr": {
+        "name": "Americano",
+        "desc": null
+      },
+      "en": {
+        "name": "Americano",
+        "desc": null
+      }
+    },
+    {
+      "id": "latte",
+      "cat": "hotcoffee",
+      "price": 175,
+      "tr": {
+        "name": "Latte",
+        "desc": null
+      },
+      "en": {
+        "name": "Latte",
+        "desc": null
+      }
+    },
+    {
+      "id": "latte-aroma",
+      "cat": "hotcoffee",
+      "price": 190,
+      "tr": {
+        "name": "Aromalı Latte",
+        "desc": null
+      },
+      "en": {
+        "name": "Flavored Latte",
+        "desc": null
+      }
+    },
+    {
+      "id": "cappuccino",
+      "cat": "hotcoffee",
+      "price": 170,
+      "tr": {
+        "name": "Cappuccino",
+        "desc": null
+      },
+      "en": {
+        "name": "Cappuccino",
+        "desc": null
+      }
+    },
+    {
+      "id": "machiato",
+      "cat": "hotcoffee",
+      "price": 130,
+      "tr": {
+        "name": "Machiato Espresso",
+        "desc": null
+      },
+      "en": {
+        "name": "Espresso Macchiato",
+        "desc": null
+      }
+    },
+    {
+      "id": "mocha",
+      "cat": "hotcoffee",
+      "price": 190,
+      "tr": {
+        "name": "Mocha",
+        "desc": null
+      },
+      "en": {
+        "name": "Mocha",
+        "desc": null
+      }
+    },
+    {
+      "id": "white-mocha",
+      "cat": "hotcoffee",
+      "price": 200,
+      "tr": {
+        "name": "White Chocolate Mocha",
+        "desc": null
+      },
+      "en": {
+        "name": "White Chocolate Mocha",
+        "desc": null
+      }
+    },
+    {
+      "id": "flat-white",
+      "cat": "hotcoffee",
+      "price": 170,
+      "tr": {
+        "name": "Flat White",
+        "desc": null
+      },
+      "en": {
+        "name": "Flat White",
+        "desc": null
+      }
+    },
+    {
+      "id": "cortado",
+      "cat": "hotcoffee",
+      "price": 170,
+      "tr": {
+        "name": "Cortado",
+        "desc": null
+      },
+      "en": {
+        "name": "Cortado",
+        "desc": null
+      }
+    },
+    {
+      "id": "turk",
+      "cat": "hotcoffee",
+      "price": 125,
+      "tr": {
+        "name": "Türk Kahvesi",
+        "desc": null
+      },
+      "en": {
+        "name": "Turkish Coffee",
+        "desc": null
+      }
+    },
+    {
+      "id": "dibek",
+      "cat": "hotcoffee",
+      "price": 150,
+      "tr": {
+        "name": "Dibek Kahvesi",
+        "desc": null
+      },
+      "en": {
+        "name": "Dibek Coffee",
+        "desc": null
+      }
+    },
+    {
+      "id": "double-turk",
+      "cat": "hotcoffee",
+      "price": 175,
+      "tr": {
+        "name": "Double Türk Kahvesi",
+        "desc": null
+      },
+      "en": {
+        "name": "Double Turkish Coffee",
+        "desc": null
+      }
+    },
+    {
+      "id": "menengic",
+      "cat": "hotcoffee",
+      "price": 150,
+      "tr": {
+        "name": "Menengiç Kahvesi",
+        "desc": null
+      },
+      "en": {
+        "name": "Menengiç Coffee",
+        "desc": null
+      }
+    },
+    {
+      "id": "filtre",
+      "cat": "hotcoffee",
+      "price": 150,
+      "tr": {
+        "name": "Filtre Kahve",
+        "desc": null
+      },
+      "en": {
+        "name": "Filter Coffee",
+        "desc": null
+      }
+    },
+    {
+      "id": "ice-latte",
+      "cat": "icecoffee",
+      "price": 180,
+      "tr": {
+        "name": "Ice Latte",
+        "desc": null
+      },
+      "en": {
+        "name": "Ice Latte",
+        "desc": null
+      }
+    },
+    {
+      "id": "ice-americano",
+      "cat": "icecoffee",
+      "price": 170,
+      "tr": {
+        "name": "Ice Americano",
+        "desc": null
+      },
+      "en": {
+        "name": "Ice Americano",
+        "desc": null
+      }
+    },
+    {
+      "id": "ice-mocha",
+      "cat": "icecoffee",
+      "price": 200,
+      "tr": {
+        "name": "Ice Mocha",
+        "desc": null
+      },
+      "en": {
+        "name": "Ice Mocha",
+        "desc": null
+      }
+    },
+    {
+      "id": "ice-karamel",
+      "cat": "icecoffee",
+      "price": 200,
+      "tr": {
+        "name": "Ice Latte Karamel",
+        "desc": null
+      },
+      "en": {
+        "name": "Ice Caramel Latte",
+        "desc": null
+      }
+    },
+    {
+      "id": "ice-findik",
+      "cat": "icecoffee",
+      "price": 200,
+      "tr": {
+        "name": "Ice Latte Fındık",
+        "desc": null
+      },
+      "en": {
+        "name": "Ice Hazelnut Latte",
+        "desc": null
+      }
+    },
+    {
+      "id": "ice-vanilya",
+      "cat": "icecoffee",
+      "price": 200,
+      "tr": {
+        "name": "Ice Latte Vanilya",
+        "desc": null
+      },
+      "en": {
+        "name": "Ice Vanilla Latte",
+        "desc": null
+      }
+    },
+    {
+      "id": "ice-white-choc",
+      "cat": "icecoffee",
+      "price": 200,
+      "tr": {
+        "name": "Ice White Chocolate",
+        "desc": null
+      },
+      "en": {
+        "name": "Ice White Chocolate",
+        "desc": null
+      }
+    },
+    {
+      "id": "ice-spanish",
+      "cat": "icecoffee",
+      "price": 250,
+      "tr": {
+        "name": "Ice Spanish Latte",
+        "desc": null
+      },
+      "en": {
+        "name": "Ice Spanish Latte",
+        "desc": null
+      }
+    },
+    {
+      "id": "afogato",
+      "cat": "icecoffee",
+      "price": 150,
+      "tr": {
+        "name": "Affogato",
+        "desc": null
+      },
+      "en": {
+        "name": "Affogato",
+        "desc": null
+      }
+    },
+    {
+      "id": "cay",
+      "cat": "hotdrinks",
+      "price": 40,
+      "tr": {
+        "name": "Çay",
+        "desc": null
+      },
+      "en": {
+        "name": "Tea",
+        "desc": null
+      }
+    },
+    {
+      "id": "fincan-cay",
+      "cat": "hotdrinks",
+      "price": 60,
+      "tr": {
+        "name": "Fincan Çay",
+        "desc": null
+      },
+      "en": {
+        "name": "Tea (Cup)",
+        "desc": null
+      }
+    },
+    {
+      "id": "sicak-cik",
+      "cat": "hotdrinks",
+      "price": 180,
+      "tr": {
+        "name": "Sıcak Çikolata",
+        "desc": null
+      },
+      "en": {
+        "name": "Hot Chocolate",
+        "desc": null
+      }
+    },
+    {
+      "id": "salep",
+      "cat": "hotdrinks",
+      "price": 180,
+      "tr": {
+        "name": "Salep",
+        "desc": null
+      },
+      "en": {
+        "name": "Salep",
+        "desc": null
+      }
+    },
+    {
+      "id": "beyaz-cik",
+      "cat": "hotdrinks",
+      "price": 180,
+      "tr": {
+        "name": "Beyaz Çikolata",
+        "desc": null
+      },
+      "en": {
+        "name": "White Chocolate",
+        "desc": null
+      }
+    },
+    {
+      "id": "chai-tea",
+      "cat": "hotdrinks",
+      "price": 180,
+      "tr": {
+        "name": "Chai Tea Latte",
+        "desc": null
+      },
+      "en": {
+        "name": "Chai Tea Latte",
+        "desc": null
+      }
+    },
+    {
+      "id": "balli-sut",
+      "cat": "hotdrinks",
+      "price": 180,
+      "tr": {
+        "name": "Ballı Süt",
+        "desc": null
+      },
+      "en": {
+        "name": "Honey Milk",
+        "desc": null
+      }
+    },
+    {
+      "id": "ihlamur",
+      "cat": "tea",
+      "price": 150,
+      "tr": {
+        "name": "Ihlamur",
+        "desc": null
+      },
+      "en": {
+        "name": "Linden",
+        "desc": null
+      }
+    },
+    {
+      "id": "yesil",
+      "cat": "tea",
+      "price": 150,
+      "tr": {
+        "name": "Yeşil Çay",
+        "desc": null
+      },
+      "en": {
+        "name": "Green Tea",
+        "desc": null
+      }
+    },
+    {
+      "id": "kis",
+      "cat": "tea",
+      "price": 150,
+      "tr": {
+        "name": "Kış Çayı",
+        "desc": null
+      },
+      "en": {
+        "name": "Winter Tea",
+        "desc": null
+      }
+    },
+    {
+      "id": "papatya",
+      "cat": "tea",
+      "price": 150,
+      "tr": {
+        "name": "Papatya",
+        "desc": null
+      },
+      "en": {
+        "name": "Chamomile",
+        "desc": null
+      }
+    },
+    {
+      "id": "nane-lim",
+      "cat": "tea",
+      "price": 150,
+      "tr": {
+        "name": "Nane Limon",
+        "desc": null
+      },
+      "en": {
+        "name": "Mint Lemon",
+        "desc": null
+      }
+    },
+    {
+      "id": "tropikal",
+      "cat": "tea",
+      "price": 150,
+      "tr": {
+        "name": "Tropikal Meyve Çayı",
+        "desc": null
+      },
+      "en": {
+        "name": "Tropical Fruit Tea",
+        "desc": null
+      }
+    },
+    {
+      "id": "frappe",
+      "cat": "frappe",
+      "price": 250,
+      "tr": {
+        "name": "Frappe",
+        "desc": null
+      },
+      "en": {
+        "name": "Frappe",
+        "desc": null
+      }
+    },
+    {
+      "id": "karamel-frappe",
+      "cat": "frappe",
+      "price": 250,
+      "tr": {
+        "name": "Karamel Frappe",
+        "desc": null
+      },
+      "en": {
+        "name": "Caramel Frappe",
+        "desc": null
+      }
+    },
+    {
+      "id": "cik-frappe",
+      "cat": "frappe",
+      "price": 250,
+      "tr": {
+        "name": "Çikolata Frappe",
+        "desc": null
+      },
+      "en": {
+        "name": "Chocolate Frappe",
+        "desc": null
+      }
+    },
+    {
+      "id": "van-frappe",
+      "cat": "frappe",
+      "price": 250,
+      "tr": {
+        "name": "Vanilya Frappe",
+        "desc": null
+      },
+      "en": {
+        "name": "Vanilla Frappe",
+        "desc": null
+      }
+    },
+    {
+      "id": "dond-frappe",
+      "cat": "frappe",
+      "price": 250,
+      "tr": {
+        "name": "Dondurmalı Frappe",
+        "desc": null
+      },
+      "en": {
+        "name": "Ice Cream Frappe",
+        "desc": null
+      }
+    },
+    {
+      "id": "shake-cik",
+      "cat": "shake",
+      "price": 225,
+      "tr": {
+        "name": "Çikolatalı Milkshake",
+        "desc": null
+      },
+      "en": {
+        "name": "Chocolate Shake",
+        "desc": null
+      }
+    },
+    {
+      "id": "shake-oreo",
+      "cat": "shake",
+      "price": 225,
+      "tr": {
+        "name": "Oreo Milkshake",
+        "desc": null
+      },
+      "en": {
+        "name": "Oreo Shake",
+        "desc": null
+      }
+    },
+    {
+      "id": "shake-orm",
+      "cat": "shake",
+      "price": 225,
+      "tr": {
+        "name": "Orman Meyveli Milkshake",
+        "desc": null
+      },
+      "en": {
+        "name": "Berry Shake",
+        "desc": null
+      }
+    },
+    {
+      "id": "shake-cilek",
+      "cat": "shake",
+      "price": 225,
+      "tr": {
+        "name": "Çilek Milkshake",
+        "desc": null
+      },
+      "en": {
+        "name": "Strawberry Shake",
+        "desc": null
+      }
+    },
+    {
+      "id": "shake-van",
+      "cat": "shake",
+      "price": 225,
+      "tr": {
+        "name": "Vanilya Milkshake",
+        "desc": null
+      },
+      "en": {
+        "name": "Vanilla Shake",
+        "desc": null
+      }
+    },
+    {
+      "id": "shake-kar",
+      "cat": "shake",
+      "price": 225,
+      "tr": {
+        "name": "Karamel Milkshake",
+        "desc": null
+      },
+      "en": {
+        "name": "Caramel Shake",
+        "desc": null
+      }
+    },
+    {
+      "id": "shake-muz",
+      "cat": "shake",
+      "price": 225,
+      "tr": {
+        "name": "Muz Milkshake",
+        "desc": null
+      },
+      "en": {
+        "name": "Banana Shake",
+        "desc": null
+      }
+    },
+    {
+      "id": "shake-yab",
+      "cat": "shake",
+      "price": 225,
+      "tr": {
+        "name": "Yaban Mersinli Milkshake",
+        "desc": null
+      },
+      "en": {
+        "name": "Blueberry Shake",
+        "desc": null
+      }
+    },
+    {
+      "id": "frozen-cilek",
+      "cat": "frozen",
+      "price": 225,
+      "tr": {
+        "name": "Çilek Frozen",
+        "desc": null
+      },
+      "en": {
+        "name": "Strawberry Frozen",
+        "desc": null
+      }
+    },
+    {
+      "id": "frozen-mango",
+      "cat": "frozen",
+      "price": 225,
+      "tr": {
+        "name": "Mango Frozen",
+        "desc": null
+      },
+      "en": {
+        "name": "Mango Frozen",
+        "desc": null
+      }
+    },
+    {
+      "id": "frozen-karp",
+      "cat": "frozen",
+      "price": 225,
+      "tr": {
+        "name": "Karpuz Frozen",
+        "desc": null
+      },
+      "en": {
+        "name": "Watermelon Frozen",
+        "desc": null
+      }
+    },
+    {
+      "id": "frozen-muz",
+      "cat": "frozen",
+      "price": 225,
+      "tr": {
+        "name": "Muz Frozen",
+        "desc": null
+      },
+      "en": {
+        "name": "Banana Frozen",
+        "desc": null
+      }
+    },
+    {
+      "id": "frozen-elma",
+      "cat": "frozen",
+      "price": 225,
+      "tr": {
+        "name": "Yeşil Elma Frozen",
+        "desc": null
+      },
+      "en": {
+        "name": "Green Apple Frozen",
+        "desc": null
+      }
+    },
+    {
+      "id": "frozen-orm",
+      "cat": "frozen",
+      "price": 225,
+      "tr": {
+        "name": "Orman Meyveli Frozen",
+        "desc": null
+      },
+      "en": {
+        "name": "Berry Frozen",
+        "desc": null
+      }
+    },
+    {
+      "id": "frozen-yaban",
+      "cat": "frozen",
+      "price": 225,
+      "tr": {
+        "name": "Yaban Mersinli Frozen",
+        "desc": null
+      },
+      "en": {
+        "name": "Blueberry Frozen",
+        "desc": null
+      }
+    },
+    {
+      "id": "sm-karp",
+      "cat": "smoothie",
+      "price": 200,
+      "tr": {
+        "name": "Karpuz Smoothie",
+        "desc": null
+      },
+      "en": {
+        "name": "Watermelon Smoothie",
+        "desc": null
+      }
+    },
+    {
+      "id": "sm-muz",
+      "cat": "smoothie",
+      "price": 200,
+      "tr": {
+        "name": "Muz Smoothie",
+        "desc": null
+      },
+      "en": {
+        "name": "Banana Smoothie",
+        "desc": null
+      }
+    },
+    {
+      "id": "sm-man",
+      "cat": "smoothie",
+      "price": 200,
+      "tr": {
+        "name": "Mango Smoothie",
+        "desc": null
+      },
+      "en": {
+        "name": "Mango Smoothie",
+        "desc": null
+      }
+    },
+    {
+      "id": "sm-cil",
+      "cat": "smoothie",
+      "price": 200,
+      "tr": {
+        "name": "Çilek Smoothie",
+        "desc": null
+      },
+      "en": {
+        "name": "Strawberry Smoothie",
+        "desc": null
+      }
+    },
+    {
+      "id": "sm-bog",
+      "cat": "smoothie",
+      "price": 200,
+      "tr": {
+        "name": "Böğürtlen Smoothie",
+        "desc": null
+      },
+      "en": {
+        "name": "Blackberry Smoothie",
+        "desc": null
+      }
+    },
+    {
+      "id": "lim",
+      "cat": "lemonade",
+      "price": 175,
+      "tr": {
+        "name": "Klasik Limonata",
+        "desc": null
+      },
+      "en": {
+        "name": "Classic Lemonade",
+        "desc": null
+      }
+    },
+    {
+      "id": "lim-elma",
+      "cat": "lemonade",
+      "price": 200,
+      "tr": {
+        "name": "Yeşil Elma Limonata",
+        "desc": null
+      },
+      "en": {
+        "name": "Green Apple Lemonade",
+        "desc": null
+      }
+    },
+    {
+      "id": "lim-nane",
+      "cat": "lemonade",
+      "price": 200,
+      "tr": {
+        "name": "Naneli Limonata",
+        "desc": null
+      },
+      "en": {
+        "name": "Mint Lemonade",
+        "desc": null
+      }
+    },
+    {
+      "id": "lim-karp",
+      "cat": "lemonade",
+      "price": 200,
+      "tr": {
+        "name": "Karpuzlu Limonata",
+        "desc": null
+      },
+      "en": {
+        "name": "Watermelon Lemonade",
+        "desc": null
+      }
+    },
+    {
+      "id": "lim-cil",
+      "cat": "lemonade",
+      "price": 200,
+      "tr": {
+        "name": "Çilekli Limonata",
+        "desc": null
+      },
+      "en": {
+        "name": "Strawberry Lemonade",
+        "desc": null
+      }
+    },
+    {
+      "id": "lim-yab",
+      "cat": "lemonade",
+      "price": 200,
+      "tr": {
+        "name": "Yaban Mersinli Limonata",
+        "desc": null
+      },
+      "en": {
+        "name": "Blueberry Lemonade",
+        "desc": null
+      }
+    },
+    {
+      "id": "lim-bog",
+      "cat": "lemonade",
+      "price": 200,
+      "tr": {
+        "name": "Böğürtlenli Limonata",
+        "desc": null
+      },
+      "en": {
+        "name": "Blackberry Lemonade",
+        "desc": null
+      }
+    },
+    {
+      "id": "mojito",
+      "cat": "cocktail",
+      "price": 250,
+      "tr": {
+        "name": "Mojito",
+        "desc": null
+      },
+      "en": {
+        "name": "Mojito",
+        "desc": null
+      }
+    },
+    {
+      "id": "rb-yaban",
+      "cat": "cocktail",
+      "price": 250,
+      "tr": {
+        "name": "Redbull Yaban Mersini",
+        "desc": null
+      },
+      "en": {
+        "name": "Redbull Blueberry",
+        "desc": null
+      }
+    },
+    {
+      "id": "rb-hindistan",
+      "cat": "cocktail",
+      "price": 250,
+      "tr": {
+        "name": "Redbull Hindistan Cevizi",
+        "desc": null
+      },
+      "en": {
+        "name": "Redbull Coconut",
+        "desc": null
+      }
+    },
+    {
+      "id": "rb-tropikal",
+      "cat": "cocktail",
+      "price": 250,
+      "tr": {
+        "name": "Redbull Tropikal",
+        "desc": null
+      },
+      "en": {
+        "name": "Redbull Tropical",
+        "desc": null
+      }
+    },
+    {
+      "id": "rb-karpuz",
+      "cat": "cocktail",
+      "price": 250,
+      "tr": {
+        "name": "Redbull Karpuz",
+        "desc": null
+      },
+      "en": {
+        "name": "Redbull Watermelon",
+        "desc": null
+      }
+    },
+    {
+      "id": "kola",
+      "cat": "cold",
+      "price": 125,
+      "tr": {
+        "name": "Coca-Cola",
+        "desc": null
+      },
+      "en": {
+        "name": "Coca-Cola",
+        "desc": null
+      }
+    },
+    {
+      "id": "fanta",
+      "cat": "cold",
+      "price": 125,
+      "tr": {
+        "name": "Fanta",
+        "desc": null
+      },
+      "en": {
+        "name": "Fanta",
+        "desc": null
+      }
+    },
+    {
+      "id": "sprite",
+      "cat": "cold",
+      "price": 125,
+      "tr": {
+        "name": "Sprite",
+        "desc": null
+      },
+      "en": {
+        "name": "Sprite",
+        "desc": null
+      }
+    },
+    {
+      "id": "maden",
+      "cat": "cold",
+      "price": 80,
+      "tr": {
+        "name": "Maden Suyu",
+        "desc": null
+      },
+      "en": {
+        "name": "Sparkling Water",
+        "desc": null
+      }
+    },
+    {
+      "id": "meyveli-soda",
+      "cat": "cold",
+      "price": 90,
+      "tr": {
+        "name": "Meyveli Soda",
+        "desc": null
+      },
+      "en": {
+        "name": "Fruit Soda",
+        "desc": null
+      }
+    },
+    {
+      "id": "churchill",
+      "cat": "cold",
+      "price": 125,
+      "tr": {
+        "name": "Churchill",
+        "desc": null
+      },
+      "en": {
+        "name": "Churchill",
+        "desc": null
+      }
+    },
+    {
+      "id": "gazoz",
+      "cat": "cold",
+      "price": 100,
+      "tr": {
+        "name": "Gazoz",
+        "desc": null
+      },
+      "en": {
+        "name": "Turkish Soda",
+        "desc": null
+      }
+    },
+    {
+      "id": "ice-tea",
+      "cat": "cold",
+      "price": 125,
+      "tr": {
+        "name": "Ice Tea",
+        "desc": null
+      },
+      "en": {
+        "name": "Iced Tea",
+        "desc": null
+      }
+    },
+    {
+      "id": "su",
+      "cat": "cold",
+      "price": 25,
+      "tr": {
+        "name": "Su",
+        "desc": null
+      },
+      "en": {
+        "name": "Water",
+        "desc": null
+      }
+    },
+    {
+      "id": "meyve-suyu",
+      "cat": "cold",
+      "price": 100,
+      "tr": {
+        "name": "Meyve Suyu",
+        "desc": null
+      },
+      "en": {
+        "name": "Fruit Juice",
+        "desc": null
+      }
+    },
+    {
+      "id": "redbull",
+      "cat": "cold",
+      "price": 150,
+      "tr": {
+        "name": "Redbull",
+        "desc": null
+      },
+      "en": {
+        "name": "Redbull",
+        "desc": null
+      }
+    },
+    {
+      "id": "cips-tab",
+      "cat": "ekstralar-cat",
+      "price": 130,
+      "tr": {
+        "name": "Cips Tabağı",
+        "desc": null
+      },
+      "en": {
+        "name": "Chips Plate",
+        "desc": null
+      }
+    },
+    {
+      "id": "patlamis-misir",
+      "cat": "ekstralar-cat",
+      "price": 120,
+      "tr": {
+        "name": "Patlamış Mısır",
+        "desc": null
+      },
+      "en": {
+        "name": "Popcorn",
+        "desc": null
+      }
+    },
+    {
+      "id": "mozaik",
+      "cat": "desserts",
+      "price": 250,
+      "hue": 320,
+      "tr": {
+        "name": "Mozaik",
+        "desc": null
+      },
+      "en": {
+        "name": "Mozaik",
+        "desc": null
+      }
+    },
+    {
+      "id": "karamel-mac",
+      "cat": "hotcoffee",
+      "price": 190,
+      "tr": {
+        "name": "Karamel Macchiato",
+        "desc": null
+      },
+      "en": {
+        "name": "Caramel Macchiato",
+        "desc": null
+      }
+    },
+    {
+      "id": "matcha",
+      "cat": "matcha",
+      "price": 300,
+      "tr": {
+        "name": "Matcha",
+        "desc": null
+      },
+      "en": {
+        "name": "Matcha",
+        "desc": null
+      }
+    },
+    {
+      "id": "van-matcha",
+      "cat": "matcha",
+      "price": 300,
+      "tr": {
+        "name": "Vanilya Matcha",
+        "desc": null
+      },
+      "en": {
+        "name": "Vanilla Matcha",
+        "desc": null
+      }
+    },
+    {
+      "id": "yaban-matcha",
+      "cat": "matcha",
+      "price": 300,
+      "tr": {
+        "name": "Yaban Mersin Matcha",
+        "desc": null
+      },
+      "en": {
+        "name": "Blueberry Matcha",
+        "desc": null
+      }
+    },
+    {
+      "id": "mango-matcha",
+      "cat": "matcha",
+      "price": 300,
+      "tr": {
+        "name": "Mango Matcha",
+        "desc": null
+      },
+      "en": {
+        "name": "Mango Matcha",
+        "desc": null
+      }
+    },
+    {
+      "id": "lavanta-matcha",
+      "cat": "matcha",
+      "price": 300,
+      "tr": {
+        "name": "Lavanta Matcha",
+        "desc": null
+      },
+      "en": {
+        "name": "Lavender Matcha",
+        "desc": null
+      }
+    }
+  ]
+}
