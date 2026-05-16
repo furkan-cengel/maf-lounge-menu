@@ -287,59 +287,6 @@
       }
     },
     {
-      "id": "omlet",
-      "cat": "breakfast",
-      "price": 200,
-      "tr": {
-        "name": "Omlet",
-        "desc": null
-      },
-      "en": {
-        "name": "Omelette",
-        "desc": null
-      },
-      "section": "Kahvaltıya Ek Lezzetler"
-    },
-    {
-      "id": "pey-omlet",
-      "cat": "breakfast",
-      "price": 250,
-      "tr": {
-        "name": "Peynirli Omlet",
-        "desc": null
-      },
-      "en": {
-        "name": "Cheese Omelette",
-        "desc": null
-      }
-    },
-    {
-      "id": "kas-omlet",
-      "cat": "breakfast",
-      "price": 250,
-      "tr": {
-        "name": "Kaşarlı Omlet",
-        "desc": null
-      },
-      "en": {
-        "name": "Kaşar Omelette",
-        "desc": null
-      }
-    },
-    {
-      "id": "suc-omlet",
-      "cat": "breakfast",
-      "price": 250,
-      "tr": {
-        "name": "Sucuklu Omlet",
-        "desc": null
-      },
-      "en": {
-        "name": "Sucuk Omelette",
-        "desc": null
-      }
-    },
-    {
       "id": "sahanda",
       "cat": "breakfast",
       "price": 200,
@@ -392,15 +339,15 @@
       }
     },
     {
-      "id": "menemen",
+      "id": "item-mp84dk6q",
       "cat": "breakfast",
-      "price": 250,
+      "price": 375,
       "tr": {
-        "name": "Menemen",
+        "name": "Kavurmalı yumurta  ",
         "desc": null
       },
       "en": {
-        "name": "Menemen",
+        "name": "Kavurmalı yumurta  ",
         "desc": null
       }
     },
@@ -2080,6 +2027,58 @@
       },
       "en": {
         "name": "Lavender Matcha",
+        "desc": null
+      }
+    },
+    {
+      "id": "menemen",
+      "cat": "breakfast",
+      "price": 250,
+      "tr": {
+        "name": "Menemen",
+        "desc": null
+      },
+      "en": {
+        "name": "Menemen",
+        "desc": null
+      }
+    },
+    {
+      "id": "item-mp84e5u5",
+      "cat": "breakfast",
+      "price": 250,
+      "tr": {
+        "name": "Kaşarlı menemen ",
+        "desc": null
+      },
+      "en": {
+        "name": "Kaşarlı menemen ",
+        "desc": null
+      }
+    },
+    {
+      "id": "item-mp84l79i",
+      "cat": "breakfast",
+      "price": 260,
+      "tr": {
+        "name": "Sucuklu menemen ",
+        "desc": null
+      },
+      "en": {
+        "name": "Sucuklu menemen ",
+        "desc": null
+      }
+    },
+    {
+      "id": "item-mp84k7s5",
+      "cat": "breakfast",
+      "price": 260,
+      "tr": {
+        "name": "Kaşarlı sucuklu menemen ",
+        "desc": null
+      },
+      "en": {
+        "name": "Kaşarlı sucuku ",
         "desc": null
       }
     }
