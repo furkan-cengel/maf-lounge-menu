@@ -1,23 +1,17 @@
 "use client";
 
-import type { Lang, MenuMeta } from "@/types/menu";
+import type { Lang, Venue } from "@/types/menu";
 import { Icon } from "./Icon";
 
 interface DrawerProps {
-  meta: MenuMeta;
+  venue: Venue;
   lang: Lang;
   setLang: (l: Lang) => void;
   tx: (tr: string, en: string) => string;
   onClose: () => void;
 }
 
-export function Drawer({ meta, lang, setLang, tx, onClose }: DrawerProps) {
-  const hours = [
-    [tx("Pzt – Per", "Mon – Thu"), "08:00 – 02:00"],
-    [tx("Cum – Cmt", "Fri – Sat"), "08:00 – 03:00"],
-    [tx("Pazar", "Sunday"), "09:00 – 01:00"],
-  ];
-
+export function Drawer({ venue, lang, setLang, tx, onClose }: DrawerProps) {
   return (
     <div
       style={{ position: "fixed", inset: 0, zIndex: 40 }}
@@ -68,7 +62,7 @@ export function Drawer({ meta, lang, setLang, tx, onClose }: DrawerProps) {
               color: "var(--text)",
             }}
           >
-            MAF Lounge Cafe
+            {venue?.name}
           </span>
           <button onClick={onClose} style={ghostBtn()}>
             <Icon name="close" size={18} />
@@ -116,23 +110,39 @@ export function Drawer({ meta, lang, setLang, tx, onClose }: DrawerProps) {
                 fontFamily: "var(--font-inter), system-ui, sans-serif",
               }}
             >
-              {meta.wifi.name}
+              {venue?.wifi?.networkName}
             </div>
+            {venue?.wifi?.password && (
+              <div
+                style={{
+                  marginTop: 4,
+                  fontSize: 13,
+                  color: "var(--sub)",
+                  fontFamily: "var(--font-inter), system-ui, sans-serif",
+                }}
+              >
+                {venue.wifi.password}
+              </div>
+            )}
           </div>
 
           {/* Actions */}
           <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
             <DrawerRow
               icon="instagram"
-              label={"@" + meta.instagram}
+              label={venue?.instagram ?? ""}
               hint="Instagram"
+              onClick={() => {
+                const handle = (venue?.instagram ?? "").replace("@", "");
+                window.open(`https://instagram.com/${handle}`, "_blank");
+              }}
             />
             <DrawerRow
               icon="phone"
-              label={meta.phone}
+              label={venue?.phone ?? ""}
               hint={tx("Rezervasyon · WhatsApp", "Reservation · WhatsApp")}
               onClick={() => {
-                const num = meta.phone.replace(/\D/g, "");
+                const num = (venue?.phone ?? "").replace(/\D/g, "");
                 window.open(`https://wa.me/${num}`, "_blank");
               }}
             />
@@ -147,47 +157,49 @@ export function Drawer({ meta, lang, setLang, tx, onClose }: DrawerProps) {
             />
           </div>
 
-          {/* Hours */}
-          <div
-            style={{
-              marginTop: 22,
-              padding: 16,
-              borderRadius: 16,
-              border: "1px solid var(--border)",
-              background: "var(--surface)",
-            }}
-          >
+          {/* Working hours */}
+          {(venue?.workingHours?.length ?? 0) > 0 && (
             <div
               style={{
-                fontSize: 11,
-                letterSpacing: "0.18em",
-                textTransform: "uppercase",
-                color: "var(--sub)",
-                fontWeight: 600,
-                fontFamily: "var(--font-inter), system-ui, sans-serif",
-                marginBottom: 10,
+                marginTop: 22,
+                padding: 16,
+                borderRadius: 16,
+                border: "1px solid var(--border)",
+                background: "var(--surface)",
               }}
             >
-              {tx("Çalışma saatleri", "Hours")}
-            </div>
-            {hours.map(([day, time]) => (
               <div
-                key={day}
                 style={{
-                  display: "flex",
-                  justifyContent: "space-between",
-                  marginTop: 6,
-                  fontSize: 13,
+                  fontSize: 11,
+                  letterSpacing: "0.18em",
+                  textTransform: "uppercase",
+                  color: "var(--sub)",
+                  fontWeight: 600,
                   fontFamily: "var(--font-inter), system-ui, sans-serif",
+                  marginBottom: 10,
                 }}
               >
-                <span style={{ color: "var(--sub)" }}>{day}</span>
-                <span style={{ fontFamily: "ui-monospace, monospace", color: "var(--text)" }}>
-                  {time}
-                </span>
+                {tx("Çalışma saatleri", "Hours")}
               </div>
-            ))}
-          </div>
+              {(venue?.workingHours ?? []).map((row, i) => (
+                <div
+                  key={i}
+                  style={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    marginTop: 6,
+                    fontSize: 13,
+                    fontFamily: "var(--font-inter), system-ui, sans-serif",
+                  }}
+                >
+                  <span style={{ color: "var(--sub)" }}>{row.days}</span>
+                  <span style={{ fontFamily: "ui-monospace, monospace", color: "var(--text)" }}>
+                    {row.hours}
+                  </span>
+                </div>
+              ))}
+            </div>
+          )}
 
           <div
             style={{

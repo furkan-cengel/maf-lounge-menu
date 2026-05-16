@@ -33,16 +33,28 @@ export interface Branch {
   categories: BranchCategory[];
 }
 
-export interface MenuMeta {
+export interface WorkingHoursRow {
+  days: string;
+  hours: string;
+}
+
+export interface Venue {
+  greeting: string;
   name: string;
-  tagline: { tr: string; en: string };
-  wifi: { name: string; pass: string };
+  subtitle: string;
+  status: string;
+  hours: string;
+  wifi: {
+    networkName: string;
+    password: string;
+  };
   instagram: string;
   phone: string;
+  workingHours: WorkingHoursRow[];
 }
 
 export interface MenuData {
-  meta: MenuMeta;
+  venue: Venue;
   branches: Branch[];
   items: MenuItem[];
 }

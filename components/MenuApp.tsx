@@ -175,7 +175,7 @@ export function MenuApp({ data, tableNumber }: MenuAppProps) {
         />
 
         <HeroSection
-          meta={data.meta}
+          venue={data.venue}
           tableNumber={tableNumber}
           lang={lang}
           tx={tx}
@@ -260,7 +260,7 @@ export function MenuApp({ data, tableNumber }: MenuAppProps) {
 
         {drawerOpen && (
           <Drawer
-            meta={data.meta}
+            venue={data.venue}
             lang={lang}
             setLang={setLang}
             tx={tx}

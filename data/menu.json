@@ -1,16 +1,30 @@
 {
-  "meta": {
-    "name": "MAF Coffee & Lounge",
-    "tagline": {
-      "tr": "Şehrin kalbinde, gecenin tadında",
-      "en": "At the heart of the city"
-    },
+  "venue": {
+    "name": "MAF Lounge Cafe",
+    "subtitle": "Coffee & Lounge",
+    "greeting": "Hoş Geldiniz",
+    "status": "Açık",
+    "hours": "08:00 – 02:00",
     "wifi": {
-      "name": "MAF_Guest",
-      "pass": "maflounge2026"
+      "networkName": "MAF_Guest",
+      "password": ""
     },
-    "instagram": "mafcoffeelounge",
-    "phone": "+90 555 123 4567"
+    "instagram": "@mafcoffeelounge",
+    "phone": "+90 531 423 2757",
+    "workingHours": [
+      {
+        "days": "Pzt – Per",
+        "hours": "08:00 – 02:00"
+      },
+      {
+        "days": "Cum – Cmt",
+        "hours": "08:00 – 03:00"
+      },
+      {
+        "days": "Pazar",
+        "hours": "09:00 – 01:00"
+      }
+    ]
   },
   "branches": [
     {

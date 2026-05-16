@@ -16,12 +16,34 @@ import {
   horizontalListSortingStrategy,
   verticalListSortingStrategy,
 } from "@dnd-kit/sortable";
-import type { Branch, BranchCategory, MenuData, MenuItem } from "@/types/menu";
+import type { Branch, BranchCategory, MenuData, MenuItem, Venue } from "@/types/menu";
 import { SortableItemCard } from "./SortableItemCard";
 import { SortableCategoryPill } from "./SortableCategoryPill";
 
 const DRAFT_KEY = "maf_admin_draft";
 const HINT_KEY = "maf_drag_hint_seen";
+
+const DEFAULT_VENUE: Venue = {
+  name: "MAF Lounge Cafe",
+  subtitle: "Coffee & Lounge",
+  greeting: "Hoş Geldiniz",
+  status: "Açık",
+  hours: "08:00 – 02:00",
+  wifi: { networkName: "MAF_Guest", password: "" },
+  instagram: "@mafcoffeelounge",
+  phone: "+90 531 423 2757",
+  workingHours: [
+    { days: "Pzt – Per", hours: "08:00 – 02:00" },
+    { days: "Cum – Cmt", hours: "08:00 – 03:00" },
+    { days: "Pazar", hours: "09:00 – 01:00" },
+  ],
+};
+
+function normalizeData(content: unknown): MenuData {
+  const d = content as MenuData & { meta?: unknown };
+  if (!d.venue) d.venue = DEFAULT_VENUE;
+  return d as MenuData;
+}
 
 // ─── helpers ────────────────────────────────────────────────────────────────
 
@@ -89,6 +111,9 @@ export function AdminApp() {
   const [addingItem, setAddingItem] = useState(false);
   const [newItem, setNewItem] = useState({ tr_name: "", en_name: "", price: "", badge: "" });
 
+  // Mode
+  const [adminMode, setAdminMode] = useState<"menu" | "venue">("menu");
+
   // UI
   const [toast, setToast] = useState<{ msg: string; ok: boolean } | null>(null);
   const toastTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -127,14 +152,14 @@ export function AdminApp() {
       if (raw) {
         try {
           const draft = JSON.parse(raw);
-          setData(draft.data);
+          setData(normalizeData(draft.data));
           if (draft.sha) setSha(draft.sha);
           setHasDraft(true);
         } catch {
-          setData(content);
+          setData(normalizeData(content));
         }
       } else {
-        setData(content);
+        setData(normalizeData(content));
       }
       setDragHintSeen(!!localStorage.getItem(HINT_KEY));
       setAuthed(true);
@@ -174,6 +199,8 @@ export function AdminApp() {
   const hasCatNav = (activeBranch?.categories.length ?? 0) > 0;
   const currentCatId = hasCatNav ? activeCategoryId : (activeBranch?.catIds[0] ?? "");
   const visibleItems = data?.items.filter((i) => i.cat === currentCatId) ?? [];
+  const catColorHue =
+    data?.branches.flatMap((b) => b.categories).find((c) => c.id === currentCatId)?.colorHue ?? 295;
 
   // ── Draft / Publish ──────────────────────────────────────────────────────
   function saveDraft() {
@@ -190,7 +217,7 @@ export function AdminApp() {
     fetch("/api/admin/menu", { headers: { "x-admin-password": password } })
       .then((r) => r.json())
       .then(({ content, sha: ghSha }) => {
-        setData(content);
+        setData(normalizeData(content));
         setSha(ghSha);
         setActiveBranchId("");
       })
@@ -262,6 +289,52 @@ export function AdminApp() {
     if (!data) return;
     setData({ ...data, items: data.items.filter((i) => i.id !== id) });
     if (editingId === id) setEditingId(null);
+  }
+
+  function handleImageChange(itemId: string, val: string | null) {
+    if (!data) return;
+    setData({
+      ...data,
+      items: data.items.map((i) => (i.id === itemId ? { ...i, image: val } : i)),
+    });
+  }
+
+  // ── Venue editing ─────────────────────────────────────────────────────────
+  function setVenueField<K extends keyof Venue>(field: K, val: Venue[K]) {
+    if (!data) return;
+    setData({ ...data, venue: { ...data.venue, [field]: val } });
+  }
+
+  function setWifiField(field: "networkName" | "password", val: string) {
+    if (!data) return;
+    setData({ ...data, venue: { ...data.venue, wifi: { ...data.venue.wifi, [field]: val } } });
+  }
+
+  function addHoursRow() {
+    if (!data) return;
+    setData({
+      ...data,
+      venue: { ...data.venue, workingHours: [...data.venue.workingHours, { days: "", hours: "" }] },
+    });
+  }
+
+  function removeHoursRow(idx: number) {
+    if (!data) return;
+    setData({
+      ...data,
+      venue: { ...data.venue, workingHours: data.venue.workingHours.filter((_, i) => i !== idx) },
+    });
+  }
+
+  function updateHoursRow(idx: number, field: "days" | "hours", val: string) {
+    if (!data) return;
+    setData({
+      ...data,
+      venue: {
+        ...data.venue,
+        workingHours: data.venue.workingHours.map((r, i) => (i === idx ? { ...r, [field]: val } : r)),
+      },
+    });
   }
 
   function addItem() {
@@ -421,16 +494,40 @@ export function AdminApp() {
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/logo.png" alt="MAF" style={{ height: 32, width: "auto" }} />
+          {/* Mode toggle */}
           <div
             style={{
               flex: 1,
-              fontSize: 11,
-              color: "var(--sub)",
-              letterSpacing: "0.18em",
-              textTransform: "uppercase",
+              display: "flex",
+              gap: 4,
+              background: "var(--surface)",
+              borderRadius: 10,
+              padding: 3,
+              maxWidth: 160,
             }}
           >
-            Admin Paneli
+            {(["menu", "venue"] as const).map((m) => (
+              <button
+                key={m}
+                onClick={() => setAdminMode(m)}
+                style={{
+                  flex: 1,
+                  padding: "5px 0",
+                  borderRadius: 8,
+                  border: "none",
+                  background: adminMode === m ? "var(--accent)" : "transparent",
+                  color: adminMode === m ? "oklch(10% 0.04 295)" : "var(--sub)",
+                  fontSize: 11,
+                  fontWeight: 600,
+                  cursor: "pointer",
+                  fontFamily: "var(--font-inter), system-ui, sans-serif",
+                  letterSpacing: "0.08em",
+                  textTransform: "uppercase",
+                }}
+              >
+                {m === "menu" ? "Menü" : "Mekan"}
+              </button>
+            ))}
           </div>
           <button
             onClick={saveDraft}
@@ -486,6 +583,71 @@ export function AdminApp() {
             </button>
           </div>
         )}
+
+        {/* ── Venue settings ─────────────────────────────────────────────── */}
+        {adminMode === "venue" && (
+          <div style={{ padding: "16px", display: "flex", flexDirection: "column", gap: 8 }}>
+
+            <VenueSectionHeading>Genel</VenueSectionHeading>
+            <NewField label="Karşılama" value={data.venue.greeting} onChange={(v) => setVenueField("greeting", v)} />
+            <NewField label="Mekan Adı" value={data.venue.name} onChange={(v) => setVenueField("name", v)} />
+            <NewField label="Alt Başlık" value={data.venue.subtitle} onChange={(v) => setVenueField("subtitle", v)} />
+            <div style={{ display: "flex", gap: 8 }}>
+              <NewField label="Durum" value={data.venue.status} onChange={(v) => setVenueField("status", v)} style={{ flex: 1 }} />
+              <NewField label="Açık Saat" value={data.venue.hours} onChange={(v) => setVenueField("hours", v)} style={{ flex: 2 }} />
+            </div>
+
+            <VenueDivider />
+
+            <VenueSectionHeading>WiFi</VenueSectionHeading>
+            <NewField label="Ağ Adı" value={data.venue.wifi.networkName} onChange={(v) => setWifiField("networkName", v)} />
+            <NewField label="Şifre (boş = misafirler görmez)" value={data.venue.wifi.password} onChange={(v) => setWifiField("password", v)} placeholder="Şifresiz ağ" />
+
+            <VenueDivider />
+
+            <VenueSectionHeading>İletişim</VenueSectionHeading>
+            <NewField label="Instagram" value={data.venue.instagram} onChange={(v) => setVenueField("instagram", v)} placeholder="@mafcoffee" />
+            <NewField label="Telefon (WhatsApp)" value={data.venue.phone} onChange={(v) => setVenueField("phone", v)} placeholder="+90 555 123 4567" />
+
+            <VenueDivider />
+
+            <VenueSectionHeading>Çalışma Saatleri</VenueSectionHeading>
+            {data.venue.workingHours.map((row, idx) => (
+              <div key={idx} style={{ display: "flex", gap: 8, alignItems: "flex-end", marginBottom: 8 }}>
+                <NewField label="Günler" value={row.days} onChange={(v) => updateHoursRow(idx, "days", v)} style={{ flex: 2 }} />
+                <NewField label="Saat" value={row.hours} onChange={(v) => updateHoursRow(idx, "hours", v)} style={{ flex: 2 }} />
+                <button
+                  onClick={() => removeHoursRow(idx)}
+                  title="Sil"
+                  style={{
+                    width: 36,
+                    height: 36,
+                    borderRadius: 8,
+                    border: "1px solid var(--border)",
+                    background: "transparent",
+                    color: "oklch(65% 0.22 25)",
+                    cursor: "pointer",
+                    fontSize: 14,
+                    flexShrink: 0,
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    marginBottom: 2,
+                  }}
+                >
+                  🗑
+                </button>
+              </div>
+            ))}
+            <button onClick={addHoursRow} style={actionBtnStyle("var(--surface)", "var(--accent)")}>
+              + Satır Ekle
+            </button>
+          </div>
+        )}
+
+        {/* ── Menu editor (hidden when venue mode) ──────────────────────── */}
+        {adminMode === "menu" && (
+        <>
 
         {/* Branch tabs */}
         <div
@@ -606,6 +768,8 @@ export function AdminApp() {
                 <SortableItemCard
                   key={item.id}
                   item={item}
+                  colorHue={catColorHue}
+                  password={password}
                   isEditing={editingId === item.id}
                   editValues={editValues}
                   onStartEdit={() => startEdit(item)}
@@ -613,6 +777,7 @@ export function AdminApp() {
                   onSaveEdit={saveEdit}
                   onCancelEdit={() => setEditingId(null)}
                   onDelete={() => deleteItem(item.id)}
+                  onImageChange={(val) => handleImageChange(item.id, val)}
                 />
               ))}
             </SortableContext>
@@ -708,6 +873,10 @@ export function AdminApp() {
             </div>
           )}
         </div>
+
+        </> /* end adminMode === "menu" */
+        )}
+
       </div>
 
       {/* Publish confirm dialog */}
@@ -880,4 +1049,35 @@ function actionBtnStyle(bg: string, color: string): React.CSSProperties {
     fontFamily: "var(--font-inter), system-ui, sans-serif",
     whiteSpace: "nowrap",
   };
+}
+
+function VenueSectionHeading({ children }: { children: React.ReactNode }) {
+  return (
+    <div
+      style={{
+        fontSize: 11,
+        color: "var(--sub)",
+        letterSpacing: "0.18em",
+        textTransform: "uppercase",
+        fontWeight: 600,
+        fontFamily: "var(--font-inter), system-ui, sans-serif",
+        marginBottom: 10,
+        marginTop: 2,
+      }}
+    >
+      {children}
+    </div>
+  );
+}
+
+function VenueDivider() {
+  return (
+    <div
+      style={{
+        height: 1,
+        background: "var(--border)",
+        margin: "20px 0 16px",
+      }}
+    />
+  );
 }

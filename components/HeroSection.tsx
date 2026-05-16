@@ -1,13 +1,13 @@
-import type { MenuMeta, Lang } from "@/types/menu";
+import type { Venue, Lang } from "@/types/menu";
 
 interface HeroSectionProps {
-  meta: MenuMeta;
+  venue: Venue;
   tableNumber: string | null;
   lang: Lang;
   tx: (tr: string, en: string) => string;
 }
 
-export function HeroSection({ tableNumber, tx }: HeroSectionProps) {
+export function HeroSection({ venue, tableNumber, tx }: HeroSectionProps) {
   return (
     <div
       style={{
@@ -27,7 +27,7 @@ export function HeroSection({ tableNumber, tx }: HeroSectionProps) {
             fontWeight: 600,
           }}
         >
-          {tx("Hoş Geldiniz", "Welcome")}
+          {venue?.greeting}
         </div>
         <div
           style={{
@@ -39,10 +39,14 @@ export function HeroSection({ tableNumber, tx }: HeroSectionProps) {
             color: "var(--text)",
           }}
         >
-          MAF{" "}
-          <span style={{ fontStyle: "italic" }}>Cafe</span>{" "}
-          <span style={{ color: "var(--accent)" }}>&amp;</span>{" "}
-          <span>Lounge</span>
+          {(venue?.name ?? "").split("&").map((part, i) => (
+            <span key={i}>
+              {i > 0 && (
+                <span style={{ color: "var(--accent)" }}> &amp; </span>
+              )}
+              {part.trim()}
+            </span>
+          ))}
         </div>
         <div
           style={{
@@ -66,7 +70,7 @@ export function HeroSection({ tableNumber, tx }: HeroSectionProps) {
                 flexShrink: 0,
               }}
             />
-            {tx("Açık · 08:00 – 02:00", "Open · 08:00 – 02:00")}
+            {venue?.status} · {venue?.hours}
           </span>
           {tableNumber && (
             <span
