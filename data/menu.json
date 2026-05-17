@@ -31,16 +31,23 @@
       "comingSoon": false,
       "colorHue": 35,
       "catIds": [
+        "desserts",
         "breakfast",
         "toasts",
         "gozleme",
         "burgers",
         "pasta",
         "pans",
-        "salads",
-        "desserts"
+        "salads"
       ],
       "categories": [
+        {
+          "id": "desserts",
+          "tr": "Tatlılar",
+          "en": "Desserts",
+          "emoji": "🍰",
+          "colorHue": 320
+        },
         {
           "id": "breakfast",
           "tr": "Kahvaltı",
@@ -89,13 +96,6 @@
           "en": "Salads",
           "emoji": "🥗",
           "colorHue": 130
-        },
-        {
-          "id": "desserts",
-          "tr": "Tatlılar",
-          "en": "Desserts",
-          "emoji": "🍰",
-          "colorHue": 320
         }
       ]
     },
