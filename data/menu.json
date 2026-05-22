@@ -2099,6 +2099,19 @@
         "name": "Maf Special Cocktail",
         "desc": null
       }
+    },
+    {
+      "id": "item-mphk0y3l",
+      "cat": "hotcoffee",
+      "price": 250,
+      "tr": {
+        "name": "Double Sütlü menengiç kahvesi",
+        "desc": null
+      },
+      "en": {
+        "name": "Double Sütlü menengiç kahvesi",
+        "desc": null
+      }
     }
   ],
   "venue": {
