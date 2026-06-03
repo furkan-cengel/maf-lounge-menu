@@ -2096,6 +2096,19 @@
         "name": "Maf Special Cocktail",
         "desc": null
       }
+    },
+    {
+      "id": "item-mpyclbyh",
+      "cat": "specials",
+      "price": 350,
+      "tr": {
+        "name": "PİNA COLADA ",
+        "desc": null
+      },
+      "en": {
+        "name": "PİNA COLADA ",
+        "desc": null
+      }
     }
   ],
   "venue": {
