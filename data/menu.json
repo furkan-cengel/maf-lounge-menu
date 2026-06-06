@@ -940,11 +940,11 @@
       "cat": "hotcoffee",
       "price": 200,
       "tr": {
-        "name": "White Chocolate Mocha",
+        "name": "White Mocha",
         "desc": null
       },
       "en": {
-        "name": "White Chocolate Mocha",
+        "name": "White Mocha",
         "desc": null
       }
     },
@@ -1040,18 +1040,18 @@
       }
     },
     {
-      "id": "ice-latte",
+      "id": "afogato",
       "cat": "icecoffee",
-      "price": 180,
+      "price": 150,
       "tr": {
-        "name": "Ice Latte",
+        "name": "Affogato",
         "desc": null
       },
       "en": {
-        "name": "Ice Latte",
+        "name": "Affogato",
         "desc": null
       },
-      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1780746167285-b608eb39.jpg"
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1780746292127-fd32a963.jpg"
     },
     {
       "id": "ice-americano",
@@ -1068,18 +1068,18 @@
       "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1780746180000-1a2f343b.jpg"
     },
     {
-      "id": "ice-mocha",
+      "id": "ice-latte",
       "cat": "icecoffee",
-      "price": 200,
+      "price": 180,
       "tr": {
-        "name": "Ice Mocha",
+        "name": "Ice Latte",
         "desc": null
       },
       "en": {
-        "name": "Ice Mocha",
+        "name": "Ice Latte",
         "desc": null
       },
-      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1780747694144-aab2480d.jpg"
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1780746167285-b608eb39.jpg"
     },
     {
       "id": "ice-karamel",
@@ -1124,20 +1124,6 @@
       "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1780746254498-f0ff2eb5.jpg"
     },
     {
-      "id": "ice-white-choc",
-      "cat": "icecoffee",
-      "price": 200,
-      "tr": {
-        "name": "Ice White Mocha ",
-        "desc": null
-      },
-      "en": {
-        "name": "Ice White Chocolate",
-        "desc": null
-      },
-      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1780747707414-4bb56b10.jpg"
-    },
-    {
       "id": "ice-spanish",
       "cat": "icecoffee",
       "price": 250,
@@ -1151,18 +1137,32 @@
       }
     },
     {
-      "id": "afogato",
+      "id": "ice-mocha",
       "cat": "icecoffee",
-      "price": 150,
+      "price": 200,
       "tr": {
-        "name": "Affogato",
+        "name": "Ice Mocha",
         "desc": null
       },
       "en": {
-        "name": "Affogato",
+        "name": "Ice Mocha",
         "desc": null
       },
-      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1780746292127-fd32a963.jpg"
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1780747694144-aab2480d.jpg"
+    },
+    {
+      "id": "ice-white-choc",
+      "cat": "icecoffee",
+      "price": 200,
+      "tr": {
+        "name": "Ice White Mocha ",
+        "desc": null
+      },
+      "en": {
+        "name": "Ice White Chocolate",
+        "desc": null
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1780747707414-4bb56b10.jpg"
     },
     {
       "id": "cay",
