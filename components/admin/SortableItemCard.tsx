@@ -114,8 +114,8 @@ export function SortableItemCard({
         const err = await res.json();
         throw new Error(err.error ?? "Bilinmeyen hata");
       }
-      const { base64 } = await res.json();
-      onImageChange(base64);
+      const { url } = await res.json();
+      onImageChange(url);
     } catch {
       setUploadError("Yükleme başarısız, tekrar deneyin.");
     } finally {

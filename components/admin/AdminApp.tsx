@@ -16,7 +16,7 @@ import {
   horizontalListSortingStrategy,
   verticalListSortingStrategy,
 } from "@dnd-kit/sortable";
-import type { Branch, BranchCategory, MenuData, MenuItem, Venue } from "@/types/menu";
+import type { Branch, MenuData, MenuItem, Venue } from "@/types/menu";
 import { SortableItemCard } from "./SortableItemCard";
 import { SortableCategoryPill } from "./SortableCategoryPill";
 
@@ -134,7 +134,7 @@ export function AdminApp() {
   }
 
   // ── Auth ────────────────────────────────────────────────────────────────
-  async function handleLogin(e: React.FormEvent) {
+  async function handleLogin(e: React.SyntheticEvent) {
     e.preventDefault();
     setAuthLoading(true);
     setAuthError(false);
@@ -143,8 +143,9 @@ export function AdminApp() {
         headers: { "x-admin-password": pwInput },
       });
       if (res.status === 401) { setAuthError(true); return; }
-      if (!res.ok) throw new Error("Server error");
-      const { content, sha: ghSha } = await res.json();
+      const json = await res.json();
+      if (!res.ok) throw new Error(json.error ?? `Sunucu hatası ${res.status}`);
+      const { content, sha: ghSha } = json;
       setPassword(pwInput);
       setSha(ghSha);
       // Check draft
@@ -163,8 +164,8 @@ export function AdminApp() {
       }
       setDragHintSeen(!!localStorage.getItem(HINT_KEY));
       setAuthed(true);
-    } catch {
-      showToast("Bağlantı hatası", false);
+    } catch (e) {
+      showToast(e instanceof Error ? e.message : "Bağlantı hatası", false);
     } finally {
       setAuthLoading(false);
     }
@@ -229,20 +230,24 @@ export function AdminApp() {
     if (!data) return;
     setPublishing(true);
     try {
-      let currentSha = sha;
-      if (!currentSha) {
-        const r = await fetch("/api/admin/menu", { headers: { "x-admin-password": password } });
-        const { sha: s } = await r.json();
-        currentSha = s;
-      }
+      // Strip any legacy base64 images before publishing — keeps menu.json small.
+      // Images uploaded via the new flow are stored as GitHub file URLs instead.
+      const publishData: MenuData = {
+        ...data,
+        items: data.items.map((item) => ({
+          ...item,
+          image: item.image?.startsWith("data:") ? undefined : item.image,
+        })),
+      };
+      // SHA is fetched server-side from GitHub; we only send the content.
       const res = await fetch("/api/admin/menu", {
         method: "POST",
         headers: { "x-admin-password": password, "Content-Type": "application/json" },
-        body: JSON.stringify({ content: data, sha: currentSha }),
+        body: JSON.stringify({ content: publishData }),
       });
-      if (!res.ok) throw new Error(await res.text());
-      const { sha: newSha } = await res.json();
-      setSha(newSha);
+      const json = await res.json();
+      if (!res.ok) throw new Error(json.error ?? `HTTP ${res.status}`);
+      setSha(json.sha);
       localStorage.removeItem(DRAFT_KEY);
       setHasDraft(false);
       showToast("Başarıyla yayınlandı ✓");
