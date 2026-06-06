@@ -120,8 +120,9 @@
       "comingSoon": false,
       "colorHue": 200,
       "catIds": [
-        "hotcoffee",
+        "cocktail",
         "icecoffee",
+        "hotcoffee",
         "hotdrinks",
         "tea",
         "frappe",
@@ -129,17 +130,16 @@
         "frozen",
         "smoothie",
         "lemonade",
-        "cocktail",
         "cold",
         "matcha"
       ],
       "categories": [
         {
-          "id": "hotcoffee",
-          "tr": "Sıcak Kahveler",
-          "en": "Hot Coffee",
-          "emoji": "☕",
-          "colorHue": 28
+          "id": "cocktail",
+          "tr": "Kokteyller",
+          "en": "Cocktails",
+          "emoji": "🍹",
+          "colorHue": 340
         },
         {
           "id": "icecoffee",
@@ -147,6 +147,13 @@
           "en": "Cold Coffee",
           "emoji": "🧊",
           "colorHue": 200
+        },
+        {
+          "id": "hotcoffee",
+          "tr": "Sıcak Kahveler",
+          "en": "Hot Coffee",
+          "emoji": "☕",
+          "colorHue": 28
         },
         {
           "id": "hotdrinks",
@@ -198,13 +205,6 @@
           "colorHue": 60
         },
         {
-          "id": "cocktail",
-          "tr": "Kokteyller",
-          "en": "Cocktails",
-          "emoji": "🍹",
-          "colorHue": 340
-        },
-        {
           "id": "cold",
           "tr": "Soğuk İçecekler",
           "en": "Cold Drinks",
@@ -242,51 +242,6 @@
     }
   ],
   "items": [
-    {
-      "id": "maf-special-ice",
-      "cat": "specials",
-      "price": 250,
-      "badge": "imza",
-      "hue": 280,
-      "tr": {
-        "name": "Ice MAF Special",
-        "desc": null
-      },
-      "en": {
-        "name": "Ice MAF Special",
-        "desc": null
-      }
-    },
-    {
-      "id": "maf-special-cocktail",
-      "cat": "specials",
-      "price": 300,
-      "badge": "imza",
-      "hue": 285,
-      "tr": {
-        "name": "Maf Spesial Kokteyl",
-        "desc": null
-      },
-      "en": {
-        "name": "Maf Special Cocktail",
-        "desc": null
-      }
-    },
-    {
-      "id": "dibek-double",
-      "cat": "specials",
-      "price": 200,
-      "badge": "klasik",
-      "hue": 30,
-      "tr": {
-        "name": "Double Dibek Kahvesi",
-        "desc": null
-      },
-      "en": {
-        "name": "Double Dibek Coffee",
-        "desc": null
-      }
-    },
     {
       "id": "kahvalti-tab",
       "cat": "breakfast",
@@ -977,7 +932,8 @@
       "en": {
         "name": "Mocha",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1780746447753-09b60ccd.jpg"
     },
     {
       "id": "white-mocha",
@@ -1094,7 +1050,8 @@
       "en": {
         "name": "Ice Latte",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1780746167285-b608eb39.jpg"
     },
     {
       "id": "ice-americano",
@@ -1107,7 +1064,8 @@
       "en": {
         "name": "Ice Americano",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1780746180000-1a2f343b.jpg"
     },
     {
       "id": "ice-mocha",
@@ -1127,46 +1085,49 @@
       "cat": "icecoffee",
       "price": 200,
       "tr": {
-        "name": "Ice Latte Karamel",
+        "name": "Ice Karamel Latte ",
         "desc": null
       },
       "en": {
         "name": "Ice Caramel Latte",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1780746214872-6ed7f7c3.jpg"
     },
     {
       "id": "ice-findik",
       "cat": "icecoffee",
       "price": 200,
       "tr": {
-        "name": "Ice Latte Fındık",
+        "name": "Ice Fındık Latte ",
         "desc": null
       },
       "en": {
         "name": "Ice Hazelnut Latte",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1780746234708-6461248a.jpg"
     },
     {
       "id": "ice-vanilya",
       "cat": "icecoffee",
       "price": 200,
       "tr": {
-        "name": "Ice Latte Vanilya",
+        "name": "Ice Vanilya Latte ",
         "desc": null
       },
       "en": {
         "name": "Ice Vanilla Latte",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1780746254498-f0ff2eb5.jpg"
     },
     {
       "id": "ice-white-choc",
       "cat": "icecoffee",
       "price": 200,
       "tr": {
-        "name": "Ice White Chocolate",
+        "name": "Ice White Mocha ",
         "desc": null
       },
       "en": {
@@ -1198,7 +1159,8 @@
       "en": {
         "name": "Affogato",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1780746292127-fd32a963.jpg"
     },
     {
       "id": "cay",
@@ -1212,7 +1174,7 @@
         "name": "Tea",
         "desc": null
       },
-      "image": null
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1780745845047-9322c914.webp"
     },
     {
       "id": "fincan-cay",
@@ -1706,7 +1668,8 @@
       "en": {
         "name": "Classic Lemonade",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1780746484637-5e08d739.jpg"
     },
     {
       "id": "lim-elma",
@@ -1719,7 +1682,8 @@
       "en": {
         "name": "Green Apple Lemonade",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1780746541269-27cf326b.jpg"
     },
     {
       "id": "lim-nane",
@@ -1758,7 +1722,8 @@
       "en": {
         "name": "Strawberry Lemonade",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1780746554226-d991ef58.jpg"
     },
     {
       "id": "lim-yab",
@@ -1810,7 +1775,8 @@
       "en": {
         "name": "Redbull Blueberry",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1780746306772-19353845.jpg"
     },
     {
       "id": "rb-hindistan",
@@ -2111,6 +2077,76 @@
         "name": "Lavender Matcha",
         "desc": null
       }
+    },
+    {
+      "id": "item-mq2a7fig",
+      "cat": "cocktail",
+      "price": 300,
+      "tr": {
+        "name": "SEX ON THE BEACH",
+        "desc": null
+      },
+      "en": {
+        "name": "SEX ON THE BEACH",
+        "desc": null
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1780746316195-ce0ea5b9.jpg"
+    },
+    {
+      "id": "item-mq2a7ydz",
+      "cat": "specials",
+      "price": 325,
+      "tr": {
+        "name": "GREEN FOREST ",
+        "desc": null
+      },
+      "en": {
+        "name": "GREEN FOREST ",
+        "desc": null
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1780746137575-53a03748.jpg"
+    },
+    {
+      "id": "item-mq2a9mj8",
+      "cat": "specials",
+      "price": 350,
+      "tr": {
+        "name": "PİNA COLADA ",
+        "desc": null
+      },
+      "en": {
+        "name": "PİNA COLADA ",
+        "desc": null
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1780746147610-0fbba095.jpg"
+    },
+    {
+      "id": "item-mq2aeukl",
+      "cat": "cocktail",
+      "price": 325,
+      "tr": {
+        "name": "GREEN FOREST ",
+        "desc": null
+      },
+      "en": {
+        "name": "GREEN FOREST ",
+        "desc": null
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1780746382149-c08410db.jpg"
+    },
+    {
+      "id": "item-mq2afg2f",
+      "cat": "cocktail",
+      "price": 350,
+      "tr": {
+        "name": "PİNA COLADA ",
+        "desc": null
+      },
+      "en": {
+        "name": "PİNA COLADA ",
+        "desc": null
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1780746417320-94458365.jpg"
     }
   ]
 }
