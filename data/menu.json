@@ -1078,7 +1078,8 @@
       "en": {
         "name": "Ice Mocha",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1780747694144-aab2480d.jpg"
     },
     {
       "id": "ice-karamel",
@@ -1133,7 +1134,8 @@
       "en": {
         "name": "Ice White Chocolate",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1780747707414-4bb56b10.jpg"
     },
     {
       "id": "ice-spanish",
@@ -1709,7 +1711,8 @@
       "en": {
         "name": "Watermelon Lemonade",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1780747731416-0b3e95e2.jpg"
     },
     {
       "id": "lim-cil",
@@ -1736,7 +1739,8 @@
       "en": {
         "name": "Blueberry Lemonade",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1780747742201-1c0032f2.jpg"
     },
     {
       "id": "lim-bog",
