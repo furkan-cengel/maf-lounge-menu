@@ -2151,6 +2151,19 @@
         "desc": null
       },
       "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1780746417320-94458365.jpg"
+    },
+    {
+      "id": "item-mq4a1t0f",
+      "cat": "specials",
+      "price": 200,
+      "tr": {
+        "name": "BUBLEE TEA ",
+        "desc": null
+      },
+      "en": {
+        "name": "BUBLEE TEA ",
+        "desc": null
+      }
     }
   ]
 }
