@@ -2097,9 +2097,22 @@
       "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1780746316195-ce0ea5b9.jpg"
     },
     {
+      "id": "item-mq4a1t0f",
+      "cat": "specials",
+      "price": 200,
+      "tr": {
+        "name": "BUBLEE TEA ",
+        "desc": null
+      },
+      "en": {
+        "name": "BUBLEE TEA ",
+        "desc": null
+      }
+    },
+    {
       "id": "item-mq2a7ydz",
       "cat": "specials",
-      "price": 325,
+      "price": 350,
       "tr": {
         "name": "GREEN FOREST ",
         "desc": null
@@ -2109,20 +2122,6 @@
         "desc": null
       },
       "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1780746137575-53a03748.jpg"
-    },
-    {
-      "id": "item-mq2a9mj8",
-      "cat": "specials",
-      "price": 350,
-      "tr": {
-        "name": "PİNA COLADA ",
-        "desc": null
-      },
-      "en": {
-        "name": "PİNA COLADA ",
-        "desc": null
-      },
-      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1780746147610-0fbba095.jpg"
     },
     {
       "id": "item-mq2aeukl",
@@ -2153,15 +2152,29 @@
       "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1780746417320-94458365.jpg"
     },
     {
-      "id": "item-mq4a1t0f",
+      "id": "item-mq2a9mj8",
       "cat": "specials",
-      "price": 200,
+      "price": 350,
       "tr": {
-        "name": "BUBLEE TEA ",
+        "name": "PİNA COLADA ",
         "desc": null
       },
       "en": {
-        "name": "BUBLEE TEA ",
+        "name": "PİNA COLADA ",
+        "desc": null
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1780746147610-0fbba095.jpg"
+    },
+    {
+      "id": "item-mq6q9bc1",
+      "cat": "specials",
+      "price": 380,
+      "tr": {
+        "name": "SEX ON THE BEACH ",
+        "desc": null
+      },
+      "en": {
+        "name": "SEX ON THE BEACH ",
         "desc": null
       }
     }
