@@ -120,6 +120,7 @@
       "comingSoon": false,
       "colorHue": 200,
       "catIds": [
+        "matcha",
         "cocktail",
         "icecoffee",
         "hotcoffee",
@@ -130,10 +131,16 @@
         "frozen",
         "smoothie",
         "lemonade",
-        "cold",
-        "matcha"
+        "cold"
       ],
       "categories": [
+        {
+          "id": "matcha",
+          "tr": "Matchalar",
+          "en": "Matcha",
+          "emoji": "🍵",
+          "colorHue": 140
+        },
         {
           "id": "cocktail",
           "tr": "Kokteyller",
@@ -210,13 +217,6 @@
           "en": "Cold Drinks",
           "emoji": "🥤",
           "colorHue": 200
-        },
-        {
-          "id": "matcha",
-          "tr": "Matchalar",
-          "en": "Matcha",
-          "emoji": "🍵",
-          "colorHue": 140
         }
       ]
     },
@@ -2189,6 +2189,19 @@
       },
       "en": {
         "name": "Kavurmalı yumurta ",
+        "desc": null
+      }
+    },
+    {
+      "id": "item-mqmoai7q",
+      "cat": "matcha",
+      "price": 300,
+      "tr": {
+        "name": "Çilekli Matcha ",
+        "desc": null
+      },
+      "en": {
+        "name": "Çilekli Matcha ",
         "desc": null
       }
     }
