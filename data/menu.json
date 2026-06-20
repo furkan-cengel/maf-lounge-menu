@@ -2178,6 +2178,19 @@
         "desc": null
       },
       "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1781014903846-b67291ff.jpg"
+    },
+    {
+      "id": "item-mqm1rxiq",
+      "cat": "breakfast",
+      "price": 400,
+      "tr": {
+        "name": "Kavurmalı yumurta ",
+        "desc": null
+      },
+      "en": {
+        "name": "Kavurmalı yumurta ",
+        "desc": null
+      }
     }
   ]
 }
