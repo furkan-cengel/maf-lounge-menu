@@ -1134,7 +1134,8 @@
       "en": {
         "name": "Ice Spanish Latte",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1782148195740-2f2faca5.jpg"
     },
     {
       "id": "ice-mocha",
