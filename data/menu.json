@@ -2028,7 +2028,8 @@
       "en": {
         "name": "Matcha",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1782138849521-44f38e2b.jpg"
     },
     {
       "id": "van-matcha",
@@ -2041,7 +2042,8 @@
       "en": {
         "name": "Vanilla Matcha",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1782139233003-7793f2aa.jpg"
     },
     {
       "id": "yaban-matcha",
@@ -2054,7 +2056,8 @@
       "en": {
         "name": "Blueberry Matcha",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1782142178913-9700aba7.jpg"
     },
     {
       "id": "mango-matcha",
@@ -2067,7 +2070,8 @@
       "en": {
         "name": "Mango Matcha",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1782142899963-74b66272.jpg"
     },
     {
       "id": "lavanta-matcha",
@@ -2080,7 +2084,8 @@
       "en": {
         "name": "Lavender Matcha",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1782142700883-dd35120a.jpg"
     },
     {
       "id": "item-mq2a7fig",
@@ -2203,7 +2208,8 @@
       "en": {
         "name": "Çilekli Matcha ",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1782142174073-779a2c05.jpg"
     }
   ]
 }
