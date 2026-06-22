@@ -1968,6 +1968,19 @@
       }
     },
     {
+      "id": "item-mqpilve6",
+      "cat": "ekstralar-cat",
+      "price": 200,
+      "tr": {
+        "name": "Karışık Çerez tabağı ",
+        "desc": null
+      },
+      "en": {
+        "name": "Karışık Çerez tabağı ",
+        "desc": null
+      }
+    },
+    {
       "id": "cips-tab",
       "cat": "ekstralar-cat",
       "price": 130,
@@ -1977,19 +1990,6 @@
       },
       "en": {
         "name": "Chips Plate",
-        "desc": null
-      }
-    },
-    {
-      "id": "patlamis-misir",
-      "cat": "ekstralar-cat",
-      "price": 120,
-      "tr": {
-        "name": "Patlamış Mısır",
-        "desc": null
-      },
-      "en": {
-        "name": "Popcorn",
         "desc": null
       }
     },
@@ -2213,6 +2213,32 @@
         "desc": null
       },
       "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1782142174073-779a2c05.jpg"
+    },
+    {
+      "id": "item-mqpim7dk",
+      "cat": "ekstralar-cat",
+      "price": 130,
+      "tr": {
+        "name": "Tuzlu fıstık tabağı ",
+        "desc": null
+      },
+      "en": {
+        "name": "Tuzlu fıstık tabağı ",
+        "desc": null
+      }
+    },
+    {
+      "id": "patlamis-misir",
+      "cat": "ekstralar-cat",
+      "price": 120,
+      "tr": {
+        "name": "Patlamış Mısır",
+        "desc": null
+      },
+      "en": {
+        "name": "Popcorn",
+        "desc": null
+      }
     }
   ]
 }
