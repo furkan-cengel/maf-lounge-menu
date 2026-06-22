@@ -120,8 +120,8 @@
       "comingSoon": false,
       "colorHue": 200,
       "catIds": [
-        "matcha",
         "cocktail",
+        "matcha",
         "icecoffee",
         "hotcoffee",
         "hotdrinks",
@@ -135,18 +135,18 @@
       ],
       "categories": [
         {
-          "id": "matcha",
-          "tr": "Matchalar",
-          "en": "Matcha",
-          "emoji": "🍵",
-          "colorHue": 140
-        },
-        {
           "id": "cocktail",
           "tr": "Kokteyller",
           "en": "Cocktails",
           "emoji": "🍹",
           "colorHue": 340
+        },
+        {
+          "id": "matcha",
+          "tr": "Matchalar",
+          "en": "Matcha",
+          "emoji": "🍵",
+          "colorHue": 140
         },
         {
           "id": "icecoffee",
@@ -1699,7 +1699,8 @@
       "en": {
         "name": "Mint Lemonade",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1782148384280-cb64a29c.jpg"
     },
     {
       "id": "lim-karp",
@@ -1754,7 +1755,8 @@
       "en": {
         "name": "Blackberry Lemonade",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1782148681494-3f263c33.jpg"
     },
     {
       "id": "mojito",
