@@ -854,7 +854,8 @@
       "en": {
         "name": "Double Espresso",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1782229233050-9db79669.jpg"
     },
     {
       "id": "americano",
