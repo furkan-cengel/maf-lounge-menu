@@ -122,8 +122,8 @@
       "catIds": [
         "cocktail",
         "matcha",
-        "icecoffee",
         "hotcoffee",
+        "icecoffee",
         "hotdrinks",
         "tea",
         "frappe",
@@ -149,18 +149,18 @@
           "colorHue": 140
         },
         {
-          "id": "icecoffee",
-          "tr": "Soğuk Kahveler",
-          "en": "Cold Coffee",
-          "emoji": "🧊",
-          "colorHue": 200
-        },
-        {
           "id": "hotcoffee",
           "tr": "Sıcak Kahveler",
           "en": "Hot Coffee",
           "emoji": "☕",
           "colorHue": 28
+        },
+        {
+          "id": "icecoffee",
+          "tr": "Soğuk Kahveler",
+          "en": "Cold Coffee",
+          "emoji": "🧊",
+          "colorHue": 200
         },
         {
           "id": "hotdrinks",
@@ -1177,7 +1177,7 @@
         "name": "Tea",
         "desc": null
       },
-      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1780745845047-9322c914.webp"
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1782226349506-fe727c10.jpg"
     },
     {
       "id": "fincan-cay",
@@ -1190,7 +1190,8 @@
       "en": {
         "name": "Tea (Cup)",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1782226369307-9c65082a.jpg"
     },
     {
       "id": "sicak-cik",
@@ -1203,7 +1204,8 @@
       "en": {
         "name": "Hot Chocolate",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1782226532364-3784ab01.jpg"
     },
     {
       "id": "salep",
@@ -1216,7 +1218,8 @@
       "en": {
         "name": "Salep",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1782227545946-256cc281.jpg"
     },
     {
       "id": "beyaz-cik",
@@ -1229,7 +1232,8 @@
       "en": {
         "name": "White Chocolate",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1782226540014-b8f2624f.jpg"
     },
     {
       "id": "chai-tea",
