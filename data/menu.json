@@ -1769,7 +1769,8 @@
       "en": {
         "name": "Mojito",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1782213558280-89c2e2e4.jpg"
     },
     {
       "id": "rb-yaban",
@@ -1796,7 +1797,8 @@
       "en": {
         "name": "Redbull Coconut",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1782213234429-408d75dc.jpg"
     },
     {
       "id": "rb-tropikal",
@@ -1809,7 +1811,8 @@
       "en": {
         "name": "Redbull Tropical",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1782213304338-7fd59171.jpg"
     },
     {
       "id": "rb-karpuz",
@@ -1822,7 +1825,8 @@
       "en": {
         "name": "Redbull Watermelon",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1782213520512-fa8d537e.jpg"
     },
     {
       "id": "kola",
