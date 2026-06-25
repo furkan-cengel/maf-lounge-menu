@@ -46,10 +46,10 @@
       "colorHue": 35,
       "catIds": [
         "breakfast",
-        "toasts",
-        "gozleme",
         "burgers",
         "pasta",
+        "toasts",
+        "gozleme",
         "pans",
         "salads",
         "desserts"
@@ -61,20 +61,6 @@
           "en": "Breakfast",
           "emoji": "🍳",
           "colorHue": 35
-        },
-        {
-          "id": "toasts",
-          "tr": "Tostlar",
-          "en": "Toasts",
-          "emoji": "🥪",
-          "colorHue": 25
-        },
-        {
-          "id": "gozleme",
-          "tr": "Gözlemeler",
-          "en": "Gözleme",
-          "emoji": "🫓",
-          "colorHue": 40
         },
         {
           "id": "burgers",
@@ -89,6 +75,20 @@
           "en": "Pasta",
           "emoji": "🍝",
           "colorHue": 30
+        },
+        {
+          "id": "toasts",
+          "tr": "Tostlar",
+          "en": "Toasts",
+          "emoji": "🥪",
+          "colorHue": 25
+        },
+        {
+          "id": "gozleme",
+          "tr": "Gözlemeler",
+          "en": "Gözleme",
+          "emoji": "🫓",
+          "colorHue": 40
         },
         {
           "id": "pans",
@@ -588,7 +588,7 @@
       "cat": "pasta",
       "price": 300,
       "tr": {
-        "name": "Pesto Makarna",
+        "name": "Pesto Soslu Tavuklu Makarna",
         "desc": null
       },
       "en": {
@@ -601,7 +601,7 @@
       "cat": "pasta",
       "price": 300,
       "tr": {
-        "name": "Napoliten Makarna",
+        "name": "Napoliten Soslu tavuklu Makarna",
         "desc": null
       },
       "en": {
@@ -614,7 +614,7 @@
       "cat": "pasta",
       "price": 300,
       "tr": {
-        "name": "Köri Makarna",
+        "name": "Köri Soslu Tavuklu Makarna ",
         "desc": null
       },
       "en": {
@@ -627,7 +627,7 @@
       "cat": "pasta",
       "price": 300,
       "tr": {
-        "name": "Kremalı Mantarlı",
+        "name": "Kremalı Mantarlı Tavuklu Makarna ",
         "desc": null
       },
       "en": {
