@@ -594,7 +594,8 @@
       "en": {
         "name": "Pesto Pasta",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1782492396730-fee4dc87.jpg"
     },
     {
       "id": "napoliten",
@@ -620,7 +621,8 @@
       "en": {
         "name": "Curry Pasta",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1782492407869-d4a32650.jpg"
     },
     {
       "id": "kremali",
@@ -633,7 +635,8 @@
       "en": {
         "name": "Creamy Mushroom",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1782492422809-4a467034.jpg"
     },
     {
       "id": "sosis-tava",
