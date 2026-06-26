@@ -2248,6 +2248,20 @@
         "name": "Popcorn",
         "desc": null
       }
+    },
+    {
+      "id": "item-mqv2zb29",
+      "cat": "specials",
+      "price": 350,
+      "tr": {
+        "name": "Ruby Infusion",
+        "desc": null
+      },
+      "en": {
+        "name": "Ruby Infusion",
+        "desc": null
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1782487517196-0c8c9d7e.jpg"
     }
   ]
 }
