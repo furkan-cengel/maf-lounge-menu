@@ -50,8 +50,8 @@
         "pasta",
         "toasts",
         "gozleme",
-        "pans",
         "salads",
+        "pans",
         "desserts"
       ],
       "categories": [
@@ -91,18 +91,18 @@
           "colorHue": 40
         },
         {
-          "id": "pans",
-          "tr": "Tavalar",
-          "en": "Skillets",
-          "emoji": "🍳",
-          "colorHue": 22
-        },
-        {
           "id": "salads",
           "tr": "Salatalar",
           "en": "Salads",
           "emoji": "🥗",
           "colorHue": 130
+        },
+        {
+          "id": "pans",
+          "tr": "Tavalar",
+          "en": "Skillets",
+          "emoji": "🍳",
+          "colorHue": 22
         },
         {
           "id": "desserts",
