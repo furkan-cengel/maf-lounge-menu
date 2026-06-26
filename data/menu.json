@@ -586,7 +586,7 @@
     {
       "id": "pesto",
       "cat": "pasta",
-      "price": 300,
+      "price": 450,
       "tr": {
         "name": "Pesto Soslu Tavuklu Makarna",
         "desc": null
@@ -599,7 +599,7 @@
     {
       "id": "napoliten",
       "cat": "pasta",
-      "price": 300,
+      "price": 450,
       "tr": {
         "name": "Napoliten Soslu tavuklu Makarna",
         "desc": null
@@ -612,7 +612,7 @@
     {
       "id": "kori",
       "cat": "pasta",
-      "price": 300,
+      "price": 450,
       "tr": {
         "name": "Köri Soslu Tavuklu Makarna ",
         "desc": null
@@ -625,7 +625,7 @@
     {
       "id": "kremali",
       "cat": "pasta",
-      "price": 300,
+      "price": 450,
       "tr": {
         "name": "Kremalı Mantarlı Tavuklu Makarna ",
         "desc": null
