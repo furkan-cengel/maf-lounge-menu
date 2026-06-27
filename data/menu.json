@@ -399,7 +399,8 @@
       "en": {
         "name": "Kaşar Toast",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1782564392380-c0303b5d.jpg"
     },
     {
       "id": "tost-sucuk",
@@ -412,7 +413,8 @@
       "en": {
         "name": "Sucuk Toast",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1782564404598-3089915a.jpg"
     },
     {
       "id": "tost-karisik",
@@ -425,7 +427,8 @@
       "en": {
         "name": "Mixed Toast",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1782564421562-f8d15b77.jpg"
     },
     {
       "id": "tost-kavurma",
@@ -438,7 +441,8 @@
       "en": {
         "name": "Kavurma Toast",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1782564437199-784cbd90.jpg"
     },
     {
       "id": "tost-ayvalik",
