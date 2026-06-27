@@ -1411,7 +1411,8 @@
       "en": {
         "name": "Chocolate Shake",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1782573215449-076fb660.jpg"
     },
     {
       "id": "shake-oreo",
@@ -1424,7 +1425,8 @@
       "en": {
         "name": "Oreo Shake",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1782573200938-96c73c66.jpg"
     },
     {
       "id": "shake-orm",
@@ -1437,7 +1439,8 @@
       "en": {
         "name": "Berry Shake",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1782573229125-b59ef07a.jpg"
     },
     {
       "id": "shake-cilek",
@@ -1450,7 +1453,8 @@
       "en": {
         "name": "Strawberry Shake",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1782573238428-10e56627.jpg"
     },
     {
       "id": "shake-van",
@@ -1463,7 +1467,8 @@
       "en": {
         "name": "Vanilla Shake",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1782573246477-4509a59a.jpg"
     },
     {
       "id": "shake-kar",
@@ -1476,7 +1481,8 @@
       "en": {
         "name": "Caramel Shake",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1782573253851-3f7f93d3.jpg"
     },
     {
       "id": "shake-muz",
@@ -1489,7 +1495,8 @@
       "en": {
         "name": "Banana Shake",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1782573261676-c1666359.jpg"
     },
     {
       "id": "shake-yab",
@@ -1502,7 +1509,8 @@
       "en": {
         "name": "Blueberry Shake",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1782573269409-26db7a3b.jpg"
     },
     {
       "id": "frozen-cilek",
