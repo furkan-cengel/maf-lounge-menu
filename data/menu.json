@@ -1515,7 +1515,8 @@
       "en": {
         "name": "Strawberry Frozen",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1782569247165-f392c67c.jpg"
     },
     {
       "id": "frozen-mango",
@@ -1528,7 +1529,8 @@
       "en": {
         "name": "Mango Frozen",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1782569253218-7c26bf9c.jpg"
     },
     {
       "id": "frozen-karp",
@@ -1541,7 +1543,8 @@
       "en": {
         "name": "Watermelon Frozen",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1782569260694-e72b1558.jpg"
     },
     {
       "id": "frozen-muz",
@@ -1554,7 +1557,8 @@
       "en": {
         "name": "Banana Frozen",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1782569291165-c673dd9d.jpg"
     },
     {
       "id": "frozen-elma",
@@ -1567,7 +1571,8 @@
       "en": {
         "name": "Green Apple Frozen",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1782569307833-384d2816.jpg"
     },
     {
       "id": "frozen-orm",
@@ -1580,7 +1585,8 @@
       "en": {
         "name": "Berry Frozen",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1782569239338-0b49f2e9.jpg"
     },
     {
       "id": "frozen-yaban",
@@ -1593,7 +1599,8 @@
       "en": {
         "name": "Blueberry Frozen",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1782569318136-af84767d.jpg"
     },
     {
       "id": "sm-karp",
