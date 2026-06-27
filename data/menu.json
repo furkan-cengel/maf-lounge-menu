@@ -128,8 +128,8 @@
         "tea",
         "frappe",
         "shake",
-        "frozen",
         "smoothie",
+        "frozen",
         "lemonade",
         "cold"
       ],
@@ -191,18 +191,18 @@
           "colorHue": 320
         },
         {
-          "id": "frozen",
-          "tr": "Frozen",
-          "en": "Frozen",
-          "emoji": "❄️",
-          "colorHue": 200
-        },
-        {
           "id": "smoothie",
           "tr": "Smoothie",
           "en": "Smoothie",
           "emoji": "🍓",
           "colorHue": 340
+        },
+        {
+          "id": "frozen",
+          "tr": "Frozen",
+          "en": "Frozen",
+          "emoji": "❄️",
+          "colorHue": 200
         },
         {
           "id": "lemonade",
@@ -2304,6 +2304,19 @@
       },
       "en": {
         "name": "Double Dibek Kahvesi ",
+        "desc": null
+      }
+    },
+    {
+      "id": "item-mqvqp2wm",
+      "cat": "cocktail",
+      "price": 350,
+      "tr": {
+        "name": "OCEAN COCTAİL ",
+        "desc": null
+      },
+      "en": {
+        "name": "OCEAN COCTAİL ",
         "desc": null
       }
     }
