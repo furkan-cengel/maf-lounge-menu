@@ -122,8 +122,8 @@
       "catIds": [
         "cocktail",
         "matcha",
-        "hotcoffee",
         "icecoffee",
+        "hotcoffee",
         "hotdrinks",
         "tea",
         "frappe",
@@ -149,18 +149,18 @@
           "colorHue": 140
         },
         {
-          "id": "hotcoffee",
-          "tr": "Sıcak Kahveler",
-          "en": "Hot Coffee",
-          "emoji": "☕",
-          "colorHue": 28
-        },
-        {
           "id": "icecoffee",
           "tr": "Soğuk Kahveler",
           "en": "Cold Coffee",
           "emoji": "🧊",
           "colorHue": 200
+        },
+        {
+          "id": "hotcoffee",
+          "tr": "Sıcak Kahveler",
+          "en": "Hot Coffee",
+          "emoji": "☕",
+          "colorHue": 28
         },
         {
           "id": "hotdrinks",
@@ -1034,7 +1034,7 @@
     {
       "id": "afogato",
       "cat": "icecoffee",
-      "price": 150,
+      "price": 180,
       "tr": {
         "name": "Affogato",
         "desc": null
@@ -1048,7 +1048,7 @@
     {
       "id": "ice-americano",
       "cat": "icecoffee",
-      "price": 170,
+      "price": 200,
       "tr": {
         "name": "Ice Americano",
         "desc": null
@@ -1062,7 +1062,7 @@
     {
       "id": "ice-latte",
       "cat": "icecoffee",
-      "price": 180,
+      "price": 220,
       "tr": {
         "name": "Ice Latte",
         "desc": null
@@ -1076,7 +1076,7 @@
     {
       "id": "ice-karamel",
       "cat": "icecoffee",
-      "price": 200,
+      "price": 240,
       "tr": {
         "name": "Ice Karamel Latte ",
         "desc": null
@@ -1090,7 +1090,7 @@
     {
       "id": "ice-findik",
       "cat": "icecoffee",
-      "price": 200,
+      "price": 240,
       "tr": {
         "name": "Ice Fındık Latte ",
         "desc": null
@@ -1104,7 +1104,7 @@
     {
       "id": "ice-vanilya",
       "cat": "icecoffee",
-      "price": 200,
+      "price": 240,
       "tr": {
         "name": "Ice Vanilya Latte ",
         "desc": null
@@ -1118,7 +1118,7 @@
     {
       "id": "ice-spanish",
       "cat": "icecoffee",
-      "price": 250,
+      "price": 280,
       "tr": {
         "name": "Ice Spanish Latte",
         "desc": null
@@ -1132,7 +1132,7 @@
     {
       "id": "ice-mocha",
       "cat": "icecoffee",
-      "price": 200,
+      "price": 240,
       "tr": {
         "name": "Ice Mocha",
         "desc": null
@@ -1146,7 +1146,7 @@
     {
       "id": "ice-white-choc",
       "cat": "icecoffee",
-      "price": 200,
+      "price": 240,
       "tr": {
         "name": "Ice White Mocha ",
         "desc": null
@@ -1174,7 +1174,7 @@
     {
       "id": "fincan-cay",
       "cat": "hotdrinks",
-      "price": 60,
+      "price": 80,
       "tr": {
         "name": "Fincan Çay",
         "desc": null
@@ -1188,7 +1188,7 @@
     {
       "id": "sicak-cik",
       "cat": "hotdrinks",
-      "price": 180,
+      "price": 190,
       "tr": {
         "name": "Sıcak Çikolata",
         "desc": null
@@ -1202,7 +1202,7 @@
     {
       "id": "salep",
       "cat": "hotdrinks",
-      "price": 180,
+      "price": 190,
       "tr": {
         "name": "Salep",
         "desc": null
@@ -1216,7 +1216,7 @@
     {
       "id": "beyaz-cik",
       "cat": "hotdrinks",
-      "price": 180,
+      "price": 190,
       "tr": {
         "name": "Beyaz Çikolata",
         "desc": null
@@ -1230,7 +1230,7 @@
     {
       "id": "chai-tea",
       "cat": "hotdrinks",
-      "price": 180,
+      "price": 190,
       "tr": {
         "name": "Chai Tea Latte",
         "desc": null
@@ -1243,7 +1243,7 @@
     {
       "id": "balli-sut",
       "cat": "hotdrinks",
-      "price": 180,
+      "price": 190,
       "tr": {
         "name": "Ballı Süt",
         "desc": null
