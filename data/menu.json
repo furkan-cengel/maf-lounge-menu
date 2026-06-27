@@ -1334,7 +1334,7 @@
     {
       "id": "frappe",
       "cat": "frappe",
-      "price": 280,
+      "price": 250,
       "tr": {
         "name": "Frappe",
         "desc": null
@@ -1347,7 +1347,7 @@
     {
       "id": "karamel-frappe",
       "cat": "frappe",
-      "price": 280,
+      "price": 250,
       "tr": {
         "name": "Karamel Frappe",
         "desc": null
@@ -1360,7 +1360,7 @@
     {
       "id": "cik-frappe",
       "cat": "frappe",
-      "price": 280,
+      "price": 250,
       "tr": {
         "name": "Çikolata Frappe",
         "desc": null
@@ -1373,7 +1373,7 @@
     {
       "id": "van-frappe",
       "cat": "frappe",
-      "price": 280,
+      "price": 250,
       "tr": {
         "name": "Vanilya Frappe",
         "desc": null
@@ -1386,7 +1386,7 @@
     {
       "id": "dond-frappe",
       "cat": "frappe",
-      "price": 280,
+      "price": 250,
       "tr": {
         "name": "Dondurmalı Frappe",
         "desc": null
@@ -1594,7 +1594,7 @@
     {
       "id": "sm-karp",
       "cat": "smoothie",
-      "price": 200,
+      "price": 240,
       "tr": {
         "name": "Karpuz Smoothie",
         "desc": null
@@ -1607,7 +1607,7 @@
     {
       "id": "sm-muz",
       "cat": "smoothie",
-      "price": 200,
+      "price": 240,
       "tr": {
         "name": "Muz Smoothie",
         "desc": null
@@ -1620,7 +1620,7 @@
     {
       "id": "sm-man",
       "cat": "smoothie",
-      "price": 200,
+      "price": 240,
       "tr": {
         "name": "Mango Smoothie",
         "desc": null
@@ -1633,7 +1633,7 @@
     {
       "id": "sm-cil",
       "cat": "smoothie",
-      "price": 200,
+      "price": 240,
       "tr": {
         "name": "Çilek Smoothie",
         "desc": null
@@ -1646,7 +1646,7 @@
     {
       "id": "sm-bog",
       "cat": "smoothie",
-      "price": 200,
+      "price": 240,
       "tr": {
         "name": "Böğürtlen Smoothie",
         "desc": null
@@ -1957,7 +1957,7 @@
     {
       "id": "redbull",
       "cat": "cold",
-      "price": 100,
+      "price": 200,
       "tr": {
         "name": "Redbull",
         "desc": null
