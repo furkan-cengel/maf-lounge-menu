@@ -824,7 +824,7 @@
     {
       "id": "espresso",
       "cat": "hotcoffee",
-      "price": 100,
+      "price": 130,
       "tr": {
         "name": "Espresso",
         "desc": null
@@ -837,7 +837,7 @@
     {
       "id": "double-espresso",
       "cat": "hotcoffee",
-      "price": 125,
+      "price": 160,
       "tr": {
         "name": "Double Espresso",
         "desc": null
@@ -851,7 +851,7 @@
     {
       "id": "americano",
       "cat": "hotcoffee",
-      "price": 160,
+      "price": 180,
       "tr": {
         "name": "Americano",
         "desc": null
@@ -864,7 +864,7 @@
     {
       "id": "latte",
       "cat": "hotcoffee",
-      "price": 175,
+      "price": 210,
       "tr": {
         "name": "Latte",
         "desc": null
@@ -877,7 +877,7 @@
     {
       "id": "latte-aroma",
       "cat": "hotcoffee",
-      "price": 190,
+      "price": 225,
       "tr": {
         "name": "Aromalı Latte",
         "desc": null
@@ -890,7 +890,7 @@
     {
       "id": "cappuccino",
       "cat": "hotcoffee",
-      "price": 170,
+      "price": 210,
       "tr": {
         "name": "Cappuccino",
         "desc": null
@@ -903,7 +903,7 @@
     {
       "id": "machiato",
       "cat": "hotcoffee",
-      "price": 130,
+      "price": 150,
       "tr": {
         "name": "Machiato Espresso",
         "desc": null
@@ -916,7 +916,7 @@
     {
       "id": "mocha",
       "cat": "hotcoffee",
-      "price": 190,
+      "price": 225,
       "tr": {
         "name": "Mocha",
         "desc": null
@@ -930,7 +930,7 @@
     {
       "id": "white-mocha",
       "cat": "hotcoffee",
-      "price": 200,
+      "price": 225,
       "tr": {
         "name": "White Mocha",
         "desc": null
@@ -943,7 +943,7 @@
     {
       "id": "flat-white",
       "cat": "hotcoffee",
-      "price": 170,
+      "price": 210,
       "tr": {
         "name": "Flat White",
         "desc": null
@@ -956,7 +956,7 @@
     {
       "id": "cortado",
       "cat": "hotcoffee",
-      "price": 170,
+      "price": 200,
       "tr": {
         "name": "Cortado",
         "desc": null
@@ -969,7 +969,7 @@
     {
       "id": "turk",
       "cat": "hotcoffee",
-      "price": 125,
+      "price": 135,
       "tr": {
         "name": "Türk Kahvesi",
         "desc": null
@@ -982,7 +982,7 @@
     {
       "id": "dibek",
       "cat": "hotcoffee",
-      "price": 150,
+      "price": 160,
       "tr": {
         "name": "Dibek Kahvesi",
         "desc": null
@@ -995,7 +995,7 @@
     {
       "id": "double-turk",
       "cat": "hotcoffee",
-      "price": 175,
+      "price": 180,
       "tr": {
         "name": "Double Türk Kahvesi",
         "desc": null
@@ -1008,7 +1008,7 @@
     {
       "id": "menengic",
       "cat": "hotcoffee",
-      "price": 150,
+      "price": 160,
       "tr": {
         "name": "Menengiç Kahvesi",
         "desc": null
@@ -1021,7 +1021,7 @@
     {
       "id": "filtre",
       "cat": "hotcoffee",
-      "price": 150,
+      "price": 190,
       "tr": {
         "name": "Filtre Kahve",
         "desc": null
@@ -1757,7 +1757,7 @@
     {
       "id": "mojito",
       "cat": "cocktail",
-      "price": 250,
+      "price": 280,
       "tr": {
         "name": "Mojito",
         "desc": null
@@ -1771,7 +1771,7 @@
     {
       "id": "rb-yaban",
       "cat": "cocktail",
-      "price": 250,
+      "price": 270,
       "tr": {
         "name": "Redbull Yaban Mersini",
         "desc": null
@@ -1785,7 +1785,7 @@
     {
       "id": "rb-hindistan",
       "cat": "cocktail",
-      "price": 250,
+      "price": 270,
       "tr": {
         "name": "Redbull Hindistan Cevizi",
         "desc": null
@@ -1799,7 +1799,7 @@
     {
       "id": "rb-tropikal",
       "cat": "cocktail",
-      "price": 250,
+      "price": 270,
       "tr": {
         "name": "Redbull Tropikal",
         "desc": null
@@ -1813,7 +1813,7 @@
     {
       "id": "rb-karpuz",
       "cat": "cocktail",
-      "price": 250,
+      "price": 270,
       "tr": {
         "name": "Redbull Karpuz",
         "desc": null
@@ -2010,7 +2010,7 @@
     {
       "id": "karamel-mac",
       "cat": "hotcoffee",
-      "price": 190,
+      "price": 230,
       "tr": {
         "name": "Karamel Macchiato",
         "desc": null
@@ -2037,7 +2037,7 @@
     {
       "id": "van-matcha",
       "cat": "matcha",
-      "price": 300,
+      "price": 320,
       "tr": {
         "name": "Vanilya Matcha",
         "desc": null
@@ -2051,7 +2051,7 @@
     {
       "id": "yaban-matcha",
       "cat": "matcha",
-      "price": 300,
+      "price": 320,
       "tr": {
         "name": "Yaban Mersin Matcha",
         "desc": null
@@ -2065,7 +2065,7 @@
     {
       "id": "mango-matcha",
       "cat": "matcha",
-      "price": 300,
+      "price": 320,
       "tr": {
         "name": "Mango Matcha",
         "desc": null
@@ -2079,7 +2079,7 @@
     {
       "id": "lavanta-matcha",
       "cat": "matcha",
-      "price": 300,
+      "price": 320,
       "tr": {
         "name": "Lavanta Matcha",
         "desc": null
@@ -2091,18 +2091,18 @@
       "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1782142700883-dd35120a.jpg"
     },
     {
-      "id": "item-mq2a7fig",
+      "id": "item-mq2aeukl",
       "cat": "cocktail",
-      "price": 380,
+      "price": 350,
       "tr": {
-        "name": "SEX ON THE BEACH",
+        "name": "GREEN FOREST ",
         "desc": null
       },
       "en": {
-        "name": "SEX ON THE BEACH",
+        "name": "GREEN FOREST ",
         "desc": null
       },
-      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1780746316195-ce0ea5b9.jpg"
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1780746382149-c08410db.jpg"
     },
     {
       "id": "item-mqv2zb29",
@@ -2133,20 +2133,6 @@
       "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1781014903846-b67291ff.jpg"
     },
     {
-      "id": "item-mq2aeukl",
-      "cat": "cocktail",
-      "price": 350,
-      "tr": {
-        "name": "GREEN FOREST ",
-        "desc": null
-      },
-      "en": {
-        "name": "GREEN FOREST ",
-        "desc": null
-      },
-      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1780746382149-c08410db.jpg"
-    },
-    {
       "id": "item-mq2afg2f",
       "cat": "cocktail",
       "price": 350,
@@ -2159,6 +2145,20 @@
         "desc": null
       },
       "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1780746417320-94458365.jpg"
+    },
+    {
+      "id": "item-mqvq6hhj",
+      "cat": "cocktail",
+      "price": 350,
+      "tr": {
+        "name": "RUBY INFUSİON",
+        "desc": null
+      },
+      "en": {
+        "name": "Ruby Infusion ",
+        "desc": null
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1782526384762-d8ea10d6.jpg"
     },
     {
       "id": "item-mq2a9mj8",
@@ -2204,7 +2204,7 @@
     {
       "id": "item-mqmoai7q",
       "cat": "matcha",
-      "price": 300,
+      "price": 320,
       "tr": {
         "name": "Çilekli Matcha ",
         "desc": null
@@ -2277,6 +2277,33 @@
       },
       "en": {
         "name": "İkili Mix Tava ",
+        "desc": null
+      }
+    },
+    {
+      "id": "item-mq2a7fig",
+      "cat": "cocktail",
+      "price": 350,
+      "tr": {
+        "name": "SEX ON THE BEACH",
+        "desc": null
+      },
+      "en": {
+        "name": "SEX ON THE BEACH",
+        "desc": null
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1780746316195-ce0ea5b9.jpg"
+    },
+    {
+      "id": "item-mqvqeug9",
+      "cat": "hotcoffee",
+      "price": 200,
+      "tr": {
+        "name": "Double Dibek Kahvesi ",
+        "desc": null
+      },
+      "en": {
+        "name": "Double Dibek Kahvesi ",
         "desc": null
       }
     }
