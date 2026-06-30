@@ -1486,20 +1486,6 @@
       "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1782569247165-f392c67c.jpg"
     },
     {
-      "id": "frozen-mango",
-      "cat": "frozen",
-      "price": 250,
-      "tr": {
-        "name": "Mango Frozen",
-        "desc": null
-      },
-      "en": {
-        "name": "Mango Frozen",
-        "desc": null
-      },
-      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1782569253218-7c26bf9c.jpg"
-    },
-    {
       "id": "frozen-karp",
       "cat": "frozen",
       "price": 250,
@@ -1514,6 +1500,20 @@
       "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1782569260694-e72b1558.jpg"
     },
     {
+      "id": "frozen-mango",
+      "cat": "frozen",
+      "price": 250,
+      "tr": {
+        "name": "Mango Frozen",
+        "desc": null
+      },
+      "en": {
+        "name": "Mango Frozen",
+        "desc": null
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1782569253218-7c26bf9c.jpg"
+    },
+    {
       "id": "frozen-muz",
       "cat": "frozen",
       "price": 250,
@@ -1526,20 +1526,6 @@
         "desc": null
       },
       "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1782569291165-c673dd9d.jpg"
-    },
-    {
-      "id": "frozen-elma",
-      "cat": "frozen",
-      "price": 250,
-      "tr": {
-        "name": "Yeşil Elma Frozen",
-        "desc": null
-      },
-      "en": {
-        "name": "Green Apple Frozen",
-        "desc": null
-      },
-      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1782569307833-384d2816.jpg"
     },
     {
       "id": "frozen-orm",
@@ -1703,20 +1689,6 @@
         "desc": null
       },
       "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1780746554226-d991ef58.jpg"
-    },
-    {
-      "id": "lim-yab",
-      "cat": "lemonade",
-      "price": 220,
-      "tr": {
-        "name": "Yaban Mersinli Limonata",
-        "desc": null
-      },
-      "en": {
-        "name": "Blueberry Lemonade",
-        "desc": null
-      },
-      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1780747742201-1c0032f2.jpg"
     },
     {
       "id": "lim-bog",
@@ -2294,19 +2266,6 @@
       }
     },
     {
-      "id": "item-mqvqp2wm",
-      "cat": "cocktail",
-      "price": 350,
-      "tr": {
-        "name": "OCEAN COCTAİL ",
-        "desc": null
-      },
-      "en": {
-        "name": "OCEAN COCTAİL ",
-        "desc": null
-      }
-    },
-    {
       "id": "item-mr0tr9rd",
       "cat": "hotcoffee",
       "price": 150,
@@ -2395,6 +2354,45 @@
       },
       "en": {
         "name": "Orman Meyveli Frappe ",
+        "desc": null
+      }
+    },
+    {
+      "id": "item-mr0uaamu",
+      "cat": "lemonade",
+      "price": 220,
+      "tr": {
+        "name": "Hindistan Cevizli Limonata ",
+        "desc": null
+      },
+      "en": {
+        "name": "Hindistan Cevizli Limonata ",
+        "desc": null
+      }
+    },
+    {
+      "id": "item-mr0uars0",
+      "cat": "lemonade",
+      "price": 220,
+      "tr": {
+        "name": "Mango Limonata ",
+        "desc": null
+      },
+      "en": {
+        "name": "Mango Limonata ",
+        "desc": null
+      }
+    },
+    {
+      "id": "item-mr0ub3mv",
+      "cat": "lemonade",
+      "price": 220,
+      "tr": {
+        "name": "Narlı Limonata",
+        "desc": null
+      },
+      "en": {
+        "name": "Narlı Limonata",
         "desc": null
       }
     }
