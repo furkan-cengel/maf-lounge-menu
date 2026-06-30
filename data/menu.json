@@ -866,6 +866,19 @@
       }
     },
     {
+      "id": "filtre",
+      "cat": "hotcoffee",
+      "price": 190,
+      "tr": {
+        "name": "Filtre Kahve",
+        "desc": null
+      },
+      "en": {
+        "name": "Filter Coffee",
+        "desc": null
+      }
+    },
+    {
       "id": "latte",
       "cat": "hotcoffee",
       "price": 210,
@@ -907,7 +920,7 @@
     {
       "id": "machiato",
       "cat": "hotcoffee",
-      "price": 150,
+      "price": 130,
       "tr": {
         "name": "Machiato Espresso",
         "desc": null
@@ -984,19 +997,6 @@
       }
     },
     {
-      "id": "dibek",
-      "cat": "hotcoffee",
-      "price": 160,
-      "tr": {
-        "name": "Dibek Kahvesi",
-        "desc": null
-      },
-      "en": {
-        "name": "Dibek Coffee",
-        "desc": null
-      }
-    },
-    {
       "id": "double-turk",
       "cat": "hotcoffee",
       "price": 180,
@@ -1010,28 +1010,28 @@
       }
     },
     {
-      "id": "menengic",
+      "id": "dibek",
       "cat": "hotcoffee",
-      "price": 160,
+      "price": 150,
       "tr": {
-        "name": "Menengiç Kahvesi",
+        "name": "Dibek Kahvesi",
         "desc": null
       },
       "en": {
-        "name": "Menengiç Coffee",
+        "name": "Dibek Coffee",
         "desc": null
       }
     },
     {
-      "id": "filtre",
+      "id": "item-mqvqeug9",
       "cat": "hotcoffee",
-      "price": 190,
+      "price": 200,
       "tr": {
-        "name": "Filtre Kahve",
+        "name": "Double Dibek Kahvesi ",
         "desc": null
       },
       "en": {
-        "name": "Filter Coffee",
+        "name": "Double Dibek Kahvesi ",
         "desc": null
       }
     },
@@ -1497,20 +1497,6 @@
         "desc": null
       },
       "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1782573261676-c1666359.jpg"
-    },
-    {
-      "id": "shake-yab",
-      "cat": "shake",
-      "price": 250,
-      "tr": {
-        "name": "Yaban Mersinli Milkshake",
-        "desc": null
-      },
-      "en": {
-        "name": "Blueberry Shake",
-        "desc": null
-      },
-      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1782573269409-26db7a3b.jpg"
     },
     {
       "id": "frozen-cilek",
@@ -2035,15 +2021,15 @@
       }
     },
     {
-      "id": "karamel-mac",
+      "id": "menengic",
       "cat": "hotcoffee",
-      "price": 230,
+      "price": 160,
       "tr": {
-        "name": "Karamel Macchiato",
+        "name": "Menengiç Kahvesi",
         "desc": null
       },
       "en": {
-        "name": "Caramel Macchiato",
+        "name": "Menengiç Coffee",
         "desc": null
       }
     },
@@ -2322,15 +2308,15 @@
       "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1780746316195-ce0ea5b9.jpg"
     },
     {
-      "id": "item-mqvqeug9",
+      "id": "karamel-mac",
       "cat": "hotcoffee",
-      "price": 200,
+      "price": 230,
       "tr": {
-        "name": "Double Dibek Kahvesi ",
+        "name": "Karamel Macchiato",
         "desc": null
       },
       "en": {
-        "name": "Double Dibek Kahvesi ",
+        "name": "Caramel Macchiato",
         "desc": null
       }
     },
@@ -2344,6 +2330,19 @@
       },
       "en": {
         "name": "OCEAN COCTAİL ",
+        "desc": null
+      }
+    },
+    {
+      "id": "item-mr0tr9rd",
+      "cat": "hotcoffee",
+      "price": 150,
+      "tr": {
+        "name": "Damla Sakızlı Türk kahvesi ",
+        "desc": null
+      },
+      "en": {
+        "name": "Damla Sakızlı Türk kahvesi ",
         "desc": null
       }
     }
