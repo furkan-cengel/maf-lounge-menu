@@ -984,6 +984,19 @@
       }
     },
     {
+      "id": "karamel-mac",
+      "cat": "hotcoffee",
+      "price": 230,
+      "tr": {
+        "name": "Karamel Macchiato",
+        "desc": null
+      },
+      "en": {
+        "name": "Caramel Macchiato",
+        "desc": null
+      }
+    },
+    {
       "id": "turk",
       "cat": "hotcoffee",
       "price": 135,
@@ -1019,19 +1032,6 @@
       },
       "en": {
         "name": "Dibek Coffee",
-        "desc": null
-      }
-    },
-    {
-      "id": "item-mqvqeug9",
-      "cat": "hotcoffee",
-      "price": 200,
-      "tr": {
-        "name": "Double Dibek Kahvesi ",
-        "desc": null
-      },
-      "en": {
-        "name": "Double Dibek Kahvesi ",
         "desc": null
       }
     },
@@ -1120,6 +1120,19 @@
       "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1780746254498-f0ff2eb5.jpg"
     },
     {
+      "id": "item-mr0tw71n",
+      "cat": "icecoffee",
+      "price": 240,
+      "tr": {
+        "name": "Ice Cookie Latte ",
+        "desc": null
+      },
+      "en": {
+        "name": "Ice Cookie Latte ",
+        "desc": null
+      }
+    },
+    {
       "id": "ice-spanish",
       "cat": "icecoffee",
       "price": 280,
@@ -1146,20 +1159,6 @@
         "desc": null
       },
       "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1780747694144-aab2480d.jpg"
-    },
-    {
-      "id": "ice-white-choc",
-      "cat": "icecoffee",
-      "price": 240,
-      "tr": {
-        "name": "Ice White Mocha ",
-        "desc": null
-      },
-      "en": {
-        "name": "Ice White Chocolate",
-        "desc": null
-      },
-      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1780747707414-4bb56b10.jpg"
     },
     {
       "id": "cay",
@@ -1336,19 +1335,6 @@
       }
     },
     {
-      "id": "frappe",
-      "cat": "frappe",
-      "price": 250,
-      "tr": {
-        "name": "Frappe",
-        "desc": null
-      },
-      "en": {
-        "name": "Frappe",
-        "desc": null
-      }
-    },
-    {
       "id": "karamel-frappe",
       "cat": "frappe",
       "price": 250,
@@ -1384,19 +1370,6 @@
       },
       "en": {
         "name": "Vanilla Frappe",
-        "desc": null
-      }
-    },
-    {
-      "id": "dond-frappe",
-      "cat": "frappe",
-      "price": 250,
-      "tr": {
-        "name": "Dondurmalı Frappe",
-        "desc": null
-      },
-      "en": {
-        "name": "Ice Cream Frappe",
         "desc": null
       }
     },
@@ -1872,6 +1845,33 @@
       "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1782582237098-1a5c5ad6.jpg"
     },
     {
+      "id": "ice-tea",
+      "cat": "cold",
+      "price": 135,
+      "tr": {
+        "name": "Fuse Tea",
+        "desc": null
+      },
+      "en": {
+        "name": "Iced Tea",
+        "desc": null
+      }
+    },
+    {
+      "id": "gazoz",
+      "cat": "cold",
+      "price": 135,
+      "tr": {
+        "name": "Gazoz",
+        "desc": null
+      },
+      "en": {
+        "name": "Turkish Soda",
+        "desc": null
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1782582403994-eb086aad.jpg"
+    },
+    {
       "id": "maden",
       "cat": "cold",
       "price": 90,
@@ -1914,44 +1914,18 @@
       "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1782582442234-d514c974.jpg"
     },
     {
-      "id": "gazoz",
+      "id": "redbull",
       "cat": "cold",
-      "price": 135,
+      "price": 200,
       "tr": {
-        "name": "Gazoz",
+        "name": "Redbull",
         "desc": null
       },
       "en": {
-        "name": "Turkish Soda",
+        "name": "Redbull",
         "desc": null
       },
-      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1782582403994-eb086aad.jpg"
-    },
-    {
-      "id": "ice-tea",
-      "cat": "cold",
-      "price": 135,
-      "tr": {
-        "name": "Ice Tea",
-        "desc": null
-      },
-      "en": {
-        "name": "Iced Tea",
-        "desc": null
-      }
-    },
-    {
-      "id": "su",
-      "cat": "cold",
-      "price": 30,
-      "tr": {
-        "name": "Su",
-        "desc": null
-      },
-      "en": {
-        "name": "Water",
-        "desc": null
-      }
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1782582416785-ccad8171.jpg"
     },
     {
       "id": "meyve-suyu",
@@ -1967,18 +1941,17 @@
       }
     },
     {
-      "id": "redbull",
+      "id": "su",
       "cat": "cold",
-      "price": 200,
+      "price": 30,
       "tr": {
-        "name": "Redbull",
+        "name": "Su",
         "desc": null
       },
       "en": {
-        "name": "Redbull",
+        "name": "Water",
         "desc": null
-      },
-      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1782582416785-ccad8171.jpg"
+      }
     },
     {
       "id": "item-mqpilve6",
@@ -2021,15 +1994,15 @@
       }
     },
     {
-      "id": "menengic",
+      "id": "item-mqvqeug9",
       "cat": "hotcoffee",
-      "price": 160,
+      "price": 200,
       "tr": {
-        "name": "Menengiç Kahvesi",
+        "name": "Double Dibek Kahvesi ",
         "desc": null
       },
       "en": {
-        "name": "Menengiç Coffee",
+        "name": "Double Dibek Kahvesi ",
         "desc": null
       }
     },
@@ -2308,15 +2281,15 @@
       "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1780746316195-ce0ea5b9.jpg"
     },
     {
-      "id": "karamel-mac",
+      "id": "menengic",
       "cat": "hotcoffee",
-      "price": 230,
+      "price": 160,
       "tr": {
-        "name": "Karamel Macchiato",
+        "name": "Menengiç Kahvesi",
         "desc": null
       },
       "en": {
-        "name": "Caramel Macchiato",
+        "name": "Menengiç Coffee",
         "desc": null
       }
     },
@@ -2343,6 +2316,85 @@
       },
       "en": {
         "name": "Damla Sakızlı Türk kahvesi ",
+        "desc": null
+      }
+    },
+    {
+      "id": "item-mr0trs56",
+      "cat": "hotcoffee",
+      "price": 200,
+      "tr": {
+        "name": "Double Damla Sakızlı Türk Kahvesi",
+        "desc": null
+      },
+      "en": {
+        "name": "Double Damla Sakızlı Türk Kahvesi",
+        "desc": null
+      }
+    },
+    {
+      "id": "ice-white-choc",
+      "cat": "icecoffee",
+      "price": 240,
+      "tr": {
+        "name": "Ice White Mocha ",
+        "desc": null
+      },
+      "en": {
+        "name": "Ice White Chocolate",
+        "desc": null
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1780747707414-4bb56b10.jpg"
+    },
+    {
+      "id": "item-mr0u2k6q",
+      "cat": "frappe",
+      "price": 250,
+      "tr": {
+        "name": "Çilekli Frappe ",
+        "desc": null
+      },
+      "en": {
+        "name": "Çilekli Frappe ",
+        "desc": null
+      }
+    },
+    {
+      "id": "item-mr0u2wu8",
+      "cat": "frappe",
+      "price": 250,
+      "tr": {
+        "name": "Oreo Frappe ",
+        "desc": null
+      },
+      "en": {
+        "name": "Oreo Frappe ",
+        "desc": null
+      }
+    },
+    {
+      "id": "item-mr0u3cxz",
+      "cat": "frappe",
+      "price": 240,
+      "tr": {
+        "name": "Muz frappe ",
+        "desc": null
+      },
+      "en": {
+        "name": "Muz frappe ",
+        "desc": null
+      }
+    },
+    {
+      "id": "item-mr0u3rhp",
+      "cat": "frappe",
+      "price": 240,
+      "tr": {
+        "name": "Orman Meyveli Frappe ",
+        "desc": null
+      },
+      "en": {
+        "name": "Orman Meyveli Frappe ",
         "desc": null
       }
     }
