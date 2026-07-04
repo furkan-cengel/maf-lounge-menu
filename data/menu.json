@@ -709,32 +709,6 @@
       }
     },
     {
-      "id": "san-seb",
-      "cat": "desserts",
-      "price": 250,
-      "tr": {
-        "name": "Cheesecake",
-        "desc": null
-      },
-      "en": {
-        "name": "Cheesecake",
-        "desc": null
-      }
-    },
-    {
-      "id": "sutlac",
-      "cat": "desserts",
-      "price": 250,
-      "tr": {
-        "name": "Sütlaç",
-        "desc": null
-      },
-      "en": {
-        "name": "Rice Pudding",
-        "desc": null
-      }
-    },
-    {
       "id": "magnolya",
       "cat": "desserts",
       "price": 250,
@@ -757,19 +731,6 @@
       },
       "en": {
         "name": "Tiramisu",
-        "desc": null
-      }
-    },
-    {
-      "id": "crem-brule",
-      "cat": "desserts",
-      "price": 250,
-      "tr": {
-        "name": "Crème Brûlée",
-        "desc": null
-      },
-      "en": {
-        "name": "Crème Brûlée",
         "desc": null
       }
     },
