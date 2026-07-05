@@ -482,7 +482,8 @@
       "en": {
         "name": "White Cheese Gözleme",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1783267209091-204e1cb8.jpg"
     },
     {
       "id": "goz-kasar",
@@ -495,7 +496,8 @@
       "en": {
         "name": "Kaşar Gözleme",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1783267215553-82855a20.jpg"
     },
     {
       "id": "goz-sucuk",
@@ -508,7 +510,8 @@
       "en": {
         "name": "Kaşar-Sucuk Gözleme",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1783267235381-4cc0366e.jpg"
     },
     {
       "id": "burger",
