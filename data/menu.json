@@ -261,7 +261,8 @@
       "en": {
         "name": "Breakfast Plate",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1783266749245-2b51ddaa.jpg"
     },
     {
       "id": "serpme",
@@ -276,7 +277,8 @@
       "en": {
         "name": "Spread Breakfast (for 2)",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1783266755996-e8007f00.jpg"
     },
     {
       "id": "omlet",
@@ -290,7 +292,8 @@
         "name": "Omelette",
         "desc": null
       },
-      "section": "Kahvaltıya Ek Lezzetler"
+      "section": "Kahvaltıya Ek Lezzetler",
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1783266769069-f76b0b56.jpg"
     },
     {
       "id": "pey-omlet",
@@ -316,7 +319,8 @@
       "en": {
         "name": "Kaşar Omelette",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1783266774991-9254bcd4.jpg"
     },
     {
       "id": "suc-omlet",
@@ -329,7 +333,8 @@
       "en": {
         "name": "Sucuk Omelette",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1783266783083-b0aca980.jpg"
     },
     {
       "id": "sahanda",
@@ -394,7 +399,8 @@
       "en": {
         "name": "Menemen",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1783266797997-647b089c.jpg"
     },
     {
       "id": "tost-kasar",
