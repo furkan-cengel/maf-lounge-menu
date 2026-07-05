@@ -48,6 +48,7 @@
         "breakfast",
         "burgers",
         "pasta",
+        "pizzalar",
         "toasts",
         "gozleme",
         "salads",
@@ -75,6 +76,13 @@
           "en": "Pasta",
           "emoji": "🍝",
           "colorHue": 30
+        },
+        {
+          "id": "pizzalar",
+          "tr": "PİZZALAR",
+          "en": "PİZZALAR",
+          "emoji": "🍕",
+          "colorHue": 35
         },
         {
           "id": "toasts",
@@ -2393,6 +2401,45 @@
       },
       "en": {
         "name": "Triliçe",
+        "desc": null
+      }
+    },
+    {
+      "id": "item-mr7tj3dv",
+      "cat": "",
+      "price": 550,
+      "tr": {
+        "name": "NARGİLE ",
+        "desc": null
+      },
+      "en": {
+        "name": "NARGİLE",
+        "desc": null
+      }
+    },
+    {
+      "id": "item-mr7tmlx0",
+      "cat": "pizzalar",
+      "price": 350,
+      "tr": {
+        "name": "Special Pizza ",
+        "desc": null
+      },
+      "en": {
+        "name": "Special pizza ",
+        "desc": null
+      }
+    },
+    {
+      "id": "item-mr7to1x5",
+      "cat": "pizzalar",
+      "price": 300,
+      "tr": {
+        "name": "Margarita Pizza  ",
+        "desc": null
+      },
+      "en": {
+        "name": "Margarita Pizza  ",
         "desc": null
       }
     }
