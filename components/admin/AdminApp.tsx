@@ -23,6 +23,10 @@ import { SortableCategoryPill } from "./SortableCategoryPill";
 const DRAFT_KEY = "maf_admin_draft";
 const HINT_KEY = "maf_drag_hint_seen";
 
+type DeleteTarget =
+  | { type: "branch"; id: string; name: string; itemCount: number }
+  | { type: "category"; id: string; name: string; itemCount: number };
+
 const DEFAULT_VENUE: Venue = {
   name: "MAF Lounge Cafe",
   subtitle: "Coffee & Lounge",
@@ -85,6 +89,33 @@ function genId() {
   return "item-" + Date.now().toString(36);
 }
 
+function slugify(value: string) {
+  return value
+    .trim()
+    .toLocaleLowerCase("tr-TR")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/ı/g, "i")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "") || "kategori";
+}
+
+function uniqueCategoryId(data: MenuData, label: string) {
+  const used = new Set([
+    ...data.branches.map((branch) => branch.id),
+    ...data.branches.flatMap((branch) => branch.catIds),
+    ...data.branches.flatMap((branch) => branch.categories.map((category) => category.id)),
+  ]);
+  const base = slugify(label);
+  let id = base;
+  let suffix = 2;
+  while (used.has(id)) {
+    id = `${base}-${suffix}`;
+    suffix += 1;
+  }
+  return id;
+}
+
 // ─── AdminApp ────────────────────────────────────────────────────────────────
 
 export function AdminApp() {
@@ -110,6 +141,15 @@ export function AdminApp() {
   const [editValues, setEditValues] = useState({ tr_name: "", en_name: "", price: "", badge: "" });
   const [addingItem, setAddingItem] = useState(false);
   const [newItem, setNewItem] = useState({ tr_name: "", en_name: "", price: "", badge: "" });
+  const [addingBranch, setAddingBranch] = useState(false);
+  const [newBranch, setNewBranch] = useState({ tr: "", en: "", colorHue: "285" });
+  const [addingCategory, setAddingCategory] = useState(false);
+  const [newCategory, setNewCategory] = useState({
+    tr: "",
+    en: "",
+    emoji: "",
+    colorHue: "285",
+  });
 
   // Mode
   const [adminMode, setAdminMode] = useState<"menu" | "venue">("menu");
@@ -120,6 +160,7 @@ export function AdminApp() {
   const [showPublishConfirm, setShowPublishConfirm] = useState(false);
   const [publishing, setPublishing] = useState(false);
   const [dragHintSeen, setDragHintSeen] = useState(true);
+  const [deleteTarget, setDeleteTarget] = useState<DeleteTarget | null>(null);
 
   const sensors = useSensors(
     useSensor(PointerSensor, { activationConstraint: { distance: 8 } }),
@@ -187,6 +228,7 @@ export function AdminApp() {
     setActiveCategoryId(branch?.categories[0]?.id ?? "");
     setEditingId(null);
     setAddingItem(false);
+    setAddingCategory(false);
   }
 
   function selectCategory(id: string) {
@@ -355,6 +397,165 @@ export function AdminApp() {
     setData({ ...data, items: [...data.items, item] });
     setNewItem({ tr_name: "", en_name: "", price: "", badge: "" });
     setAddingItem(false);
+  }
+
+  function addBranch() {
+    const tr = newBranch.tr.trim();
+    if (!data || !tr) return;
+    const id = uniqueCategoryId(data, tr);
+    const branch: Branch = {
+      id,
+      tr,
+      en: newBranch.en.trim() || tr,
+      comingSoon: false,
+      colorHue: Number(newBranch.colorHue) || 285,
+      catIds: [id],
+      categories: [],
+    };
+    setData({ ...data, branches: [...data.branches, branch] });
+    setActiveBranchId(id);
+    setActiveCategoryId("");
+    setNewBranch({ tr: "", en: "", colorHue: "285" });
+    setAddingBranch(false);
+    setAddingCategory(false);
+    setAddingItem(false);
+    setEditingId(null);
+    showToast("Kategori eklendi ✓");
+  }
+
+  function openSubcategoryForm() {
+    setNewCategory({
+      tr: "",
+      en: "",
+      emoji: "",
+      colorHue: String(activeBranch?.colorHue ?? 285),
+    });
+    setAddingCategory(true);
+    setAddingBranch(false);
+    setAddingItem(false);
+    setEditingId(null);
+  }
+
+  function addSubcategory() {
+    const tr = newCategory.tr.trim();
+    if (!data || !activeBranch || !tr) return;
+    const id = uniqueCategoryId(data, tr);
+    const category = {
+      id,
+      tr,
+      en: newCategory.en.trim() || tr,
+      emoji: newCategory.emoji.trim() || undefined,
+      colorHue: Number(newCategory.colorHue) || activeBranch.colorHue,
+    };
+    const isFirstSubcategory = activeBranch.categories.length === 0;
+    const previousLeafIds = new Set(activeBranch.catIds);
+
+    setData({
+      ...data,
+      branches: data.branches.map((branch) =>
+        branch.id === activeBranch.id
+          ? {
+              ...branch,
+              categories: [...branch.categories, category],
+              catIds: [...(isFirstSubcategory ? [] : branch.catIds), id],
+            }
+          : branch
+      ),
+      items: isFirstSubcategory
+        ? data.items.map((item) =>
+            previousLeafIds.has(item.cat) ? { ...item, cat: id } : item
+          )
+        : data.items,
+    });
+    setActiveCategoryId(id);
+    setNewCategory({ tr: "", en: "", emoji: "", colorHue: "285" });
+    setAddingCategory(false);
+    showToast(
+      isFirstSubcategory && previousLeafIds.size > 0
+        ? "Alt kategori eklendi, mevcut ürünler taşındı ✓"
+        : "Alt kategori eklendi ✓"
+    );
+  }
+
+  function requestBranchDeletion() {
+    if (!data || !activeBranch) return;
+    const categoryIds = new Set([
+      ...activeBranch.catIds,
+      ...activeBranch.categories.map((category) => category.id),
+    ]);
+    setDeleteTarget({
+      type: "branch",
+      id: activeBranch.id,
+      name: activeBranch.tr,
+      itemCount: data.items.filter((item) => categoryIds.has(item.cat)).length,
+    });
+  }
+
+  function requestCategoryDeletion() {
+    if (!data || !activeBranch || !activeCategoryId) return;
+    const category = activeBranch.categories.find((item) => item.id === activeCategoryId);
+    if (!category) return;
+    setDeleteTarget({
+      type: "category",
+      id: category.id,
+      name: category.tr,
+      itemCount: data.items.filter((item) => item.cat === category.id).length,
+    });
+  }
+
+  function confirmDelete() {
+    if (!data || !deleteTarget) return;
+
+    if (deleteTarget.type === "branch") {
+      const branch = data.branches.find((item) => item.id === deleteTarget.id);
+      if (!branch) return;
+      const categoryIds = new Set([
+        ...branch.catIds,
+        ...branch.categories.map((category) => category.id),
+      ]);
+      const remainingBranches = data.branches.filter((item) => item.id !== branch.id);
+      const nextBranch = remainingBranches[0];
+      setData({
+        ...data,
+        branches: remainingBranches,
+        items: data.items.filter((item) => !categoryIds.has(item.cat)),
+      });
+      setActiveBranchId(nextBranch?.id ?? "");
+      setActiveCategoryId(nextBranch?.categories[0]?.id ?? "");
+      showToast("Kategori silindi ✓");
+    } else {
+      const branch = data.branches.find((item) =>
+        item.categories.some((category) => category.id === deleteTarget.id)
+      );
+      if (!branch) return;
+      const remainingCategories = branch.categories.filter(
+        (category) => category.id !== deleteTarget.id
+      );
+      setData({
+        ...data,
+        branches: data.branches.map((item) =>
+          item.id === branch.id
+            ? {
+                ...item,
+                categories: remainingCategories,
+                catIds:
+                  remainingCategories.length > 0
+                    ? remainingCategories.map((category) => category.id)
+                    : [item.id],
+              }
+            : item
+        ),
+        items: data.items.filter((item) => item.cat !== deleteTarget.id),
+      });
+      setActiveCategoryId(remainingCategories[0]?.id ?? "");
+      showToast("Alt kategori silindi ✓");
+    }
+
+    setDeleteTarget(null);
+    setAddingBranch(false);
+    setAddingCategory(false);
+    setAddingItem(false);
+    setEditingId(null);
   }
 
   // ── Drag end handlers ────────────────────────────────────────────────────
@@ -685,33 +886,206 @@ export function AdminApp() {
               {b.tr}
             </button>
           ))}
+          <button
+            onClick={() => {
+              setAddingBranch(!addingBranch);
+              setAddingCategory(false);
+              setAddingItem(false);
+              setEditingId(null);
+            }}
+            style={{
+              ...actionBtnStyle("var(--surface)", "var(--accent)"),
+              flexShrink: 0,
+              border: "1px dashed var(--border)",
+            }}
+          >
+            {addingBranch ? "✕ İptal" : "+ Kategori"}
+          </button>
         </div>
 
-        {/* Category pills (sortable) */}
-        {hasCatNav && activeBranch && (
-          <div style={{ padding: "10px 16px 0" }}>
-            <DndContext
-              sensors={sensors}
-              collisionDetection={closestCenter}
-              onDragEnd={onCatDragEnd}
-            >
-              <SortableContext
-                items={activeBranch.categories.map((c) => c.id)}
-                strategy={horizontalListSortingStrategy}
+        {activeBranch && (
+          <div
+            style={{
+              margin: "10px 16px 0",
+              padding: "8px 10px",
+              borderRadius: 10,
+              border: "1px solid var(--border)",
+              background: "var(--surface)",
+              display: "flex",
+              alignItems: "center",
+              gap: 10,
+            }}
+          >
+            <div style={{ flex: 1, minWidth: 0 }}>
+              <div
+                style={{
+                  color: "var(--sub)",
+                  fontSize: 9,
+                  letterSpacing: "0.12em",
+                  textTransform: "uppercase",
+                }}
               >
-                <div style={{ display: "flex", gap: 8, overflowX: "auto" }}>
-                  {activeBranch.categories.map((cat) => (
-                    <SortableCategoryPill
-                      key={cat.id}
-                      category={cat}
-                      isActive={cat.id === activeCategoryId}
-                      onClick={() => selectCategory(cat.id)}
-                    />
-                  ))}
-                </div>
-              </SortableContext>
-            </DndContext>
+                Seçili kategori
+              </div>
+              <div
+                style={{
+                  color: "var(--text)",
+                  fontSize: 13,
+                  fontWeight: 600,
+                  overflow: "hidden",
+                  textOverflow: "ellipsis",
+                  whiteSpace: "nowrap",
+                }}
+              >
+                {activeBranch.tr}
+              </div>
+            </div>
+            <button
+              onClick={requestBranchDeletion}
+              title={`${activeBranch.tr} kategorisini sil`}
+              style={{
+                ...actionBtnStyle("oklch(20% 0.08 25 / 0.8)", "oklch(78% 0.16 25)"),
+                flexShrink: 0,
+                border: "1px solid oklch(55% 0.18 25 / 0.35)",
+              }}
+            >
+              🗑 Kategoriyi Sil
+            </button>
           </div>
+        )}
+
+        {addingBranch && (
+          <EditorForm title="Yeni Kategori">
+            <div style={{ display: "flex", gap: 8 }}>
+              <NewField
+                label="TR Adı *"
+                value={newBranch.tr}
+                onChange={(v) => setNewBranch((p) => ({ ...p, tr: v }))}
+                style={{ flex: 1 }}
+              />
+              <NewField
+                label="EN Adı"
+                value={newBranch.en}
+                onChange={(v) => setNewBranch((p) => ({ ...p, en: v }))}
+                style={{ flex: 1 }}
+              />
+            </div>
+            <NewField
+              label="Renk tonu (0–360)"
+              value={newBranch.colorHue}
+              onChange={(v) => setNewBranch((p) => ({ ...p, colorHue: v }))}
+              type="number"
+            />
+            <FormActions
+              onCancel={() => setAddingBranch(false)}
+              onSubmit={addBranch}
+              submitDisabled={!newBranch.tr.trim()}
+            />
+          </EditorForm>
+        )}
+
+        {/* Category pills (sortable) */}
+        {activeBranch && (
+          <div style={{ padding: "10px 16px 0" }}>
+            <div style={{ display: "flex", gap: 8, alignItems: "center" }}>
+              {hasCatNav && (
+                <DndContext
+                  sensors={sensors}
+                  collisionDetection={closestCenter}
+                  onDragEnd={onCatDragEnd}
+                >
+                  <SortableContext
+                    items={activeBranch.categories.map((c) => c.id)}
+                    strategy={horizontalListSortingStrategy}
+                  >
+                    <div style={{ display: "flex", gap: 8, overflowX: "auto", flex: 1 }}>
+                      {activeBranch.categories.map((cat) => (
+                        <SortableCategoryPill
+                          key={cat.id}
+                          category={cat}
+                          isActive={cat.id === activeCategoryId}
+                          onClick={() => selectCategory(cat.id)}
+                        />
+                      ))}
+                    </div>
+                  </SortableContext>
+                </DndContext>
+              )}
+              {!hasCatNav && (
+                <div style={{ flex: 1, color: "var(--sub)", fontSize: 11 }}>
+                  Bu kategoride henüz alt kategori yok.
+                </div>
+              )}
+              <button
+                onClick={openSubcategoryForm}
+                style={{
+                  ...actionBtnStyle("var(--surface)", "var(--accent)"),
+                  flexShrink: 0,
+                  border: "1px dashed var(--border)",
+                }}
+              >
+                + Alt Kategori
+              </button>
+              {hasCatNav && activeCategoryId && (
+                <button
+                  onClick={requestCategoryDeletion}
+                  title="Seçili alt kategoriyi sil"
+                  style={{
+                    ...actionBtnStyle("oklch(20% 0.08 25 / 0.8)", "oklch(78% 0.16 25)"),
+                    flexShrink: 0,
+                    border: "1px solid oklch(55% 0.18 25 / 0.35)",
+                  }}
+                >
+                  🗑
+                </button>
+              )}
+            </div>
+          </div>
+        )}
+
+        {addingCategory && activeBranch && (
+          <EditorForm title={`${activeBranch.tr} / Yeni Alt Kategori`}>
+            <div style={{ display: "flex", gap: 8 }}>
+              <NewField
+                label="TR Adı *"
+                value={newCategory.tr}
+                onChange={(v) => setNewCategory((p) => ({ ...p, tr: v }))}
+                style={{ flex: 1 }}
+              />
+              <NewField
+                label="EN Adı"
+                value={newCategory.en}
+                onChange={(v) => setNewCategory((p) => ({ ...p, en: v }))}
+                style={{ flex: 1 }}
+              />
+            </div>
+            <div style={{ display: "flex", gap: 8 }}>
+              <NewField
+                label="Emoji"
+                value={newCategory.emoji}
+                onChange={(v) => setNewCategory((p) => ({ ...p, emoji: v }))}
+                placeholder="örn: ☕"
+                style={{ flex: 1 }}
+              />
+              <NewField
+                label="Renk tonu (0–360)"
+                value={newCategory.colorHue}
+                onChange={(v) => setNewCategory((p) => ({ ...p, colorHue: v }))}
+                type="number"
+                style={{ flex: 1 }}
+              />
+            </div>
+            {activeBranch.categories.length === 0 && activeBranch.catIds.length > 0 && (
+              <div style={{ color: "var(--sub)", fontSize: 11, lineHeight: 1.5 }}>
+                İlk alt kategori olduğu için mevcut ürünler bu alt kategoriye taşınacak.
+              </div>
+            )}
+            <FormActions
+              onCancel={() => setAddingCategory(false)}
+              onSubmit={addSubcategory}
+              submitDisabled={!newCategory.tr.trim()}
+            />
+          </EditorForm>
         )}
 
         {/* Items */}
@@ -958,6 +1332,83 @@ export function AdminApp() {
         </div>
       )}
 
+      {/* Category delete confirm dialog */}
+      {deleteTarget && (
+        <div
+          style={{
+            position: "fixed",
+            inset: 0,
+            zIndex: 50,
+            background: "rgba(0,0,0,0.65)",
+            backdropFilter: "blur(4px)",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            padding: 20,
+          }}
+          onClick={() => setDeleteTarget(null)}
+        >
+          <div
+            onClick={(e) => e.stopPropagation()}
+            style={{
+              background: "oklch(10% 0.04 295)",
+              border: "1px solid var(--border)",
+              borderRadius: 20,
+              padding: "28px 24px",
+              width: "100%",
+              maxWidth: 380,
+              display: "flex",
+              flexDirection: "column",
+              gap: 16,
+            }}
+          >
+            <div
+              style={{
+                fontSize: 18,
+                fontWeight: 600,
+                color: "var(--text)",
+                fontFamily: "var(--font-cormorant), serif",
+                textAlign: "center",
+              }}
+            >
+              “{deleteTarget.name}” silinsin mi?
+            </div>
+            <div
+              style={{
+                fontSize: 13,
+                color: "var(--sub)",
+                textAlign: "center",
+                lineHeight: 1.55,
+              }}
+            >
+              {deleteTarget.type === "branch"
+                ? "Kategori, içindeki tüm alt kategoriler"
+                : "Alt kategori"}
+              {deleteTarget.itemCount > 0
+                ? ` ve ${deleteTarget.itemCount} ürün kalıcı olarak silinecek.`
+                : " kalıcı olarak silinecek."}
+            </div>
+            <div style={{ display: "flex", gap: 10 }}>
+              <button
+                onClick={() => setDeleteTarget(null)}
+                style={{ ...actionBtnStyle("var(--surface)", "var(--text)"), flex: 1 }}
+              >
+                Vazgeç
+              </button>
+              <button
+                onClick={confirmDelete}
+                style={{
+                  ...actionBtnStyle("oklch(55% 0.2 25)", "#fff"),
+                  flex: 1,
+                }}
+              >
+                Kalıcı Olarak Sil
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* Toast */}
       {toast && (
         <div
@@ -1054,6 +1505,70 @@ function actionBtnStyle(bg: string, color: string): React.CSSProperties {
     fontFamily: "var(--font-inter), system-ui, sans-serif",
     whiteSpace: "nowrap",
   };
+}
+
+function EditorForm({
+  title,
+  children,
+}: {
+  title: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <div
+      style={{
+        background: "var(--surface)",
+        border: "1px solid var(--border)",
+        borderRadius: 12,
+        padding: 14,
+        margin: "10px 16px 0",
+        display: "flex",
+        flexDirection: "column",
+        gap: 8,
+      }}
+    >
+      <div
+        style={{
+          fontSize: 11,
+          color: "var(--accent)",
+          letterSpacing: "0.18em",
+          textTransform: "uppercase",
+          fontWeight: 600,
+        }}
+      >
+        {title}
+      </div>
+      {children}
+    </div>
+  );
+}
+
+function FormActions({
+  onCancel,
+  onSubmit,
+  submitDisabled,
+}: {
+  onCancel: () => void;
+  onSubmit: () => void;
+  submitDisabled: boolean;
+}) {
+  return (
+    <div style={{ display: "flex", gap: 8, justifyContent: "flex-end" }}>
+      <button onClick={onCancel} style={actionBtnStyle("transparent", "var(--sub)")}>
+        İptal
+      </button>
+      <button
+        onClick={onSubmit}
+        disabled={submitDisabled}
+        style={{
+          ...actionBtnStyle("var(--accent)", "oklch(10% 0.04 295)"),
+          opacity: submitDisabled ? 0.4 : 1,
+        }}
+      >
+        Ekle
+      </button>
+    </div>
+  );
 }
 
 function VenueSectionHeading({ children }: { children: React.ReactNode }) {
