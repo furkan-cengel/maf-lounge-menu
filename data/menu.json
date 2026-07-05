@@ -1314,7 +1314,8 @@
       "en": {
         "name": "Caramel Frappe",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1783262156981-99351f09.jpg"
     },
     {
       "id": "cik-frappe",
@@ -1327,7 +1328,8 @@
       "en": {
         "name": "Chocolate Frappe",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1783262166070-cf1427ad.jpg"
     },
     {
       "id": "van-frappe",
@@ -1340,7 +1342,8 @@
       "en": {
         "name": "Vanilla Frappe",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1783262175850-d922f5dc.jpg"
     },
     {
       "id": "shake-cik",
@@ -2285,7 +2288,8 @@
       "en": {
         "name": "Çilekli Frappe ",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1783262303338-0fa7c5c3.jpg"
     },
     {
       "id": "item-mr0u2wu8",
@@ -2298,7 +2302,8 @@
       "en": {
         "name": "Oreo Frappe ",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1783262284797-6e8fcdd4.jpg"
     },
     {
       "id": "item-mr0u3cxz",
@@ -2311,7 +2316,8 @@
       "en": {
         "name": "Muz frappe ",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1783262209774-0896add5.jpg"
     },
     {
       "id": "item-mr0u3rhp",
@@ -2324,7 +2330,8 @@
       "en": {
         "name": "Orman Meyveli Frappe ",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1783262216541-51d57cb0.jpg"
     },
     {
       "id": "item-mr0uaamu",
