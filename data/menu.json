@@ -306,7 +306,8 @@
       "en": {
         "name": "Cheese Omelette",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1783270716636-18e2e55a.jpg"
     },
     {
       "id": "kas-omlet",
@@ -2444,7 +2445,8 @@
       "en": {
         "name": "Special pizza ",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1783270752181-5024b624.jpg"
     },
     {
       "id": "item-mr7to1x5",
@@ -2457,7 +2459,8 @@
       "en": {
         "name": "Margarita Pizza  ",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1783270761846-58289352.jpg"
     }
   ]
 }
