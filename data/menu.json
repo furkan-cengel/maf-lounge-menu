@@ -241,11 +241,13 @@
     },
     {
       "id": "nargile",
-      "tr": "Nargile",
-      "en": "Hookah",
-      "comingSoon": true,
-      "colorHue": 295,
-      "catIds": [],
+      "tr": "NARGİLE",
+      "en": "NARGİLE",
+      "comingSoon": false,
+      "colorHue": 285,
+      "catIds": [
+        "nargile"
+      ],
       "categories": []
     }
   ],
@@ -2461,6 +2463,19 @@
         "desc": null
       },
       "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1783270761846-58289352.jpg"
+    },
+    {
+      "id": "item-mrgpcah3",
+      "cat": "nargile",
+      "price": 550,
+      "tr": {
+        "name": "Nargile ",
+        "desc": null
+      },
+      "en": {
+        "name": "Nargile ",
+        "desc": null
+      }
     }
   ]
 }
