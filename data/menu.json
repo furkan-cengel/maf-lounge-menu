@@ -527,7 +527,8 @@
       "en": {
         "name": "Hamburger",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1783867881257-b905eeca.jpg"
     },
     {
       "id": "cheeseburger",
@@ -540,7 +541,8 @@
       "en": {
         "name": "Cheeseburger",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1783867887517-faf3fc1d.jpg"
     },
     {
       "id": "double-burger",
@@ -553,7 +555,8 @@
       "en": {
         "name": "Double Hamburger",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1783867896691-fd4c5050.jpg"
     },
     {
       "id": "item-mqvpfbbg",
@@ -566,7 +569,8 @@
       "en": {
         "name": "Double Cheesburger ",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1783867903948-f2ed0746.jpg"
     },
     {
       "id": "chicken-burger",
@@ -579,7 +583,8 @@
       "en": {
         "name": "Chicken Burger",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1783867933223-79ac6173.jpg"
     },
     {
       "id": "double-chicken",
@@ -592,7 +597,8 @@
       "en": {
         "name": "Double Chicken Burger",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1783867943324-6f84785b.jpg"
     },
     {
       "id": "pesto",
