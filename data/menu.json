@@ -249,6 +249,17 @@
         "nargile"
       ],
       "categories": []
+    },
+    {
+      "id": "dondurma",
+      "tr": "DONDURMA",
+      "en": "ICE CREAM",
+      "comingSoon": false,
+      "colorHue": 285,
+      "catIds": [
+        "dondurma"
+      ],
+      "categories": []
     }
   ],
   "items": [
@@ -2481,6 +2492,110 @@
       },
       "en": {
         "name": "Nargile ",
+        "desc": null
+      }
+    },
+    {
+      "id": "item-mrm9tbas",
+      "cat": "dondurma",
+      "price": 60,
+      "tr": {
+        "name": "Vanilya ",
+        "desc": null
+      },
+      "en": {
+        "name": "Vanilya ",
+        "desc": null
+      }
+    },
+    {
+      "id": "item-mrm9tl90",
+      "cat": "dondurma",
+      "price": 60,
+      "tr": {
+        "name": "Çilek ",
+        "desc": null
+      },
+      "en": {
+        "name": "Çilek ",
+        "desc": null
+      }
+    },
+    {
+      "id": "item-mrm9trm7",
+      "cat": "dondurma",
+      "price": 60,
+      "tr": {
+        "name": "Limon ",
+        "desc": null
+      },
+      "en": {
+        "name": "Limon ",
+        "desc": null
+      }
+    },
+    {
+      "id": "item-mrm9u615",
+      "cat": "dondurma",
+      "price": 60,
+      "tr": {
+        "name": "Karadut ",
+        "desc": null
+      },
+      "en": {
+        "name": "Karadut ",
+        "desc": null
+      }
+    },
+    {
+      "id": "item-mrm9uci9",
+      "cat": "dondurma",
+      "price": 60,
+      "tr": {
+        "name": "Çikolata ",
+        "desc": null
+      },
+      "en": {
+        "name": "Çikolata ",
+        "desc": null
+      }
+    },
+    {
+      "id": "item-mrm9uukb",
+      "cat": "dondurma",
+      "price": 60,
+      "tr": {
+        "name": "Big Babol",
+        "desc": null
+      },
+      "en": {
+        "name": "Big Babol",
+        "desc": null
+      }
+    },
+    {
+      "id": "item-mrm9v3x9",
+      "cat": "dondurma",
+      "price": 60,
+      "tr": {
+        "name": "Karamel ",
+        "desc": null
+      },
+      "en": {
+        "name": "Karamel ",
+        "desc": null
+      }
+    },
+    {
+      "id": "item-mrm9watq",
+      "cat": "dondurma",
+      "price": 60,
+      "tr": {
+        "name": "Kavun",
+        "desc": null
+      },
+      "en": {
+        "name": "Kavun",
         "desc": null
       }
     }
