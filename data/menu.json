@@ -2598,6 +2598,20 @@
         "name": "Kavun",
         "desc": null
       }
+    },
+    {
+      "id": "item-mrti0inx",
+      "cat": "specials",
+      "price": 270,
+      "tr": {
+        "name": "MANİFEST",
+        "desc": null
+      },
+      "en": {
+        "name": "MANİFEST",
+        "desc": null
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1784568516936-02c571a2.jpg"
     }
   ]
 }
