@@ -750,37 +750,11 @@
       "cat": "desserts",
       "price": 250,
       "tr": {
-        "name": "Magnolya",
+        "name": "Çilekli Magnolia",
         "desc": null
       },
       "en": {
         "name": "Magnolia",
-        "desc": null
-      }
-    },
-    {
-      "id": "tiramisu",
-      "cat": "desserts",
-      "price": 250,
-      "tr": {
-        "name": "Tiramisu",
-        "desc": null
-      },
-      "en": {
-        "name": "Tiramisu",
-        "desc": null
-      }
-    },
-    {
-      "id": "cilek-mag",
-      "cat": "desserts",
-      "price": 250,
-      "tr": {
-        "name": "Çilek Magnolia",
-        "desc": null
-      },
-      "en": {
-        "name": "Strawberry Magnolia",
         "desc": null
       }
     },
@@ -794,6 +768,19 @@
       },
       "en": {
         "name": "Oreo Magnolia",
+        "desc": null
+      }
+    },
+    {
+      "id": "tiramisu",
+      "cat": "desserts",
+      "price": 250,
+      "tr": {
+        "name": "Tiramisu",
+        "desc": null
+      },
+      "en": {
+        "name": "Tiramisu",
         "desc": null
       }
     },
@@ -1953,20 +1940,6 @@
       }
     },
     {
-      "id": "mozaik",
-      "cat": "desserts",
-      "price": 250,
-      "hue": 320,
-      "tr": {
-        "name": "Mozaik",
-        "desc": null
-      },
-      "en": {
-        "name": "Mozaik",
-        "desc": null
-      }
-    },
-    {
       "id": "item-mqvqeug9",
       "cat": "hotcoffee",
       "price": 200,
@@ -2403,45 +2376,6 @@
       }
     },
     {
-      "id": "item-mr7tetzs",
-      "cat": "desserts",
-      "price": 150,
-      "tr": {
-        "name": "Prenses Tatlısı ",
-        "desc": null
-      },
-      "en": {
-        "name": "Prenses tatlısı ",
-        "desc": null
-      }
-    },
-    {
-      "id": "item-mr7tgt4h",
-      "cat": "desserts",
-      "price": 150,
-      "tr": {
-        "name": "Prens Tatlısı ",
-        "desc": null
-      },
-      "en": {
-        "name": "Prens Tatlısı ",
-        "desc": null
-      }
-    },
-    {
-      "id": "item-mr7ti89j",
-      "cat": "desserts",
-      "price": 150,
-      "tr": {
-        "name": "Triliçe",
-        "desc": null
-      },
-      "en": {
-        "name": "Triliçe",
-        "desc": null
-      }
-    },
-    {
       "id": "item-mr7tj3dv",
       "cat": "",
       "price": 550,
@@ -2612,6 +2546,58 @@
         "desc": null
       },
       "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1784568516936-02c571a2.jpg"
+    },
+    {
+      "id": "item-ms94cfr4",
+      "cat": "desserts",
+      "price": 250,
+      "tr": {
+        "name": "Fıstık Rüyası",
+        "desc": null
+      },
+      "en": {
+        "name": "Fıstık Rüyası",
+        "desc": null
+      }
+    },
+    {
+      "id": "item-ms94cmjo",
+      "cat": "desserts",
+      "price": 250,
+      "tr": {
+        "name": "Tahinli muhallebi ",
+        "desc": null
+      },
+      "en": {
+        "name": "Tahinli muhallebi ",
+        "desc": null
+      }
+    },
+    {
+      "id": "item-ms94cwy1",
+      "cat": "desserts",
+      "price": 250,
+      "tr": {
+        "name": "Orman meyveli muhallebi ",
+        "desc": null
+      },
+      "en": {
+        "name": "Orman meyveli muhallebi ",
+        "desc": null
+      }
+    },
+    {
+      "id": "item-ms94d8av",
+      "cat": "desserts",
+      "price": 250,
+      "tr": {
+        "name": "Kadayıf Cup ",
+        "desc": null
+      },
+      "en": {
+        "name": "Kadayıf Cup ",
+        "desc": null
+      }
     }
   ]
 }
