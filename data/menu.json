@@ -756,7 +756,8 @@
       "en": {
         "name": "Magnolia",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1785515354439-6e7be91d.jpg"
     },
     {
       "id": "oreo-mag",
@@ -769,7 +770,22 @@
       "en": {
         "name": "Oreo Magnolia",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1785515364389-8a20257e.jpg"
+    },
+    {
+      "id": "item-ms94cfr4",
+      "cat": "desserts",
+      "price": 300,
+      "tr": {
+        "name": "Fıstık Rüyası",
+        "desc": null
+      },
+      "en": {
+        "name": "Fıstık Rüyası",
+        "desc": null
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1785515400075-6a8889e8.jpg"
     },
     {
       "id": "tiramisu",
@@ -782,33 +798,22 @@
       "en": {
         "name": "Tiramisu",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1785515392832-4c4160e2.jpg"
     },
     {
       "id": "latte-cup",
       "cat": "desserts",
       "price": 250,
       "tr": {
-        "name": "Latte Cup",
+        "name": "Maf Latte Cup",
         "desc": null
       },
       "en": {
         "name": "Latte Cup",
         "desc": null
-      }
-    },
-    {
-      "id": "spagull",
-      "cat": "desserts",
-      "price": 250,
-      "tr": {
-        "name": "Sponfull",
-        "desc": null
       },
-      "en": {
-        "name": "Sponfull",
-        "desc": null
-      }
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1785515382735-4c0deea5.jpg"
     },
     {
       "id": "espresso",
@@ -2548,15 +2553,15 @@
       "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1784568516936-02c571a2.jpg"
     },
     {
-      "id": "item-ms94cfr4",
+      "id": "spagull",
       "cat": "desserts",
-      "price": 300,
+      "price": 250,
       "tr": {
-        "name": "Fıstık Rüyası",
+        "name": "Sponfull",
         "desc": null
       },
       "en": {
-        "name": "Fıstık Rüyası",
+        "name": "Sponfull",
         "desc": null
       }
     },
@@ -2571,7 +2576,8 @@
       "en": {
         "name": "Tahinli muhallebi ",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1785515415603-d7d21435.jpg"
     },
     {
       "id": "item-ms94cwy1",
@@ -2584,7 +2590,8 @@
       "en": {
         "name": "Orman meyveli muhallebi ",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1785515425710-55b659f7.jpg"
     },
     {
       "id": "item-ms94d8av",
@@ -2597,7 +2604,8 @@
       "en": {
         "name": "Kadayıf Cup ",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1785515435595-ecf067d7.jpg"
     },
     {
       "id": "item-ms95a8hv",
