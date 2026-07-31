@@ -2417,15 +2417,15 @@
       "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1783270761846-58289352.jpg"
     },
     {
-      "id": "item-mrgpcah3",
+      "id": "item-ms95aqe5",
       "cat": "nargile",
-      "price": 550,
+      "price": 700,
       "tr": {
-        "name": "Nargile ",
+        "name": "MAF BOSS ",
         "desc": null
       },
       "en": {
-        "name": "Nargile ",
+        "name": "MAF BOSS ",
         "desc": null
       }
     },
@@ -2550,7 +2550,7 @@
     {
       "id": "item-ms94cfr4",
       "cat": "desserts",
-      "price": 250,
+      "price": 300,
       "tr": {
         "name": "Fıstık Rüyası",
         "desc": null
@@ -2596,6 +2596,45 @@
       },
       "en": {
         "name": "Kadayıf Cup ",
+        "desc": null
+      }
+    },
+    {
+      "id": "item-ms95a8hv",
+      "cat": "nargile",
+      "price": 700,
+      "tr": {
+        "name": "MAF RİCH ",
+        "desc": null
+      },
+      "en": {
+        "name": "MAF RİCH ",
+        "desc": null
+      }
+    },
+    {
+      "id": "item-ms95b9hx",
+      "cat": "nargile",
+      "price": 700,
+      "tr": {
+        "name": "MAF ROWDY ",
+        "desc": null
+      },
+      "en": {
+        "name": "MAF ROWDY ",
+        "desc": null
+      }
+    },
+    {
+      "id": "item-mrgpcah3",
+      "cat": "nargile",
+      "price": 550,
+      "tr": {
+        "name": "Nargile ",
+        "desc": null
+      },
+      "en": {
+        "name": "Nargile ",
         "desc": null
       }
     },
@@ -2934,45 +2973,6 @@
       },
       "en": {
         "name": "Kola Limon ",
-        "desc": null
-      }
-    },
-    {
-      "id": "item-ms95a8hv",
-      "cat": "nargile",
-      "price": 700,
-      "tr": {
-        "name": "MAF RİCH ",
-        "desc": null
-      },
-      "en": {
-        "name": "MAF RİCH ",
-        "desc": null
-      }
-    },
-    {
-      "id": "item-ms95aqe5",
-      "cat": "nargile",
-      "price": 700,
-      "tr": {
-        "name": "MAF BOSS ",
-        "desc": null
-      },
-      "en": {
-        "name": "MAF BOSS ",
-        "desc": null
-      }
-    },
-    {
-      "id": "item-ms95b9hx",
-      "cat": "nargile",
-      "price": 700,
-      "tr": {
-        "name": "MAF ROWDY ",
-        "desc": null
-      },
-      "en": {
-        "name": "MAF ROWDY ",
         "desc": null
       }
     }
