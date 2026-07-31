@@ -813,7 +813,7 @@
         "name": "Latte Cup",
         "desc": null
       },
-      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1785515382735-4c0deea5.jpg"
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1785516060071-f3f30470.jpg"
     },
     {
       "id": "espresso",
@@ -2563,7 +2563,8 @@
       "en": {
         "name": "Sponfull",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1785516071599-1e64904e.jpg"
     },
     {
       "id": "item-ms94cmjo",
