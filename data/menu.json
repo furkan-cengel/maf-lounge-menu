@@ -2635,19 +2635,6 @@
       }
     },
     {
-      "id": "item-mrgpcah3",
-      "cat": "nargile",
-      "price": 550,
-      "tr": {
-        "name": "Nargile ",
-        "desc": null
-      },
-      "en": {
-        "name": "Nargile ",
-        "desc": null
-      }
-    },
-    {
       "id": "item-ms94mno1",
       "cat": "nargile",
       "price": 550,
@@ -2839,32 +2826,6 @@
       },
       "en": {
         "name": "Bisküvi ",
-        "desc": null
-      }
-    },
-    {
-      "id": "item-ms94xnyj",
-      "cat": "nargile",
-      "price": 550,
-      "tr": {
-        "name": "Narkoz",
-        "desc": null
-      },
-      "en": {
-        "name": "Narkoz",
-        "desc": null
-      }
-    },
-    {
-      "id": "item-ms94xxtn",
-      "cat": "nargile",
-      "price": 550,
-      "tr": {
-        "name": "Panzehir ",
-        "desc": null
-      },
-      "en": {
-        "name": "Panzehir ",
         "desc": null
       }
     },
