@@ -2895,19 +2895,6 @@
       }
     },
     {
-      "id": "item-ms95420x",
-      "cat": "nargile",
-      "price": 550,
-      "tr": {
-        "name": "Berry Lime ",
-        "desc": null
-      },
-      "en": {
-        "name": "Berry Lime ",
-        "desc": null
-      }
-    },
-    {
       "id": "item-ms955u6o",
       "cat": "nargile",
       "price": 550,
@@ -2917,19 +2904,6 @@
       },
       "en": {
         "name": "Damla Sakız ",
-        "desc": null
-      }
-    },
-    {
-      "id": "item-ms956blq",
-      "cat": "nargile",
-      "price": 550,
-      "tr": {
-        "name": "Lady Finger ",
-        "desc": null
-      },
-      "en": {
-        "name": "Lady Finger ",
         "desc": null
       }
     },
