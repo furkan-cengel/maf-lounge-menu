@@ -130,7 +130,6 @@
       "catIds": [
         "cocktail",
         "matcha",
-        "icecoffee",
         "hotcoffee",
         "hotdrinks",
         "tea",
@@ -139,7 +138,8 @@
         "smoothie",
         "frozen",
         "lemonade",
-        "cold"
+        "cold",
+        "icecoffee"
       ],
       "categories": [
         {
@@ -155,13 +155,6 @@
           "en": "Matcha",
           "emoji": "🍵",
           "colorHue": 140
-        },
-        {
-          "id": "icecoffee",
-          "tr": "Soğuk Kahveler",
-          "en": "Cold Coffee",
-          "emoji": "🧊",
-          "colorHue": 200
         },
         {
           "id": "hotcoffee",
@@ -224,6 +217,13 @@
           "tr": "Soğuk İçecekler",
           "en": "Cold Drinks",
           "emoji": "🥤",
+          "colorHue": 200
+        },
+        {
+          "id": "icecoffee",
+          "tr": "Soğuk Kahveler",
+          "en": "Cold Coffee",
+          "emoji": "🧊",
           "colorHue": 200
         }
       ]
@@ -1249,7 +1249,7 @@
     {
       "id": "ihlamur",
       "cat": "tea",
-      "price": 180,
+      "price": 210,
       "tr": {
         "name": "Ihlamur",
         "desc": null
