@@ -2179,19 +2179,6 @@
       }
     },
     {
-      "id": "item-mq4a1t0f",
-      "cat": "specials",
-      "price": 200,
-      "tr": {
-        "name": "BUBLEE TEA ",
-        "desc": null
-      },
-      "en": {
-        "name": "BUBLEE TEA ",
-        "desc": null
-      }
-    },
-    {
       "id": "kumru",
       "cat": "burgers",
       "price": 350,
@@ -2930,6 +2917,19 @@
       },
       "en": {
         "name": "MAFFLE ",
+        "desc": null
+      }
+    },
+    {
+      "id": "item-muzujfv2",
+      "cat": "specials",
+      "price": 220,
+      "tr": {
+        "name": "BALLI Chai Tea Latte ",
+        "desc": null
+      },
+      "en": {
+        "name": "BALLI Chai Tea Latte ",
         "desc": null
       }
     }
