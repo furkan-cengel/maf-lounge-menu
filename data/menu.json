@@ -623,7 +623,7 @@
         "name": "Pesto Pasta",
         "desc": null
       },
-      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1782492396730-fee4dc87.jpg"
+      "image": null
     },
     {
       "id": "napoliten",
@@ -637,7 +637,7 @@
         "name": "Napolitan Pasta",
         "desc": null
       },
-      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1782493132215-78d9c89b.jpg"
+      "image": null
     },
     {
       "id": "kori",
@@ -651,7 +651,7 @@
         "name": "Curry Pasta",
         "desc": null
       },
-      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1782492407869-d4a32650.jpg"
+      "image": null
     },
     {
       "id": "kremali",
@@ -665,7 +665,7 @@
         "name": "Creamy Mushroom",
         "desc": null
       },
-      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1782492422809-4a467034.jpg"
+      "image": null
     },
     {
       "id": "sosis-tava",
@@ -1181,7 +1181,7 @@
     {
       "id": "sicak-cik",
       "cat": "hotdrinks",
-      "price": 190,
+      "price": 210,
       "tr": {
         "name": "Sıcak Çikolata",
         "desc": null
@@ -2381,23 +2381,9 @@
       }
     },
     {
-      "id": "item-mr7tmlx0",
-      "cat": "pizzalar",
-      "price": 350,
-      "tr": {
-        "name": "Special Pizza ",
-        "desc": null
-      },
-      "en": {
-        "name": "Special pizza ",
-        "desc": null
-      },
-      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1783270752181-5024b624.jpg"
-    },
-    {
       "id": "item-mr7to1x5",
       "cat": "pizzalar",
-      "price": 300,
+      "price": 350,
       "tr": {
         "name": "Margarita Pizza  ",
         "desc": null
@@ -2407,6 +2393,19 @@
         "desc": null
       },
       "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1783270761846-58289352.jpg"
+    },
+    {
+      "id": "item-mwg3zqdh",
+      "cat": "pizzalar",
+      "price": 600,
+      "tr": {
+        "name": "KAVURMA KAŞAR PİZZA",
+        "desc": null
+      },
+      "en": {
+        "name": "KAVURMA KAŞAR PİZZA",
+        "desc": null
+      }
     },
     {
       "id": "item-ms95aqe5",
@@ -2932,6 +2931,20 @@
         "name": "BALLI Chai Tea Latte ",
         "desc": null
       }
+    },
+    {
+      "id": "item-mr7tmlx0",
+      "cat": "pizzalar",
+      "price": 400,
+      "tr": {
+        "name": "Special Pizza ",
+        "desc": null
+      },
+      "en": {
+        "name": "Special pizza ",
+        "desc": null
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1783270752181-5024b624.jpg"
     }
   ]
 }
