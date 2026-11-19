@@ -2994,7 +2994,8 @@
         "name": "ACILI BURGER",
         "desc": null
       },
-      "badge": "New"
+      "badge": "New",
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1795103144594-f8280525.jpg"
     },
     {
       "id": "item-mwnog0g6",
@@ -3008,7 +3009,8 @@
         "name": "DOUBLE MAF BURGER",
         "desc": null
       },
-      "badge": "New"
+      "badge": "New",
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1795103289723-2a635268.jpg"
     },
     {
       "id": "item-mwnogogq",
