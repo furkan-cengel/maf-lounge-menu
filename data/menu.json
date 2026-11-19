@@ -34,9 +34,17 @@
       "comingSoon": false,
       "colorHue": 285,
       "catIds": [
-        "specials"
+        "new-kampanyali"
       ],
-      "categories": []
+      "categories": [
+        {
+          "id": "new-kampanyali",
+          "tr": "New&Kampanyalı",
+          "en": "New&Kampanyalı",
+          "emoji": "🫟",
+          "colorHue": 285
+        }
+      ]
     },
     {
       "id": "yiyecekler",
@@ -2851,7 +2859,7 @@
     },
     {
       "id": "item-mwnl3x23",
-      "cat": "specials",
+      "cat": "new-kampanyali",
       "price": 450,
       "tr": {
         "name": "ET WRAP DÜRÜM",
@@ -2880,7 +2888,7 @@
     },
     {
       "id": "item-mwnla6wy",
-      "cat": "specials",
+      "cat": "new-kampanyali",
       "price": 390,
       "tr": {
         "name": "TAVUK WRAP",
@@ -2895,7 +2903,7 @@
     },
     {
       "id": "item-mwnlnv2d",
-      "cat": "specials",
+      "cat": "new-kampanyali",
       "price": 350,
       "tr": {
         "name": "MARGARİTA PİZZA",
@@ -2910,7 +2918,7 @@
     },
     {
       "id": "item-mwnlqrf3",
-      "cat": "specials",
+      "cat": "new-kampanyali",
       "price": 450,
       "tr": {
         "name": "SPECİAL PİZZA",
@@ -2925,7 +2933,7 @@
     },
     {
       "id": "item-mwnlrl0j",
-      "cat": "specials",
+      "cat": "new-kampanyali",
       "price": 600,
       "tr": {
         "name": "KAVURMA KAŞAR PİZZA",
@@ -2954,7 +2962,7 @@
     },
     {
       "id": "item-mwnoazqo",
-      "cat": "specials",
+      "cat": "new-kampanyali",
       "price": 450,
       "tr": {
         "name": "SMASH BURGER",
@@ -2969,7 +2977,7 @@
     },
     {
       "id": "item-mwnoecaf",
-      "cat": "specials",
+      "cat": "new-kampanyali",
       "price": 550,
       "tr": {
         "name": "MAF BURGER",
@@ -2984,7 +2992,7 @@
     },
     {
       "id": "item-mwnof4fq",
-      "cat": "specials",
+      "cat": "new-kampanyali",
       "price": 500,
       "tr": {
         "name": "ACILI BURGER",
@@ -2999,7 +3007,7 @@
     },
     {
       "id": "item-mwnog0g6",
-      "cat": "specials",
+      "cat": "new-kampanyali",
       "price": 650,
       "tr": {
         "name": "DOUBLE MAF BURGER",
@@ -3014,7 +3022,7 @@
     },
     {
       "id": "item-mwnogogq",
-      "cat": "specials",
+      "cat": "new-kampanyali",
       "price": 550,
       "tr": {
         "name": "DOUBLE SMASH BURGER",
@@ -3029,7 +3037,7 @@
     },
     {
       "id": "item-mwnoi83a",
-      "cat": "specials",
+      "cat": "new-kampanyali",
       "price": 300,
       "tr": {
         "name": "TAVUK BURGER",
@@ -3044,7 +3052,7 @@
     },
     {
       "id": "item-mwnojzze",
-      "cat": "specials",
+      "cat": "new-kampanyali",
       "price": 350,
       "tr": {
         "name": "DOUBLE TAVUK BURGER",
@@ -3059,7 +3067,7 @@
     },
     {
       "id": "item-mwnomw2u",
-      "cat": "specials",
+      "cat": "new-kampanyali",
       "price": 400,
       "tr": {
         "name": "4 PEYNİRLİ PİZZA",
@@ -3074,7 +3082,7 @@
     },
     {
       "id": "item-mwnou5yh",
-      "cat": "specials",
+      "cat": "new-kampanyali",
       "price": 300,
       "tr": {
         "name": "TAVUKSUZ SOSLU MAKARNA",
