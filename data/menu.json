@@ -45,37 +45,23 @@
       "comingSoon": false,
       "colorHue": 35,
       "catIds": [
-        "burgers",
         "pizzalar",
-        "toasts",
         "gozleme",
         "salads",
         "pans",
         "breakfast",
+        "toasts",
         "desserts",
-        "pasta"
+        "pasta",
+        "burgers"
       ],
       "categories": [
-        {
-          "id": "burgers",
-          "tr": "Burgerler",
-          "en": "Burgers",
-          "emoji": "🍔",
-          "colorHue": 18
-        },
         {
           "id": "pizzalar",
           "tr": "PİZZALAR",
           "en": "PİZZALAR",
           "emoji": "🍕",
           "colorHue": 35
-        },
-        {
-          "id": "toasts",
-          "tr": "Tostlar",
-          "en": "Toasts",
-          "emoji": "🥪",
-          "colorHue": 25
         },
         {
           "id": "gozleme",
@@ -106,6 +92,13 @@
           "colorHue": 35
         },
         {
+          "id": "toasts",
+          "tr": "Tostlar",
+          "en": "Toasts",
+          "emoji": "🥪",
+          "colorHue": 25
+        },
+        {
           "id": "desserts",
           "tr": "Tatlılar",
           "en": "Desserts",
@@ -118,6 +111,13 @@
           "en": "Pasta",
           "emoji": "🍝",
           "colorHue": 30
+        },
+        {
+          "id": "burgers",
+          "tr": "Burgerler",
+          "en": "Burgers",
+          "emoji": "🍔",
+          "colorHue": 18
         }
       ]
     },
@@ -2896,7 +2896,7 @@
     {
       "id": "item-mwnlnv2d",
       "cat": "specials",
-      "price": 400,
+      "price": 350,
       "tr": {
         "name": "MARGARİTA PİZZA",
         "desc": null
@@ -2951,6 +2951,146 @@
         "desc": null
       },
       "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1795095599901-072380e4.jpg"
+    },
+    {
+      "id": "item-mwno8484",
+      "cat": "burgers",
+      "price": 450,
+      "tr": {
+        "name": "SMASH BURGER",
+        "desc": null
+      },
+      "en": {
+        "name": "SMASH BURGER",
+        "desc": null
+      },
+      "badge": "New"
+    },
+    {
+      "id": "item-mwnoazqo",
+      "cat": "specials",
+      "price": 450,
+      "tr": {
+        "name": "SMASH BURGER",
+        "desc": null
+      },
+      "en": {
+        "name": "SMASH BURGER",
+        "desc": null
+      },
+      "badge": "New"
+    },
+    {
+      "id": "item-mwnoecaf",
+      "cat": "specials",
+      "price": 550,
+      "tr": {
+        "name": "MAF BURGER",
+        "desc": null
+      },
+      "en": {
+        "name": "MAF BURGER",
+        "desc": null
+      },
+      "badge": "New"
+    },
+    {
+      "id": "item-mwnof4fq",
+      "cat": "specials",
+      "price": 500,
+      "tr": {
+        "name": "ACILI BURGER",
+        "desc": null
+      },
+      "en": {
+        "name": "ACILI BURGER",
+        "desc": null
+      },
+      "badge": "New"
+    },
+    {
+      "id": "item-mwnog0g6",
+      "cat": "specials",
+      "price": 650,
+      "tr": {
+        "name": "DOUBLE MAF BURGER",
+        "desc": null
+      },
+      "en": {
+        "name": "DOUBLE MAF BURGER",
+        "desc": null
+      },
+      "badge": "New"
+    },
+    {
+      "id": "item-mwnogogq",
+      "cat": "specials",
+      "price": 550,
+      "tr": {
+        "name": "DOUBLE SMASH BURGER",
+        "desc": null
+      },
+      "en": {
+        "name": "DOUBLE SMASH BURGER",
+        "desc": null
+      },
+      "badge": "New"
+    },
+    {
+      "id": "item-mwnoi83a",
+      "cat": "specials",
+      "price": 300,
+      "tr": {
+        "name": "TAVUK BURGER",
+        "desc": null
+      },
+      "en": {
+        "name": "Kampanyalı",
+        "desc": null
+      },
+      "badge": "Kampanyalı"
+    },
+    {
+      "id": "item-mwnojzze",
+      "cat": "specials",
+      "price": 350,
+      "tr": {
+        "name": "DOUBLE TAVUK BURGER",
+        "desc": null
+      },
+      "en": {
+        "name": "Kampanyalı",
+        "desc": null
+      },
+      "badge": "Kampanyalı"
+    },
+    {
+      "id": "item-mwnomw2u",
+      "cat": "specials",
+      "price": 400,
+      "tr": {
+        "name": "4 PEYNİRLİ PİZZA",
+        "desc": null
+      },
+      "en": {
+        "name": "4 PEYNİRLİ PİZZA",
+        "desc": null
+      },
+      "badge": "New"
+    },
+    {
+      "id": "item-mwnou5yh",
+      "cat": "specials",
+      "price": 300,
+      "tr": {
+        "name": "TAVUKSUZ SOSLU MAKARNA",
+        "desc": null
+      },
+      "en": {
+        "name": "Kampanyalı",
+        "desc": null
+      },
+      "badge": "Kampanyalı"
     }
   ]
 }
