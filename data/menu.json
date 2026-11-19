@@ -2894,20 +2894,6 @@
       "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1795095326924-6852b488.jpg"
     },
     {
-      "id": "item-muzujfv2",
-      "cat": "specials",
-      "price": 220,
-      "tr": {
-        "name": "BALLI Chai Tea Latte ",
-        "desc": null
-      },
-      "en": {
-        "name": "BALLI Chai Tea Latte ",
-        "desc": null
-      },
-      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1795095599901-072380e4.jpg"
-    },
-    {
       "id": "item-mwnlnv2d",
       "cat": "specials",
       "price": 400,
@@ -2951,6 +2937,20 @@
       },
       "badge": "New",
       "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1795096126591-27e5047b.jpg"
+    },
+    {
+      "id": "item-muzujfv2",
+      "cat": "specials",
+      "price": 220,
+      "tr": {
+        "name": "BALLI Chai Tea Latte ",
+        "desc": null
+      },
+      "en": {
+        "name": "BALLI Chai Tea Latte ",
+        "desc": null
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1795095599901-072380e4.jpg"
     }
   ]
 }
