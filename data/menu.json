@@ -128,34 +128,20 @@
       "comingSoon": false,
       "colorHue": 200,
       "catIds": [
-        "cocktail",
-        "matcha",
         "hotcoffee",
         "hotdrinks",
+        "matcha",
         "tea",
         "frappe",
         "shake",
         "smoothie",
-        "frozen",
-        "lemonade",
+        "cocktail",
         "cold",
-        "icecoffee"
+        "lemonade",
+        "icecoffee",
+        "frozen"
       ],
       "categories": [
-        {
-          "id": "cocktail",
-          "tr": "Kokteyller",
-          "en": "Cocktails",
-          "emoji": "🍹",
-          "colorHue": 340
-        },
-        {
-          "id": "matcha",
-          "tr": "Matchalar",
-          "en": "Matcha",
-          "emoji": "🍵",
-          "colorHue": 140
-        },
         {
           "id": "hotcoffee",
           "tr": "Sıcak Kahveler",
@@ -169,6 +155,13 @@
           "en": "Hot Drinks",
           "emoji": "🍵",
           "colorHue": 12
+        },
+        {
+          "id": "matcha",
+          "tr": "Matchalar",
+          "en": "Matcha",
+          "emoji": "🍵",
+          "colorHue": 140
         },
         {
           "id": "tea",
@@ -199,10 +192,17 @@
           "colorHue": 340
         },
         {
-          "id": "frozen",
-          "tr": "Frozen",
-          "en": "Frozen",
-          "emoji": "❄️",
+          "id": "cocktail",
+          "tr": "Kokteyller",
+          "en": "Cocktails",
+          "emoji": "🍹",
+          "colorHue": 340
+        },
+        {
+          "id": "cold",
+          "tr": "Soğuk İçecekler",
+          "en": "Cold Drinks",
+          "emoji": "🥤",
           "colorHue": 200
         },
         {
@@ -213,17 +213,17 @@
           "colorHue": 60
         },
         {
-          "id": "cold",
-          "tr": "Soğuk İçecekler",
-          "en": "Cold Drinks",
-          "emoji": "🥤",
-          "colorHue": 200
-        },
-        {
           "id": "icecoffee",
           "tr": "Soğuk Kahveler",
           "en": "Cold Coffee",
           "emoji": "🧊",
+          "colorHue": 200
+        },
+        {
+          "id": "frozen",
+          "tr": "Frozen",
+          "en": "Frozen",
+          "emoji": "❄️",
           "colorHue": 200
         }
       ]
