@@ -45,37 +45,23 @@
       "comingSoon": false,
       "colorHue": 35,
       "catIds": [
-        "breakfast",
         "burgers",
-        "pasta",
         "pizzalar",
         "toasts",
         "gozleme",
         "salads",
         "pans",
-        "desserts"
+        "breakfast",
+        "desserts",
+        "pasta"
       ],
       "categories": [
-        {
-          "id": "breakfast",
-          "tr": "Kahvaltı",
-          "en": "Breakfast",
-          "emoji": "🍳",
-          "colorHue": 35
-        },
         {
           "id": "burgers",
           "tr": "Burgerler",
           "en": "Burgers",
           "emoji": "🍔",
           "colorHue": 18
-        },
-        {
-          "id": "pasta",
-          "tr": "Makarnalar",
-          "en": "Pasta",
-          "emoji": "🍝",
-          "colorHue": 30
         },
         {
           "id": "pizzalar",
@@ -113,11 +99,25 @@
           "colorHue": 22
         },
         {
+          "id": "breakfast",
+          "tr": "Kahvaltı",
+          "en": "Breakfast",
+          "emoji": "🍳",
+          "colorHue": 35
+        },
+        {
           "id": "desserts",
           "tr": "Tatlılar",
           "en": "Desserts",
           "emoji": "🍰",
           "colorHue": 320
+        },
+        {
+          "id": "pasta",
+          "tr": "Makarnalar",
+          "en": "Pasta",
+          "emoji": "🍝",
+          "colorHue": 30
         }
       ]
     },
@@ -2042,34 +2042,6 @@
       "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1780746382149-c08410db.jpg"
     },
     {
-      "id": "item-mqv2zb29",
-      "cat": "specials",
-      "price": 350,
-      "tr": {
-        "name": "Ruby Infusion",
-        "desc": null
-      },
-      "en": {
-        "name": "Ruby Infusion",
-        "desc": null
-      },
-      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1782487517196-0c8c9d7e.jpg"
-    },
-    {
-      "id": "item-mq6q9bc1",
-      "cat": "specials",
-      "price": 380,
-      "tr": {
-        "name": "X ON THE BEACH ",
-        "desc": null
-      },
-      "en": {
-        "name": "SEX ON THE BEACH ",
-        "desc": null
-      },
-      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1781014903846-b67291ff.jpg"
-    },
-    {
       "id": "item-mq2afg2f",
       "cat": "cocktail",
       "price": 350,
@@ -2096,34 +2068,6 @@
         "desc": null
       },
       "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1782526384762-d8ea10d6.jpg"
-    },
-    {
-      "id": "item-mq2a9mj8",
-      "cat": "specials",
-      "price": 350,
-      "tr": {
-        "name": "PİNA COLADA ",
-        "desc": null
-      },
-      "en": {
-        "name": "PİNA COLADA ",
-        "desc": null
-      },
-      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1780746147610-0fbba095.jpg"
-    },
-    {
-      "id": "item-mq2a7ydz",
-      "cat": "specials",
-      "price": 350,
-      "tr": {
-        "name": "GREEN FOREST ",
-        "desc": null
-      },
-      "en": {
-        "name": "GREEN FOREST ",
-        "desc": null
-      },
-      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1780746137575-53a03748.jpg"
     },
     {
       "id": "item-mqm1rxiq",
@@ -2383,7 +2327,7 @@
     {
       "id": "item-mr7to1x5",
       "cat": "pizzalar",
-      "price": 350,
+      "price": 400,
       "tr": {
         "name": "Margarita Pizza  ",
         "desc": null
@@ -2523,20 +2467,6 @@
         "name": "Kavun",
         "desc": null
       }
-    },
-    {
-      "id": "item-mrti0inx",
-      "cat": "specials",
-      "price": 270,
-      "tr": {
-        "name": "MANİFEST",
-        "desc": null
-      },
-      "en": {
-        "name": "MANİFEST",
-        "desc": null
-      },
-      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1784568516936-02c571a2.jpg"
     },
     {
       "id": "spagull",
@@ -2920,6 +2850,50 @@
       }
     },
     {
+      "id": "item-mwnl3x23",
+      "cat": "specials",
+      "price": 450,
+      "tr": {
+        "name": "ET WRAP DÜRÜM",
+        "desc": null
+      },
+      "en": {
+        "name": "ET WRAP",
+        "desc": null
+      },
+      "badge": "New",
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1795094859376-8bda3a24.jpg"
+    },
+    {
+      "id": "item-mr7tmlx0",
+      "cat": "pizzalar",
+      "price": 450,
+      "tr": {
+        "name": "Special Pizza ",
+        "desc": null
+      },
+      "en": {
+        "name": "Special pizza ",
+        "desc": null
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1783270752181-5024b624.jpg"
+    },
+    {
+      "id": "item-mwnla6wy",
+      "cat": "specials",
+      "price": 390,
+      "tr": {
+        "name": "TAVUK WRAP",
+        "desc": null
+      },
+      "en": {
+        "name": "TAVUK WRAP",
+        "desc": null
+      },
+      "badge": "New",
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1795095326924-6852b488.jpg"
+    },
+    {
       "id": "item-muzujfv2",
       "cat": "specials",
       "price": 220,
@@ -2930,21 +2904,53 @@
       "en": {
         "name": "BALLI Chai Tea Latte ",
         "desc": null
-      }
+      },
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1795095599901-072380e4.jpg"
     },
     {
-      "id": "item-mr7tmlx0",
-      "cat": "pizzalar",
+      "id": "item-mwnlnv2d",
+      "cat": "specials",
       "price": 400,
       "tr": {
-        "name": "Special Pizza ",
+        "name": "MARGARİTA PİZZA",
         "desc": null
       },
       "en": {
-        "name": "Special pizza ",
+        "name": "MARGARİTA PİZZA",
         "desc": null
       },
-      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1783270752181-5024b624.jpg"
+      "badge": "New",
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1795096079897-1736ed04.jpg"
+    },
+    {
+      "id": "item-mwnlqrf3",
+      "cat": "specials",
+      "price": 450,
+      "tr": {
+        "name": "SPECİAL PİZZA",
+        "desc": null
+      },
+      "en": {
+        "name": "SPECİAL PİZZA",
+        "desc": null
+      },
+      "badge": "New",
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1795096111457-5481391a.jpg"
+    },
+    {
+      "id": "item-mwnlrl0j",
+      "cat": "specials",
+      "price": 600,
+      "tr": {
+        "name": "KAVURMA KAŞAR PİZZA",
+        "desc": null
+      },
+      "en": {
+        "name": "KAVURMA KAŞAR PİZZA",
+        "desc": null
+      },
+      "badge": "New",
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1795096126591-27e5047b.jpg"
     }
   ]
 }
