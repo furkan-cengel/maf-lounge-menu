@@ -2932,19 +2932,19 @@
       "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1795096111457-5481391a.jpg"
     },
     {
-      "id": "item-mwnlrl0j",
+      "id": "item-mwnomw2u",
       "cat": "new-kampanyali",
-      "price": 600,
+      "price": 400,
       "tr": {
-        "name": "KAVURMA KAŞAR PİZZA",
+        "name": "4 PEYNİRLİ PİZZA",
         "desc": null
       },
       "en": {
-        "name": "KAVURMA KAŞAR PİZZA",
+        "name": "4 PEYNİRLİ PİZZA",
         "desc": null
       },
       "badge": "New",
-      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1795096126591-27e5047b.jpg"
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1795102442246-5259934b.jpg"
     },
     {
       "id": "item-mwno8484",
@@ -2959,6 +2959,21 @@
         "desc": null
       },
       "badge": "New"
+    },
+    {
+      "id": "item-mwnlrl0j",
+      "cat": "new-kampanyali",
+      "price": 600,
+      "tr": {
+        "name": "KAVURMA KAŞAR PİZZA",
+        "desc": null
+      },
+      "en": {
+        "name": "KAVURMA KAŞAR PİZZA",
+        "desc": null
+      },
+      "badge": "New",
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1795096126591-27e5047b.jpg"
     },
     {
       "id": "item-mwnoazqo",
@@ -3053,7 +3068,7 @@
     {
       "id": "item-mwnojzze",
       "cat": "new-kampanyali",
-      "price": 350,
+      "price": 380,
       "tr": {
         "name": "DOUBLE TAVUK BURGER",
         "desc": null
@@ -3064,21 +3079,6 @@
       },
       "badge": "Kampanyalı",
       "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1795102431767-3288e1d8.jpg"
-    },
-    {
-      "id": "item-mwnomw2u",
-      "cat": "new-kampanyali",
-      "price": 400,
-      "tr": {
-        "name": "4 PEYNİRLİ PİZZA",
-        "desc": null
-      },
-      "en": {
-        "name": "4 PEYNİRLİ PİZZA",
-        "desc": null
-      },
-      "badge": "New",
-      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1795102442246-5259934b.jpg"
     },
     {
       "id": "item-mwnou5yh",
