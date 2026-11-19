@@ -130,13 +130,13 @@
       "catIds": [
         "hotcoffee",
         "hotdrinks",
-        "matcha",
         "tea",
+        "cold",
         "frappe",
         "shake",
         "smoothie",
         "cocktail",
-        "cold",
+        "matcha",
         "lemonade",
         "icecoffee",
         "frozen"
@@ -157,18 +157,18 @@
           "colorHue": 12
         },
         {
-          "id": "matcha",
-          "tr": "Matchalar",
-          "en": "Matcha",
-          "emoji": "🍵",
-          "colorHue": 140
-        },
-        {
           "id": "tea",
           "tr": "Bitki Çayları",
           "en": "Herbal Teas",
           "emoji": "🌿",
           "colorHue": 110
+        },
+        {
+          "id": "cold",
+          "tr": "Soğuk İçecekler",
+          "en": "Cold Drinks",
+          "emoji": "🥤",
+          "colorHue": 200
         },
         {
           "id": "frappe",
@@ -199,11 +199,11 @@
           "colorHue": 340
         },
         {
-          "id": "cold",
-          "tr": "Soğuk İçecekler",
-          "en": "Cold Drinks",
-          "emoji": "🥤",
-          "colorHue": 200
+          "id": "matcha",
+          "tr": "Matchalar",
+          "en": "Matcha",
+          "emoji": "🍵",
+          "colorHue": 140
         },
         {
           "id": "lemonade",
@@ -2327,7 +2327,7 @@
     {
       "id": "item-mr7to1x5",
       "cat": "pizzalar",
-      "price": 400,
+      "price": 350,
       "tr": {
         "name": "Margarita Pizza  ",
         "desc": null
@@ -3084,6 +3084,21 @@
       },
       "badge": "Kampanyalı",
       "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1795102452046-07c7b676.jpg"
+    },
+    {
+      "id": "item-mwnppg6o",
+      "cat": "pizzalar",
+      "price": 400,
+      "tr": {
+        "name": "4 Peynirli Pizza",
+        "desc": null
+      },
+      "en": {
+        "name": "4 Peynirli Pizza",
+        "desc": null
+      },
+      "badge": "New",
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1795102551826-bcc16c19.jpg"
     }
   ]
 }
