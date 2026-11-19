@@ -2939,20 +2939,6 @@
       "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1795096126591-27e5047b.jpg"
     },
     {
-      "id": "item-muzujfv2",
-      "cat": "specials",
-      "price": 220,
-      "tr": {
-        "name": "BALLI Chai Tea Latte ",
-        "desc": null
-      },
-      "en": {
-        "name": "BALLI Chai Tea Latte ",
-        "desc": null
-      },
-      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1795095599901-072380e4.jpg"
-    },
-    {
       "id": "item-mwno8484",
       "cat": "burgers",
       "price": 450,
@@ -2978,7 +2964,8 @@
         "name": "SMASH BURGER",
         "desc": null
       },
-      "badge": "New"
+      "badge": "New",
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1795102370790-b39ac46d.jpg"
     },
     {
       "id": "item-mwnoecaf",
@@ -2992,7 +2979,8 @@
         "name": "MAF BURGER",
         "desc": null
       },
-      "badge": "New"
+      "badge": "New",
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1795102385984-93355b59.jpg"
     },
     {
       "id": "item-mwnof4fq",
@@ -3034,7 +3022,8 @@
         "name": "DOUBLE SMASH BURGER",
         "desc": null
       },
-      "badge": "New"
+      "badge": "New",
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1795102397049-d9c67792.jpg"
     },
     {
       "id": "item-mwnoi83a",
@@ -3048,7 +3037,8 @@
         "name": "Kampanyalı",
         "desc": null
       },
-      "badge": "Kampanyalı"
+      "badge": "Kampanyalı",
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1795102419336-599390fc.jpg"
     },
     {
       "id": "item-mwnojzze",
@@ -3062,7 +3052,8 @@
         "name": "Kampanyalı",
         "desc": null
       },
-      "badge": "Kampanyalı"
+      "badge": "Kampanyalı",
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1795102431767-3288e1d8.jpg"
     },
     {
       "id": "item-mwnomw2u",
@@ -3076,7 +3067,8 @@
         "name": "4 PEYNİRLİ PİZZA",
         "desc": null
       },
-      "badge": "New"
+      "badge": "New",
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1795102442246-5259934b.jpg"
     },
     {
       "id": "item-mwnou5yh",
@@ -3090,7 +3082,8 @@
         "name": "Kampanyalı",
         "desc": null
       },
-      "badge": "Kampanyalı"
+      "badge": "Kampanyalı",
+      "image": "https://raw.githubusercontent.com/furkan-cengel/maf-lounge-menu/main/public/images/1795102452046-07c7b676.jpg"
     }
   ]
 }
